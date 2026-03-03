@@ -2,7 +2,7 @@ ACT ?= $(HOME)/.local/bin/act
 SRC_DIRS := src tests scripts
 WORKFLOW_FILE := .github/workflows/substack-sync.yml
 
-.PHONY: build lint test format format-check typecheck quality sync install-dev mutation mutation-report mutation-gate act-list act-dispatch act-schedule
+.PHONY: build lint test format format-check typecheck quality quality-ci sync install-dev mutation mutation-report mutation-gate act-list act-dispatch act-schedule
 
 define run_act
 	@if ! command -v docker >/dev/null 2>&1; then \
@@ -51,7 +51,9 @@ mutation-gate: mutation
 		exit 1; \
 	fi
 
-quality: format-check lint typecheck test mutation-gate
+quality-ci: format-check lint typecheck test
+
+quality: quality-ci mutation-gate
 
 sync:
 	PYTHONPATH=src uv run python scripts/sync_substack.py

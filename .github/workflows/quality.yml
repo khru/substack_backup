@@ -28,4 +28,4 @@ jobs:
         run: uv sync --frozen --extra dev --no-install-project
 
       - name: Run quality gate
-        run: make quality
+        run: make quality-ci

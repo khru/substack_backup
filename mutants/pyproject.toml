@@ -1,0 +1,34 @@
+[project]
+name = "substack-backup-sync"
+version = "0.1.0"
+description = "GitHub Actions pipeline to back up Substack posts as markdown"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "mypy",
+    "pytest",
+    "mutmut",
+    "vulture",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "C4", "SIM", "PTH"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+mypy_path = "src"
+files = ["src", "scripts/sync_substack.py", "tests"]

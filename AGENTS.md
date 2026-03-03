@@ -49,14 +49,23 @@
 
 ### Refactor phase must include mutation testing
 - During Refactor, mutation testing is mandatory.
+- Mutation testing is local-only and must not be executed in GitHub Actions pipelines.
 - Run `make mutation-gate` and do not close the cycle if mutants survive.
 - Goal: kill all possible mutants.
 - If a mutant is equivalent, document why explicitly before accepting it.
+
+### Planning rigor protocol (mandatory)
+- Before implementation, write an explicit plan.
+- The plan must include objective, constraints, risks, test strategy (Red/Green/Refactor), and validation commands.
+- Map each planned behavior change to at least one focused failing test.
+- Execute the plan step by step and report any deviation with rationale.
+- A task is incomplete until planned validations pass or blockers are explicitly documented.
 
 ### Commit policy
 - One commit per completed TDD cycle.
 - Immediately create a commit at the end of every completed TDD cycle.
 - A cycle is not complete until the commit exists in git history.
+- Include all changes produced in the current TDD cycle in the commit.
 - Use Conventional Commits (`feat:`, `fix:`, `refactor:`, `test:`, `chore:`).
 - Do not amend commits unless explicitly requested.
 
@@ -78,9 +87,10 @@
 - Mutation run: `make mutation`
 - Mutation survivors report: `make mutation-report`
 - Mutation gate: `make mutation-gate`
-- Full quality gate: `make quality`
+- Full local quality gate: `make quality`
+- CI quality gate (no mutation): `make quality-ci`
 
-## Required quality gate order
+## Required local quality gate order
 Run commands in this exact order:
 1. `make format-check`
 2. `make lint`
@@ -88,6 +98,14 @@ Run commands in this exact order:
 4. `make test`
 5. `make mutation-gate`
 - If any command fails, the cycle is incomplete.
+
+## Required CI quality gate order
+Run commands in this exact order:
+1. `make format-check`
+2. `make lint`
+3. `make typecheck`
+4. `make test`
+- CI must not execute mutation commands.
 
 ## Single-test quick reference (pytest)
 - File:
@@ -105,6 +123,12 @@ Run commands in this exact order:
 - Quality workflow (`.github/workflows/quality.yml`) must declare:
   - `permissions: contents: read`
 - Keep minimum required scope for each workflow.
+
+### Mutation execution scope (mandatory)
+- GitHub pipelines must never execute `mutmut`, `make mutation`, or `make mutation-gate`.
+- Quality workflow must run `make quality-ci`.
+- Mutation testing remains mandatory in local refactor phases.
+- Do not close refactor work while any non-equivalent mutant survives.
 
 ### Local workflow validation with act
 - `act` validation is mandatory when workflow files change.
@@ -168,6 +192,8 @@ Run commands in this exact order:
 - Classes/types: `PascalCase`.
 - Functions/variables/modules: `snake_case`.
 - Constants/env keys: `UPPER_SNAKE_CASE`.
+- Do not use abbreviations in names.
+- Names must reveal intent.
 - Tests must describe behavior, not implementation details.
 
 ### Error handling

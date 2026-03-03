@@ -104,7 +104,7 @@ Workflow: `.github/workflows/quality.yml`
 
 - Runs on `workflow_dispatch`, `push`, and `pull_request`.
 - Installs dependencies with `uv`.
-- Runs `make quality`.
+- Runs `make quality-ci` (format-check, lint, typecheck, test; no mutation in CI).
 - Declares minimal read permission:
   - `permissions: contents: read`
 
