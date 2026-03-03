@@ -21,7 +21,7 @@ jobs:
   sync-substack:
     runs-on: ubuntu-latest
     env:
-      SUBSTACK_FEED_URL: https://emmanuelvalverderamos.substack.com/feed.xml
+      SUBSTACK_FEED_URL: https://emmannuelvalverderamos-rss.evalverde.workers.dev/
       SUBSTACK_MARKDOWN_ENDPOINT: https://substack-to-markdown.evalverde.workers.dev/?url=
       SUBSTACK_OUTPUT_DIR: posts
       SUBSTACK_TIMEOUT_SECONDS: "30"

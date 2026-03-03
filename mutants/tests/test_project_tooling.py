@@ -96,6 +96,16 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("permissions:", workflow_content)
         self.assertIn("contents: write", workflow_content)
 
+    def test_sync_workflow_uses_cloudflare_feed_proxy_url(self) -> None:
+        workflow_content = _SYNC_WORKFLOW_PATH.read_text(encoding="utf-8")
+        expected_proxy_feed_url = "https://emmannuelvalverderamos-rss.evalverde.workers.dev/"
+
+        self.assertIn(f"SUBSTACK_FEED_URL: {expected_proxy_feed_url}", workflow_content)
+        self.assertNotIn(
+            "SUBSTACK_FEED_URL: https://emmanuelvalverderamos.substack.com/feed.xml",
+            workflow_content,
+        )
+
     def test_quality_workflow_declares_contents_read_permission(self) -> None:
         workflow_content = _QUALITY_WORKFLOW_PATH.read_text(encoding="utf-8")
 
