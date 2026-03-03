@@ -1,0 +1,122 @@
+from __future__ import annotations
+
+import tomllib
+import unittest
+from pathlib import Path
+
+
+def _discover_project_root() -> Path:
+    required_files = ("pyproject.toml", "AGENTS.md", "README.md", "Makefile")
+
+    search_roots = [Path.cwd(), *Path.cwd().parents, *Path(__file__).resolve().parents]
+    for candidate in search_roots:
+        if all((candidate / required_file).exists() for required_file in required_files):
+            return candidate
+
+    raise FileNotFoundError("Unable to locate project root with required metadata files")
+
+
+_PROJECT_ROOT = _discover_project_root()
+_PYPROJECT_PATH = _PROJECT_ROOT / "pyproject.toml"
+_EDITORCONFIG_PATH = _PROJECT_ROOT / ".editorconfig"
+_MAKEFILE_PATH = _PROJECT_ROOT / "Makefile"
+_README_PATH = _PROJECT_ROOT / "README.md"
+_AGENTS_PATH = _PROJECT_ROOT / "AGENTS.md"
+_SYNC_WORKFLOW_PATH = _PROJECT_ROOT / ".github/workflows/substack-sync.yml"
+_QUALITY_WORKFLOW_PATH = _PROJECT_ROOT / ".github/workflows/quality.yml"
+_REQUIREMENTS_DEV_PATH = _PROJECT_ROOT / "requirements-dev.txt"
+
+
+class ProjectToolingTests(unittest.TestCase):
+    def test_editorconfig_exists_with_basic_defaults(self) -> None:
+        content = _EDITORCONFIG_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("root = true", content)
+        self.assertIn("charset = utf-8", content)
+        self.assertIn("indent_style = space", content)
+        self.assertIn("indent_size = 4", content)
+        self.assertIn("end_of_line = lf", content)
+        self.assertIn("insert_final_newline = true", content)
+
+    def test_requirements_dev_file_is_not_used(self) -> None:
+        self.assertFalse(_REQUIREMENTS_DEV_PATH.exists())
+
+    def test_pyproject_declares_core_dev_tooling_dependencies(self) -> None:
+        pyproject_data = tomllib.loads(_PYPROJECT_PATH.read_text(encoding="utf-8"))
+        optional_dependencies = pyproject_data["project"]["optional-dependencies"]
+        dev_dependencies = optional_dependencies["dev"]
+
+        self.assertIn("ruff", dev_dependencies)
+        self.assertIn("mypy", dev_dependencies)
+        self.assertIn("vulture", dev_dependencies)
+
+    def test_pyproject_declares_pytest_and_mutation_testing_dependencies(self) -> None:
+        pyproject_data = tomllib.loads(_PYPROJECT_PATH.read_text(encoding="utf-8"))
+        optional_dependencies = pyproject_data["project"]["optional-dependencies"]
+        dev_dependencies = optional_dependencies["dev"]
+
+        self.assertIn("pytest", dev_dependencies)
+        self.assertIn("mutmut", dev_dependencies)
+
+    def test_makefile_install_dev_uses_uv_sync(self) -> None:
+        makefile_content = _MAKEFILE_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("uv sync --extra dev", makefile_content)
+
+    def test_makefile_uses_uv_run_for_quality_commands(self) -> None:
+        makefile_content = _MAKEFILE_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("uv run", makefile_content)
+
+    def test_makefile_exposes_mutation_targets(self) -> None:
+        makefile_content = _MAKEFILE_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("mutation:", makefile_content)
+        self.assertIn("mutation-gate:", makefile_content)
+
+    def test_quality_workflow_exists(self) -> None:
+        self.assertTrue(_QUALITY_WORKFLOW_PATH.exists())
+
+    def test_sync_workflow_declares_contents_write_permission(self) -> None:
+        workflow_content = _SYNC_WORKFLOW_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("permissions:", workflow_content)
+        self.assertIn("contents: write", workflow_content)
+
+    def test_quality_workflow_declares_contents_read_permission(self) -> None:
+        workflow_content = _QUALITY_WORKFLOW_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("permissions:", workflow_content)
+        self.assertIn("contents: read", workflow_content)
+
+    def test_readme_documents_uv_pytest_mutation_and_typing(self) -> None:
+        readme_content = _README_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn("uv", readme_content)
+        self.assertIn("pytest", readme_content)
+        self.assertIn("mutmut", readme_content)
+        self.assertIn("typed", readme_content)
+
+    def test_agents_documents_uv_pytest_mutation_and_typing(self) -> None:
+        agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn("uv", agents_content)
+        self.assertIn("pytest", agents_content)
+        self.assertIn("mutation", agents_content)
+        self.assertIn("typed", agents_content)
+
+    def test_agents_enforces_commit_after_each_completed_tdd_cycle(self) -> None:
+        agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn(
+            "immediately create a commit at the end of every completed tdd cycle",
+            agents_content,
+        )
+        self.assertIn(
+            "a cycle is not complete until the commit exists in git history",
+            agents_content,
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()

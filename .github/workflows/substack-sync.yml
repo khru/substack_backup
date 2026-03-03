@@ -1,0 +1,130 @@
+name: Sync Substack Posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      skip_repo_steps:
+        description: "Skip git add/commit/push steps (local testing helper)"
+        required: false
+        default: "false"
+  schedule:
+    - cron: "0 7,8 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: substack-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-substack:
+    runs-on: ubuntu-latest
+    env:
+      SUBSTACK_FEED_URL: https://emmanuelvalverderamos.substack.com/feed.xml
+      SUBSTACK_MARKDOWN_ENDPOINT: https://substack-to-markdown.evalverde.workers.dev/?url=
+      SUBSTACK_OUTPUT_DIR: posts
+      SUBSTACK_TIMEOUT_SECONDS: "30"
+
+    steps:
+      - name: Check 09:00 Europe/Madrid window for scheduled runs
+        id: madrid_guard
+        if: github.event_name == 'schedule'
+        run: |
+          current_hour="$(TZ=Europe/Madrid date +%H)"
+          if [ "${current_hour}" != "09" ]; then
+            echo "skip=true" >> "${GITHUB_OUTPUT}"
+            echo "Scheduled run skipped. Europe/Madrid hour: ${current_hour}."
+          else
+            echo "skip=false" >> "${GITHUB_OUTPUT}"
+            echo "Scheduled run allowed. Europe/Madrid hour: ${current_hour}."
+          fi
+
+      - name: Checkout repository
+        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Substack synchronization
+        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
+        run: python3 scripts/sync_substack.py
+
+      - name: Resolve repository steps mode
+        id: repo_mode
+        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
+        run: |
+          resolved_skip="${SKIP_REPO_STEPS:-false}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.skip_repo_steps }}" ]; then
+            resolved_skip="${{ github.event.inputs.skip_repo_steps }}"
+          fi
+          echo "skip_repo_steps=${resolved_skip}" >> "${GITHUB_OUTPUT}"
+          echo "Resolved skip_repo_steps=${resolved_skip}"
+
+      - name: Skip repository steps
+        if: >-
+          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
+          && steps.repo_mode.outputs.skip_repo_steps == 'true'
+        run: echo "Repository steps disabled by skip_repo_steps flag."
+
+      - name: Configure git author
+        if: >-
+          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
+          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Stage generated markdown files
+        if: >-
+          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
+          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          if [ -d "${SUBSTACK_OUTPUT_DIR}" ]; then
+            git add "${SUBSTACK_OUTPUT_DIR}"
+          else
+            echo "Output directory does not exist yet; nothing to stage."
+          fi
+
+      - name: Validate staged markdown files are non-empty
+        if: >-
+          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
+          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          staged_files="$(git diff --cached --name-only --diff-filter=AM -- 'posts/*.md')"
+          if [ -z "${staged_files}" ]; then
+            echo "No staged markdown files to validate."
+            exit 0
+          fi
+
+          while IFS= read -r file; do
+            if [ -z "${file}" ]; then
+              continue
+            fi
+
+            if [ ! -s "${file}" ]; then
+              echo "Empty markdown file detected: ${file}"
+              exit 1
+            fi
+          done << EOF
+          ${staged_files}
+          EOF
+
+      - name: Commit and push new posts
+        if: >-
+          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
+          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          if git diff --cached --quiet; then
+            echo "No new posts to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(sync): add new Substack posts"
+          git push
