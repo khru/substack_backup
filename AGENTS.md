@@ -61,6 +61,14 @@
 - Execute the plan step by step and report any deviation with rationale.
 - A task is incomplete until planned validations pass or blockers are explicitly documented.
 
+### Parallel change protocol (mandatory for most refactors)
+- For most refactors, when technically feasible, use Parallel Change with:
+  1. Expand: add the new path while preserving compatibility with the existing path.
+  2. Migrate: move callers, data, and workflows incrementally to the new path.
+  3. Contract: remove the legacy path only after migration validations pass.
+- Do not combine Expand and Contract in the same cycle unless the change is trivial and fully covered by focused tests.
+- Each phase must include focused tests and explicit rollback notes.
+
 ### Commit policy
 - One commit per completed TDD cycle.
 - Immediately create a commit at the end of every completed TDD cycle.

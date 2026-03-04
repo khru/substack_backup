@@ -146,6 +146,12 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("make quality-ci", readme_content)
         self.assertNotIn("- Runs `make quality`.", readme_content)
 
+    def test_readme_documents_resilience_libraries(self) -> None:
+        readme_content = _README_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn("urllib3", readme_content)
+        self.assertIn("pybreaker", readme_content)
+
     def test_agents_documents_uv_pytest_mutation_and_typing(self) -> None:
         agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()
 
@@ -179,6 +185,14 @@ class ProjectToolingTests(unittest.TestCase):
 
         self.assertIn("planning rigor protocol (mandatory)", agents_content)
         self.assertIn("before implementation, write an explicit plan", agents_content)
+
+    def test_agents_requires_parallel_change_for_most_refactors(self) -> None:
+        agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn("parallel change protocol", agents_content)
+        self.assertIn("expand", agents_content)
+        self.assertIn("migrate", agents_content)
+        self.assertIn("contract", agents_content)
 
     def test_agents_separates_local_and_ci_mutation_execution(self) -> None:
         agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()

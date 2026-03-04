@@ -25,6 +25,15 @@ make install-dev
 
 This command runs `uv sync --extra dev --no-install-project`.
 
+## Runtime resilience libraries
+
+The sync pipeline relies on two runtime libraries for resilient HTTP execution:
+
+- `urllib3`: HTTP client and retry policy engine used for exponential backoff, `429` handling, and `Retry-After` support.
+- `pybreaker`: circuit breaker guard for unstable upstream services, preventing repeated calls when an integration point is degraded.
+
+These libraries are intentionally documented and versioned to keep local and CI behavior aligned and predictable for contributors.
+
 ## Run locally
 
 Run sync locally:
