@@ -6,8 +6,16 @@ class FeedDownloadError(SubstackSyncError):
     """Raised when RSS feed download fails."""
 
 
+class ArchiveDownloadError(SubstackSyncError):
+    """Raised when archive API download fails."""
+
+
 class RssParseError(SubstackSyncError):
     """Raised when RSS content cannot be parsed."""
+
+
+class ArchiveParseError(SubstackSyncError):
+    """Raised when archive content cannot be parsed."""
 
 
 class InvalidArticleUrlError(SubstackSyncError):
@@ -24,3 +32,7 @@ class EmptyMarkdownError(SubstackSyncError):
 
 class PostPersistenceError(SubstackSyncError):
     """Raised when markdown cannot be written to disk."""
+
+
+class CircuitBreakerOpenError(SubstackSyncError):
+    """Raised when a circuit breaker is open and short-circuits a call."""

@@ -21,7 +21,7 @@ jobs:
   sync-substack:
     runs-on: ubuntu-latest
     env:
-      SUBSTACK_FEED_URL: https://emmannuelvalverderamos-rss.evalverde.workers.dev/
+      SUBSTACK_ARCHIVE_API_URL: https://emmanuelvalverderamos-substack-api.evalverde.workers.dev/
       SUBSTACK_MARKDOWN_ENDPOINT: https://substack-to-markdown.evalverde.workers.dev/?url=
       SUBSTACK_OUTPUT_DIR: posts
       SUBSTACK_TIMEOUT_SECONDS: "30"
@@ -52,9 +52,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install uv
+        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
+        run: python -m pip install uv
+
+      - name: Install project runtime dependencies
+        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
+        run: uv sync --no-install-project
+
       - name: Run Substack synchronization
         if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
-        run: python3 scripts/sync_substack.py
+        run: uv run python scripts/sync_substack.py
 
       - name: Resolve repository steps mode
         id: repo_mode

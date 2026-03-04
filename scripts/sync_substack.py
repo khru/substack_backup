@@ -17,6 +17,7 @@ def _configure_python_path() -> None:
 
 def _build_arguments_from_environment() -> list[str]:
     environment_mappings = {
+        "SUBSTACK_ARCHIVE_API_URL": "--archive-url",
         "SUBSTACK_FEED_URL": "--feed-url",
         "SUBSTACK_MARKDOWN_ENDPOINT": "--markdown-endpoint",
         "SUBSTACK_OUTPUT_DIR": "--output-directory",

@@ -3,7 +3,10 @@ name = "substack-backup-sync"
 version = "0.1.0"
 description = "GitHub Actions pipeline to back up Substack posts as markdown"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "urllib3",
+    "pybreaker",
+]
 
 [project.optional-dependencies]
 dev = [

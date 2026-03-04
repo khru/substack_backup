@@ -48,6 +48,42 @@ class FileSystemPostRepositoryTests(unittest.TestCase):
 
             self.assertEqual(existing_slugs, frozenset({"first-post", "second-post"}))
 
+    def test_upsert_post_migrates_legacy_file_name_without_duplicates(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_directory:
+            repository = FileSystemPostRepository(output_directory=Path(temp_directory))
+            repository.save_post(
+                slug=Slug("first-post"),
+                document=MarkdownDocument.from_raw_text("first"),
+            )
+
+            was_changed = repository.upsert_post(
+                slug=Slug("first-post"),
+                published_timestamp="20260304070000",
+                document=MarkdownDocument.from_raw_text("first"),
+            )
+
+            self.assertTrue(was_changed)
+            self.assertFalse((Path(temp_directory) / "first-post.md").exists())
+            self.assertTrue((Path(temp_directory) / "20260304070000-first-post.md").exists())
+
+    def test_upsert_post_keeps_file_when_content_hash_is_equal(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_directory:
+            repository = FileSystemPostRepository(output_directory=Path(temp_directory))
+
+            first_result = repository.upsert_post(
+                slug=Slug("second-post"),
+                published_timestamp="20260304070100",
+                document=MarkdownDocument.from_raw_text("same"),
+            )
+            second_result = repository.upsert_post(
+                slug=Slug("second-post"),
+                published_timestamp="20260304070100",
+                document=MarkdownDocument.from_raw_text("same"),
+            )
+
+            self.assertTrue(first_result)
+            self.assertFalse(second_result)
+
 
 if __name__ == "__main__":
     unittest.main()

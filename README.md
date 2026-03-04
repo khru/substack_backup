@@ -1,20 +1,59 @@
-# Substack Backup Pipeline
+# Substack Backup Sync
 
-This repository downloads posts from a Substack RSS feed and stores each article as markdown in `posts/`.
+## Why this project exists
+
+This project exists to keep a versioned markdown backup of Substack articles in git, including future edits to already published posts.
+
+## Problem it solves
+
+GitHub-hosted runners can be blocked when calling Substack endpoints directly. The sync workflow must still:
+
+- fetch the complete article history,
+- detect when an article changed,
+- persist updates with deterministic filenames,
+- and keep a reliable local quality process with mutation testing.
+
+The repository solves this by using a Cloudflare Worker archive proxy, MD5 content comparison, and timestamped filenames.
 
 ## What the sync does
 
-- Reads feed URLs from `https://emmanuelvalverderamos.substack.com/feed.xml`.
-- Calls the markdown endpoint as:
+- Reads article metadata from archive API proxy pages (`limit=20`, offset pagination).
+- Calls the markdown endpoint:
   - `https://substack-to-markdown.evalverde.workers.dev/?url=<URL_ENCODED>`
-- Uses slug-based filenames under `posts/`: `posts/<slug>.md`.
-- Skips already downloaded slugs.
-- Fails when a new article cannot be downloaded.
-- Fails when downloaded markdown is empty.
+- Stores files in `posts/` as:
+  - `posts/<YYYYMMDDHHMMSS>-<slug>.md`
+- Compares markdown MD5 hashes to decide unchanged vs update.
+- Migrates legacy `posts/<slug>.md` files without creating duplicates.
+- Fails when required markdown cannot be downloaded or is empty.
 
-## Tooling and setup (uv)
+## Stack
 
-This project uses [`uv`](https://docs.astral.sh/uv/) for dependency and command management.
+- Language: Python 3.11+
+- Package and command tooling: `uv`
+- Test runner: `pytest` (tests may remain `unittest` style)
+- Lint and format: `ruff`
+- Static typing: `mypy` strict mode
+- Mutation testing: `mutmut`
+
+## Runtime resilience libraries
+
+The sync pipeline relies on two runtime libraries for resilient HTTP execution:
+
+- `urllib3`: retry/backoff support, including `429` and `Retry-After` handling.
+- `pybreaker`: circuit breaker support for unstable integrations.
+
+These libraries are documented and versioned to keep local and CI behavior aligned.
+
+## ADRs
+
+- ADR directory: `docs/adr`
+- ADR index: `docs/adr/README.md`
+- Current key decisions:
+  - `docs/adr/0001-ports-and-adapters.md`
+  - `docs/adr/0002-quality-gates-and-mutation-scope.md`
+  - `docs/adr/0003-archive-api-and-timestamped-post-files.md`
+
+## Tooling and setup (`uv`)
 
 1. Install `uv`.
 2. Install development dependencies:
@@ -25,16 +64,7 @@ make install-dev
 
 This command runs `uv sync --extra dev --no-install-project`.
 
-## Runtime resilience libraries
-
-The sync pipeline relies on two runtime libraries for resilient HTTP execution:
-
-- `urllib3`: HTTP client and retry policy engine used for exponential backoff, `429` handling, and `Retry-After` support.
-- `pybreaker`: circuit breaker guard for unstable upstream services, preventing repeated calls when an integration point is degraded.
-
-These libraries are intentionally documented and versioned to keep local and CI behavior aligned and predictable for contributors.
-
-## Run locally
+## How to use
 
 Run sync locally:
 
@@ -44,26 +74,27 @@ make sync
 
 Optional environment variables:
 
-- `SUBSTACK_FEED_URL`
+- `SUBSTACK_ARCHIVE_API_URL`
+- `SUBSTACK_FEED_URL` (legacy alias)
 - `SUBSTACK_MARKDOWN_ENDPOINT`
 - `SUBSTACK_OUTPUT_DIR`
 - `SUBSTACK_TIMEOUT_SECONDS`
 
 ## Test and quality
 
-Run tests with `pytest` (current tests remain in `unittest` style, executed by pytest):
+Run tests:
 
 ```bash
 make test
 ```
 
-Run full quality gate:
+Run full local quality gate:
 
 ```bash
 make quality
 ```
 
-Quality gate runs:
+Local quality gate order:
 
 1. `make format-check`
 2. `make lint`
@@ -71,11 +102,15 @@ Quality gate runs:
 4. `make test`
 5. `make mutation-gate`
 
+Run CI quality gate locally (without mutation):
+
+```bash
+make quality-ci
+```
+
 ## Mutation testing
 
-Mutation testing is done with `mutmut` and is required during refactor.
-
-Commands:
+Mutation testing is required during refactor phases and must run locally.
 
 ```bash
 make mutation
@@ -83,15 +118,14 @@ make mutation-report
 make mutation-gate
 ```
 
-If `mutation-gate` fails, surviving mutants must be killed with additional/refined tests (or documented as equivalent mutants when truly unavoidable).
-Skipping or deleting tests to pass mutation testing is not allowed.
+If `mutation-gate` fails, surviving mutants must be killed with additional/refined tests or documented as equivalent only when unavoidable.
 
 ## Typing policy
 
-All Python code must be fully typed, including production code and tests.
+All Python code must be typed.
 
 - Static typing is enforced with strict `mypy`.
-- New or modified Python code is expected to include explicit type hints.
+- New or modified production code and test code must include explicit type hints.
 
 ## GitHub Actions
 
@@ -101,9 +135,10 @@ Workflow: `.github/workflows/substack-sync.yml`
 
 - Runs on `workflow_dispatch` and schedule (`0 7,8 * * *` UTC).
 - Uses timezone guard so schedule executes at 09:00 `Europe/Madrid`.
+- Uses archive proxy via `SUBSTACK_ARCHIVE_API_URL`.
 - Commits only when staged markdown changes exist.
-- Validates staged markdown files are not empty.
-- Supports `skip_repo_steps=true` for local testing.
+- Validates staged markdown files are non-empty.
+- Supports `skip_repo_steps=true` for local workflow validation.
 - Declares explicit write permission:
   - `permissions: contents: write`
 
@@ -117,19 +152,9 @@ Workflow: `.github/workflows/quality.yml`
 - Declares minimal read permission:
   - `permissions: contents: read`
 
-## Use this in your own GitHub repository
+## Local workflow testing with `act`
 
-1. Push all files, including workflows, `scripts/`, and `src/`.
-2. Update `SUBSTACK_FEED_URL` in `.github/workflows/substack-sync.yml`.
-3. Keep or replace `SUBSTACK_MARKDOWN_ENDPOINT` if you host your own converter.
-4. In repo settings, enable workflow write permission for sync commits:
-   - `Settings -> Actions -> General -> Workflow permissions -> Read and write permissions`.
-5. If your default branch is protected, allow this workflow to push or use a PR flow.
-6. Trigger `workflow_dispatch` once and verify outputs in `posts/`.
-
-## Local workflow testing with act
-
-Install `act`: https://github.com/nektos/act
+Install `act`: <https://github.com/nektos/act>
 
 ```bash
 make act-list
@@ -137,4 +162,4 @@ make act-dispatch
 make act-schedule
 ```
 
-`make act-dispatch` and `make act-schedule` skip repository commit/push steps via `skip_repo_steps`/`SKIP_REPO_STEPS` so workflow logic can be validated safely in local containers.
+`make act-dispatch` and `make act-schedule` skip repository commit/push steps via `skip_repo_steps` and `SKIP_REPO_STEPS` so workflow logic can be validated safely in local containers.

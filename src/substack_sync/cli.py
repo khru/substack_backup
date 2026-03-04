@@ -3,16 +3,17 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from substack_sync.archive_use_case import SyncSubstackArchivePostsUseCase
 from substack_sync.constants import (
+    DEFAULT_ARCHIVE_API_URL,
     DEFAULT_FEED_URL,
     DEFAULT_MARKDOWN_ENDPOINT,
     DEFAULT_OUTPUT_DIRECTORY,
     DEFAULT_REQUEST_TIMEOUT_SECONDS,
 )
 from substack_sync.errors import SubstackSyncError
-from substack_sync.http_clients import HttpFeedReader, HttpMarkdownFetcher
+from substack_sync.http_clients import HttpArchiveReader, HttpMarkdownFetcher
 from substack_sync.post_repository import FileSystemPostRepository
-from substack_sync.use_case import SyncSubstackPostsUseCase
 
 EXIT_SUCCESS = 0
 EXIT_FAILURE = 1
@@ -25,9 +26,9 @@ def main(argv: list[str] | None = None) -> int:
     return _run_use_case(arguments, use_case)
 
 
-def _build_use_case(arguments: argparse.Namespace) -> SyncSubstackPostsUseCase:
-    return SyncSubstackPostsUseCase(
-        feed_reader=HttpFeedReader(timeout_seconds=arguments.timeout_seconds),
+def _build_use_case(arguments: argparse.Namespace) -> SyncSubstackArchivePostsUseCase:
+    return SyncSubstackArchivePostsUseCase(
+        archive_reader=HttpArchiveReader(timeout_seconds=arguments.timeout_seconds),
         markdown_fetcher=HttpMarkdownFetcher(
             endpoint_url=arguments.markdown_endpoint,
             timeout_seconds=arguments.timeout_seconds,
@@ -36,9 +37,9 @@ def _build_use_case(arguments: argparse.Namespace) -> SyncSubstackPostsUseCase:
     )
 
 
-def _run_use_case(arguments: argparse.Namespace, use_case: SyncSubstackPostsUseCase) -> int:
+def _run_use_case(arguments: argparse.Namespace, use_case: SyncSubstackArchivePostsUseCase) -> int:
     try:
-        summary = use_case.sync(feed_url=arguments.feed_url)
+        summary = use_case.sync(archive_url=_resolve_archive_url(arguments))
     except SubstackSyncError as error:
         print(f"ERROR: {error}")
         return EXIT_FAILURE
@@ -64,10 +65,11 @@ def _parse_arguments(argv: list[str] | None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Synchronize Substack posts to markdown files in this repository.",
     )
+    parser.add_argument("--archive-url", default=DEFAULT_ARCHIVE_API_URL, help="Archive API URL.")
     parser.add_argument(
         "--feed-url",
-        default=DEFAULT_FEED_URL,
-        help="RSS feed URL to synchronize.",
+        default=None,
+        help="Legacy alias for archive URL.",
     )
     parser.add_argument(
         "--markdown-endpoint",
@@ -86,3 +88,13 @@ def _parse_arguments(argv: list[str] | None) -> argparse.Namespace:
         help="HTTP timeout in seconds for feed and markdown requests.",
     )
     return parser.parse_args(argv)
+
+
+def _resolve_archive_url(arguments: argparse.Namespace) -> str:
+    if arguments.archive_url:
+        return str(arguments.archive_url)
+
+    if arguments.feed_url:
+        return str(arguments.feed_url)
+
+    return DEFAULT_FEED_URL

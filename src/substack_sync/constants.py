@@ -1,8 +1,15 @@
 DEFAULT_FEED_URL = "https://emmanuelvalverderamos.substack.com/feed.xml"
+DEFAULT_ARCHIVE_API_URL = "https://emmanuelvalverderamos-substack-api.evalverde.workers.dev/"
+DEFAULT_ARCHIVE_PAGE_LIMIT = 20
+DEFAULT_ARCHIVE_SORT = "new"
+DEFAULT_ARCHIVE_SEARCH = ""
 DEFAULT_MARKDOWN_ENDPOINT = "https://substack-to-markdown.evalverde.workers.dev/?url="
 DEFAULT_OUTPUT_DIRECTORY = "posts"
 DEFAULT_REQUEST_TIMEOUT_SECONDS = 30
 DEFAULT_HTTP_USER_AGENT = "substack-sync-bot/1.0"
+DEFAULT_HTTP_MAX_RETRIES = 3
+DEFAULT_CIRCUIT_BREAKER_FAIL_MAX = 3
+DEFAULT_CIRCUIT_BREAKER_RESET_TIMEOUT_SECONDS = 60
 
 HTTP_STATUS_OK = 200
 MARKDOWN_EXTENSION = ".md"

@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Protocol
 
+from substack_sync.archive_parser import ArchivePost
 from substack_sync.models import MarkdownDocument, Slug
 
 
@@ -18,6 +19,12 @@ class MarkdownFetcher(Protocol):
         ...
 
 
+class ArchiveReader(Protocol):
+    def fetch(self, archive_url: str) -> tuple[ArchivePost, ...]:
+        """Return archive posts including canonical URLs and publication timestamps."""
+        ...
+
+
 class PostRepository(Protocol):
     def existing_slug_values(self) -> frozenset[str]:
         """Return existing slug values already persisted."""
@@ -25,4 +32,10 @@ class PostRepository(Protocol):
 
     def save_post(self, slug: Slug, document: MarkdownDocument) -> Path:
         """Persist markdown and return saved path."""
+        ...
+
+
+class ArchivePostRepository(Protocol):
+    def upsert_post(self, slug: Slug, published_timestamp: str, document: MarkdownDocument) -> bool:
+        """Persist or update timestamped markdown. Return True when filesystem changed."""
         ...
