@@ -67,7 +67,7 @@ class HttpArchiveReaderTests(unittest.TestCase):
 
         self.assertEqual(posts, ())
 
-    @patch("substack_sync.http_clients.PoolManager")
+    @patch("substack_sync.http_client_helpers.PoolManager")
     def test_fetch_uses_retry_policy_and_raises_for_429_status(
         self, pool_manager_class: MagicMock
     ) -> None:

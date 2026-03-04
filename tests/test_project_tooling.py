@@ -24,12 +24,17 @@ _SETUP_CFG_PATH = _PROJECT_ROOT / "setup.cfg"
 _README_PATH = _PROJECT_ROOT / "README.md"
 _AGENTS_PATH = _PROJECT_ROOT / "AGENTS.md"
 _SCRIPT_PATH = _PROJECT_ROOT / "scripts/sync_substack.py"
+_IMAGE_BACKUP_SCRIPT_PATH = _PROJECT_ROOT / "scripts/backup_post_images.py"
 _ADR_DIRECTORY_PATH = _PROJECT_ROOT / "docs/adr"
 _ADR_README_PATH = _ADR_DIRECTORY_PATH / "README.md"
 _ADR_TEMPLATE_PATH = _ADR_DIRECTORY_PATH / "0000-template.md"
+_ADR_IMAGE_BACKUP_PATH = (
+    _ADR_DIRECTORY_PATH / "0004-independent-image-backup-and-local-asset-layout.md"
+)
 _LIVE_TEST_LIST_PATH = _PROJECT_ROOT / "docs/tdd/live-test-list.md"
 _SYNC_WORKFLOW_PATH = _PROJECT_ROOT / ".github/workflows/substack-sync.yml"
 _QUALITY_WORKFLOW_PATH = _PROJECT_ROOT / ".github/workflows/quality.yml"
+_IMAGE_BACKUP_WORKFLOW_PATH = _PROJECT_ROOT / ".github/workflows/substack-image-backup.yml"
 _REQUIREMENTS_DEV_PATH = _PROJECT_ROOT / "requirements-dev.txt"
 
 
@@ -87,6 +92,12 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("mutation:", makefile_content)
         self.assertIn("mutation-gate:", makefile_content)
 
+    def test_makefile_exposes_image_backup_and_act_targets(self) -> None:
+        makefile_content = _MAKEFILE_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("backup-images:", makefile_content)
+        self.assertIn("act-image-dispatch:", makefile_content)
+
     def test_makefile_separates_local_and_ci_quality_targets(self) -> None:
         makefile_content = _MAKEFILE_PATH.read_text(encoding="utf-8")
 
@@ -101,6 +112,9 @@ class ProjectToolingTests(unittest.TestCase):
 
     def test_quality_workflow_exists(self) -> None:
         self.assertTrue(_QUALITY_WORKFLOW_PATH.exists())
+
+    def test_image_backup_workflow_exists(self) -> None:
+        self.assertTrue(_IMAGE_BACKUP_WORKFLOW_PATH.exists())
 
     def test_sync_workflow_declares_contents_write_permission(self) -> None:
         workflow_content = _SYNC_WORKFLOW_PATH.read_text(encoding="utf-8")
@@ -136,6 +150,16 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("SUBSTACK_ARCHIVE_API_URL", script_content)
         self.assertIn("--archive-url", script_content)
 
+    def test_image_backup_script_supports_posts_and_image_directory_environment_variables(
+        self,
+    ) -> None:
+        script_content = _IMAGE_BACKUP_SCRIPT_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("SUBSTACK_POSTS_DIR", script_content)
+        self.assertIn("SUBSTACK_IMAGES_DIR", script_content)
+        self.assertIn("--posts-directory", script_content)
+        self.assertIn("--images-directory", script_content)
+
     def test_quality_workflow_declares_contents_read_permission(self) -> None:
         workflow_content = _QUALITY_WORKFLOW_PATH.read_text(encoding="utf-8")
 
@@ -153,8 +177,25 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("run: make quality-ci", run_lines)
         self.assertNotIn("run: make quality", run_lines)
 
+    def test_image_backup_workflow_declares_contents_write_permission(self) -> None:
+        workflow_content = _IMAGE_BACKUP_WORKFLOW_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("permissions:", workflow_content)
+        self.assertIn("contents: write", workflow_content)
+
+    def test_image_backup_workflow_triggers_on_posts_markdown_changes(self) -> None:
+        workflow_content = _IMAGE_BACKUP_WORKFLOW_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("push:", workflow_content)
+        self.assertIn("posts/*.md", workflow_content)
+        self.assertIn("workflow_dispatch:", workflow_content)
+
     def test_workflows_do_not_execute_mutation_commands(self) -> None:
-        workflow_paths = (_SYNC_WORKFLOW_PATH, _QUALITY_WORKFLOW_PATH)
+        workflow_paths = (
+            _SYNC_WORKFLOW_PATH,
+            _QUALITY_WORKFLOW_PATH,
+            _IMAGE_BACKUP_WORKFLOW_PATH,
+        )
 
         for workflow_path in workflow_paths:
             workflow_content = workflow_path.read_text(encoding="utf-8").lower()
@@ -203,11 +244,24 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("how to use", readme_content)
         self.assertIn("docs/adr", readme_content)
 
+    def test_readme_documents_independent_image_backup_process(self) -> None:
+        readme_content = _README_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn("image backup", readme_content)
+        self.assertIn("img/<markdown_stem>/", readme_content)
+        self.assertIn("without rewriting markdown links", readme_content)
+
     def test_docs_include_adr_and_live_test_list_scaffolding(self) -> None:
         self.assertTrue(_ADR_DIRECTORY_PATH.exists())
         self.assertTrue(_ADR_README_PATH.exists())
         self.assertTrue(_ADR_TEMPLATE_PATH.exists())
         self.assertTrue(_LIVE_TEST_LIST_PATH.exists())
+
+    def test_docs_include_image_backup_adr_and_index_reference(self) -> None:
+        adr_readme_content = _ADR_README_PATH.read_text(encoding="utf-8")
+
+        self.assertTrue(_ADR_IMAGE_BACKUP_PATH.exists())
+        self.assertIn("0004-independent-image-backup-and-local-asset-layout.md", adr_readme_content)
 
     def test_agents_documents_uv_pytest_mutation_and_typing(self) -> None:
         agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()
@@ -372,6 +426,13 @@ class ProjectToolingTests(unittest.TestCase):
 
         for code_smell in required_code_smells:
             self.assertIn(code_smell, agents_content)
+
+    def test_agents_documents_independent_image_backup_invariants(self) -> None:
+        agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn("image backup invariants", agents_content)
+        self.assertIn("must not rewrite markdown links", agents_content)
+        self.assertIn("must fail if any required image cannot be downloaded", agents_content)
 
 
 if __name__ == "__main__":

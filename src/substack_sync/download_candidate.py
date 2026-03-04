@@ -1,0 +1,11 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+
+from substack_sync.models import Slug
+
+
+@dataclass(frozen=True)
+class DownloadCandidate:
+    article_url: str
+    slug: Slug

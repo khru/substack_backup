@@ -1,8 +1,9 @@
 ACT ?= $(HOME)/.local/bin/act
 SRC_DIRS := src tests scripts
 WORKFLOW_FILE := .github/workflows/substack-sync.yml
+IMAGE_BACKUP_WORKFLOW_FILE := .github/workflows/substack-image-backup.yml
 
-.PHONY: build lint test format format-check typecheck quality quality-ci sync install-dev mutation mutation-report mutation-gate act-list act-dispatch act-schedule
+.PHONY: build lint test format format-check typecheck quality quality-ci sync backup-images install-dev mutation mutation-report mutation-gate act-list act-dispatch act-schedule act-image-dispatch
 
 define run_act
 	@if ! command -v docker >/dev/null 2>&1; then \
@@ -32,7 +33,7 @@ format-check:
 	uv run ruff format --check $(SRC_DIRS)
 
 typecheck:
-	PYTHONPATH=src uv run mypy src scripts/sync_substack.py tests
+	PYTHONPATH=src uv run mypy src scripts tests
 
 test:
 	PYTHONPATH=src uv run pytest
@@ -58,6 +59,9 @@ quality: quality-ci mutation-gate
 sync:
 	PYTHONPATH=src uv run python scripts/sync_substack.py
 
+backup-images:
+	PYTHONPATH=src uv run python scripts/backup_post_images.py
+
 act-list:
 	$(call run_act,-l)
 
@@ -66,3 +70,6 @@ act-dispatch:
 
 act-schedule:
 	$(call run_act,schedule -W $(WORKFLOW_FILE) -j sync-substack --env SKIP_REPO_STEPS=true --rm)
+
+act-image-dispatch:
+	$(call run_act,workflow_dispatch -W $(IMAGE_BACKUP_WORKFLOW_FILE) -j backup-post-images --input skip_repo_steps=true --rm)

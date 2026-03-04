@@ -29,6 +29,16 @@ The repository solves this by using a Cloudflare Worker archive proxy, MD5 conte
 - Migrates legacy `posts/<slug>.md` files without creating duplicates.
 - Fails when required markdown cannot be downloaded or is empty.
 
+## Image backup
+
+The repository runs a separate image backup process for markdown posts.
+
+- Scans `posts/*.md` and extracts remote image URLs.
+- Downloads images to `img/<markdown_stem>/`.
+- Keeps markdown content intact without rewriting markdown links.
+- Fails the process if any required image cannot be downloaded.
+- Commits only when new or updated files are staged in `img/`.
+
 ## Stack
 
 - Language: Python 3.11+
@@ -55,6 +65,7 @@ These libraries are documented and versioned to keep local and CI behavior align
   - `docs/adr/0001-ports-and-adapters.md`
   - `docs/adr/0002-quality-gates-and-mutation-scope.md`
   - `docs/adr/0003-archive-api-and-timestamped-post-files.md`
+  - `docs/adr/0004-independent-image-backup-and-local-asset-layout.md`
 
 ## Tooling and setup (`uv`)
 
@@ -75,12 +86,24 @@ Run sync locally:
 make sync
 ```
 
+Run image backup locally:
+
+```bash
+make backup-images
+```
+
 Optional environment variables:
 
 - `SUBSTACK_ARCHIVE_API_URL`
 - `SUBSTACK_FEED_URL` (legacy alias)
 - `SUBSTACK_MARKDOWN_ENDPOINT`
 - `SUBSTACK_OUTPUT_DIR`
+- `SUBSTACK_TIMEOUT_SECONDS`
+
+Optional environment variables for image backup:
+
+- `SUBSTACK_POSTS_DIR`
+- `SUBSTACK_IMAGES_DIR`
 - `SUBSTACK_TIMEOUT_SECONDS`
 
 ## Test and quality
@@ -155,6 +178,18 @@ Workflow: `.github/workflows/quality.yml`
 - Declares minimal read permission:
   - `permissions: contents: read`
 
+### Image backup workflow
+
+Workflow: `.github/workflows/substack-image-backup.yml`
+
+- Runs on `workflow_dispatch` and `push` when `posts/*.md` changes.
+- Installs dependencies with `uv`.
+- Runs `uv run python scripts/backup_post_images.py`.
+- Fails if any required image cannot be downloaded.
+- Stores assets in `img/<markdown_stem>/` without rewriting markdown links.
+- Declares explicit write permission:
+  - `permissions: contents: write`
+
 ## Local workflow testing with `act`
 
 Install `act`: <https://github.com/nektos/act>
@@ -163,6 +198,7 @@ Install `act`: <https://github.com/nektos/act>
 make act-list
 make act-dispatch
 make act-schedule
+make act-image-dispatch
 ```
 
 `make act-dispatch` and `make act-schedule` skip repository commit/push steps via `skip_repo_steps` and `SKIP_REPO_STEPS` so workflow logic can be validated safely in local containers.

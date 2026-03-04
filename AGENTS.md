@@ -11,11 +11,13 @@
 - Test runner: `pytest` (existing tests can remain `unittest` style).
 - Main paths:
   - `scripts/sync_substack.py`
+  - `scripts/backup_post_images.py`
   - `src/substack_sync/`
   - `tests/`
   - `docs/adr/`
   - `docs/tdd/live-test-list.md`
   - `.github/workflows/substack-sync.yml`
+  - `.github/workflows/substack-image-backup.yml`
   - `.github/workflows/quality.yml`
 
 ## Rule files status
@@ -130,6 +132,7 @@
 - Mutation gate: `make mutation-gate`
 - Full local quality gate: `make quality`
 - CI quality gate (no mutation): `make quality-ci`
+- Local image backup run: `make backup-images`
 
 ## Required local quality gate order
 Run commands in this exact order:
@@ -161,6 +164,8 @@ Run commands in this exact order:
 ### Workflow permissions must be explicit
 - Sync workflow (`.github/workflows/substack-sync.yml`) must declare:
   - `permissions: contents: write`
+- Image backup workflow (`.github/workflows/substack-image-backup.yml`) must declare:
+  - `permissions: contents: write`
 - Quality workflow (`.github/workflows/quality.yml`) must declare:
   - `permissions: contents: read`
 - Keep minimum required scope for each workflow.
@@ -177,6 +182,7 @@ Run commands in this exact order:
   1. `make act-list`
   2. `make act-dispatch`
   3. `make act-schedule`
+  4. `make act-image-dispatch` when image backup workflow changes
 - Local workflow runs should use `skip_repo_steps=true` or `SKIP_REPO_STEPS=true` when commit/push is not needed.
 
 ## Sync pipeline invariants
@@ -192,6 +198,15 @@ Run commands in this exact order:
 - If markdown is empty, fail workflow.
 - Never commit empty markdown files.
 - Commit only when staged changes exist.
+
+## Image backup invariants
+- Image backup runs as an independent process from article synchronization.
+- Source markdown must be read from `posts/*.md` only.
+- Image output path format is `img/<markdown_stem>/`.
+- Image backup must not rewrite markdown links.
+- If no remote images are found, the process exits successfully without creating unnecessary files.
+- The process must fail if any required image cannot be downloaded.
+- Image commits must run only when staged changes exist in `img/`.
 
 ## Architecture and design rules
 - Separation of concerns means separating by reasons to change.

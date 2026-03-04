@@ -67,6 +67,37 @@ This file is the execution source of truth for TDD order.
 | WF-002 | high | done | I | on-point | Quality workflow runs `make quality-ci` and no mutation commands | - |
 | CON-001 | medium | pending | M | on-point | Contract removes legacy path only after migration validation passes | - |
 | MUT-001 | high | done | E | on-point | Placeholder for next surviving mutant after mutation-gate | - |
+| REF-CLS-001 | high | done | O | on-point | Split `models.py` classes into one-class-per-file modules with compatibility exports | - |
+| REF-CLS-002 | high | done | B | boundary | Split `resilience.py` classes into one-class-per-file modules with compatibility exports | - |
+| REF-CLS-003 | high | done | B | boundary | Split `sync_planning.py` classes into one-class-per-file modules with compatibility exports | - |
+| REF-CLS-004 | high | done | B | boundary | Split `sync_execution.py` classes into one-class-per-file modules with compatibility exports | - |
+| REF-CLS-005 | high | done | I | on-point | Split `http_clients.py` classes into one-class-per-file modules with compatibility exports | - |
+| REF-CLS-006 | medium | done | I | on-point | Split `errors.py` and `ports.py` classes/protocols into one-class-per-file modules | - |
+| IMG-001 | high | done | O | on-point | Extract markdown image URLs from `![...](url)` | - |
+| IMG-002 | high | done | B | boundary | Extract markdown image URLs from `[![](...)](...)` wrappers | - |
+| IMG-003 | medium | done | B | boundary | Extract image URLs from inline `<img src=...>` HTML | - |
+| IMG-004 | medium | done | Z | limit case | Ignore non-http image references and return empty result when no remote images exist | - |
+| IMG-005 | high | done | M | limit case | Deduplicate repeated image URLs while preserving first-seen order | - |
+| IMG-006 | high | done | O | on-point | Persist images under `img/<markdown_stem>/` | - |
+| IMG-007 | high | done | B | boundary | Keep markdown files unchanged during image backup | - |
+| IMG-008 | high | done | M | limit case | Skip downloading existing non-empty images on repeated runs | - |
+| IMG-009 | high | done | E | on-point | Continue processing remaining images after recoverable per-image failure | - |
+| IMG-010 | high | done | E | on-point | Return failure exit code when any required image download fails | - |
+| IMG-011 | medium | done | B | boundary | Do not create `img/` directories when no remote images are discovered | - |
+| IMG-012 | medium | done | Z | limit case | Return successful empty summary when `posts/` directory is missing | - |
+| IMG-013 | medium | done | B | boundary | Infer file extension from direct image URLs and Substack CDN encoded URLs | - |
+| IMG-014 | medium | pending | E | boundary | Validate redownload behavior for existing zero-byte files | - |
+| IMG-015 | medium | pending | Z | limit case | Validate binary extension fallback when URL has no image extension | - |
+| CLI-IMG-001 | high | done | O | on-point | Image backup CLI returns success when backup has no failures | - |
+| CLI-IMG-002 | high | done | E | on-point | Image backup CLI returns failure when backup reports failures | - |
+| SCR-IMG-001 | high | done | O | on-point | Image backup script maps `SUBSTACK_POSTS_DIR` and `SUBSTACK_IMAGES_DIR` to CLI args | - |
+| WF-IMG-001 | high | done | I | on-point | Image backup workflow exists as independent process with `push` and `workflow_dispatch` triggers | - |
+| WF-IMG-002 | high | done | I | on-point | Image backup workflow declares `permissions: contents: write` | - |
+| WF-IMG-003 | high | done | I | boundary | Image backup workflow commits only when staged `img/` changes exist | - |
+| DOC-IMG-001 | high | done | S | on-point | README documents independent image backup behavior and local path layout | - |
+| DOC-IMG-002 | high | done | S | on-point | README explicitly states backup runs without rewriting markdown links | - |
+| GOV-IMG-001 | high | done | S | on-point | AGENTS documents image backup invariants including required failure on download errors | - |
+| ADR-005 | high | done | I | on-point | ADR records independent image backup workflow and `img/<markdown_stem>/` layout decision | - |
 
 ## Mutation survivors log
 
@@ -75,3 +106,4 @@ Add one entry per survivor immediately after each mutation run, then create matc
 | Date | Mutant ID | File | Reason | Action | Result |
 | --- | --- | --- | --- | --- | --- |
 | 2026-03-04 | none | n/a | mutation gate reported no surviving mutants | no follow-up required | closed |
+| 2026-03-04 | none | n/a | mutation gate for image backup and class split reported 36/36 killed | no follow-up required | closed |

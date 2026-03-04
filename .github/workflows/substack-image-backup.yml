@@ -1,0 +1,109 @@
+name: Backup Post Images
+
+on:
+  workflow_dispatch:
+    inputs:
+      skip_repo_steps:
+        description: "Skip git add/commit/push steps (local testing helper)"
+        required: false
+        default: "false"
+  push:
+    paths:
+      - "posts/*.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: substack-image-backup
+  cancel-in-progress: false
+
+jobs:
+  backup-post-images:
+    runs-on: ubuntu-latest
+    env:
+      SUBSTACK_POSTS_DIR: posts
+      SUBSTACK_IMAGES_DIR: img
+      SUBSTACK_TIMEOUT_SECONDS: "30"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: python -m pip install uv
+
+      - name: Install project runtime dependencies
+        run: uv sync --no-install-project
+
+      - name: Run image backup process
+        run: uv run python scripts/backup_post_images.py
+
+      - name: Resolve repository steps mode
+        id: repo_mode
+        run: |
+          resolved_skip="${SKIP_REPO_STEPS:-false}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.skip_repo_steps }}" ]; then
+            resolved_skip="${{ github.event.inputs.skip_repo_steps }}"
+          fi
+          echo "skip_repo_steps=${resolved_skip}" >> "${GITHUB_OUTPUT}"
+          echo "Resolved skip_repo_steps=${resolved_skip}"
+
+      - name: Skip repository steps
+        if: steps.repo_mode.outputs.skip_repo_steps == 'true'
+        run: echo "Repository steps disabled by skip_repo_steps flag."
+
+      - name: Configure git author
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Stage backed up image files
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          if [ -d "${SUBSTACK_IMAGES_DIR}" ]; then
+            git add "${SUBSTACK_IMAGES_DIR}"
+          else
+            echo "Image directory does not exist; nothing to stage."
+          fi
+
+      - name: Validate staged image files are non-empty
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          staged_files="$(git diff --cached --name-only --diff-filter=AM -- 'img/*')"
+          if [ -z "${staged_files}" ]; then
+            echo "No staged image files to validate."
+            exit 0
+          fi
+
+          while IFS= read -r file; do
+            if [ -z "${file}" ]; then
+              continue
+            fi
+
+            if [ ! -s "${file}" ]; then
+              echo "Empty image file detected: ${file}"
+              exit 1
+            fi
+          done << EOF
+          ${staged_files}
+          EOF
+
+      - name: Commit and push backed up images
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
+        run: |
+          if git diff --cached --quiet; then
+            echo "No new images to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(images): back up markdown-referenced images"
+          git push

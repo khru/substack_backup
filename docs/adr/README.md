@@ -15,3 +15,4 @@ This directory stores Architecture Decision Records (ADRs) for the project.
 - `0001-ports-and-adapters.md`
 - `0002-quality-gates-and-mutation-scope.md`
 - `0003-archive-api-and-timestamped-post-files.md`
+- `0004-independent-image-backup-and-local-asset-layout.md`
