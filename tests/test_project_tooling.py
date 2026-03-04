@@ -182,6 +182,18 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("urllib3", readme_content)
         self.assertIn("pybreaker", readme_content)
 
+    def test_readme_displays_sync_and_quality_badges(self) -> None:
+        readme_content = _README_PATH.read_text(encoding="utf-8")
+
+        self.assertIn(
+            "[![Sync Substack Posts](https://github.com/khru/substack_backup/actions/workflows/substack-sync.yml/badge.svg)](https://github.com/khru/substack_backup/actions/workflows/substack-sync.yml)",
+            readme_content,
+        )
+        self.assertIn(
+            "[![Quality Gate](https://github.com/khru/substack_backup/actions/workflows/quality.yml/badge.svg)](https://github.com/khru/substack_backup/actions/workflows/quality.yml)",
+            readme_content,
+        )
+
     def test_readme_documents_project_purpose_stack_usage_and_adr_links(self) -> None:
         readme_content = _README_PATH.read_text(encoding="utf-8").lower()
 
@@ -238,6 +250,13 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("expand", agents_content)
         self.assertIn("migrate", agents_content)
         self.assertIn("contract", agents_content)
+
+    def test_agents_requires_pull_before_start_and_rebase_before_push(self) -> None:
+        agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()
+
+        self.assertIn("trunk-based development", agents_content)
+        self.assertIn("always run `git pull` before starting work", agents_content)
+        self.assertIn("before every push, run `git pull --rebase`", agents_content)
 
     def test_agents_separates_local_and_ci_mutation_execution(self) -> None:
         agents_content = _AGENTS_PATH.read_text(encoding="utf-8").lower()

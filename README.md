@@ -1,3 +1,6 @@
+[![Sync Substack Posts](https://github.com/khru/substack_backup/actions/workflows/substack-sync.yml/badge.svg)](https://github.com/khru/substack_backup/actions/workflows/substack-sync.yml)
+[![Quality Gate](https://github.com/khru/substack_backup/actions/workflows/quality.yml/badge.svg)](https://github.com/khru/substack_backup/actions/workflows/quality.yml)
+
 # Substack Backup Sync
 
 ## Why this project exists

@@ -104,6 +104,12 @@
 - Use Conventional Commits (`feat:`, `fix:`, `refactor:`, `test:`, `chore:`).
 - Do not amend commits unless explicitly requested.
 
+### Trunk-based development git sync protocol (mandatory)
+- Use trunk-based development on `main`.
+- Always run `git pull` before starting work.
+- Before every push, run `git pull --rebase`.
+- Resolve rebase conflicts locally, then rerun required validations before pushing.
+
 ## Tooling baseline
 - Use `uv` for all dependency setup and command execution.
 - Do not use `requirements*.txt` in this repository.

@@ -1,220 +1,220 @@
 {
     "tests_by_mangled_function_name": {
         "substack_sync.post_repository.x\u01c1FileSystemPostRepository\u01c1__init__": [
-            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_save_post_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_is_empty_for_new_directory",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_propagates_unexpected_exceptions",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown",
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown"
+            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_save_post_persists_markdown_file",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
+            "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
+            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_propagates_unexpected_exceptions",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.cli.x__build_use_case": [
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
             "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors"
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean"
         ],
         "substack_sync.cli.x_main": [
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
             "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors"
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean"
         ],
         "substack_sync.cli.x__run_use_case": [
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
             "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors"
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean"
         ],
         "substack_sync.cli.x__parse_arguments": [
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
             "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors"
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean"
         ],
         "substack_sync.http_clients.x\u01c1HttpMarkdownFetcher\u01c1__init__": [
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
             "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors"
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean"
         ],
         "substack_sync.http_clients.x\u01c1HttpFeedReader\u01c1__init__": [
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
             "tests/test_cli.py::CliTests::test_main_returns_failure_on_unexpected_exception",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors"
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean"
         ],
         "substack_sync.cli.x__print_summary": [
-            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean",
-            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors"
+            "tests/test_cli.py::CliTests::test_main_returns_failure_when_summary_has_errors",
+            "tests/test_cli.py::CliTests::test_main_returns_success_when_sync_is_clean"
         ],
         "substack_sync.post_repository.x\u01c1FileSystemPostRepository\u01c1existing_slug_values": [
-            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_is_empty_for_new_directory",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url"
+            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.post_repository.x\u01c1FileSystemPostRepository\u01c1save_post": [
-            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_save_post_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown"
+            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.post_repository.x\u01c1FileSystemPostRepository\u01c1_path_for_slug": [
-            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_save_post_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown"
+            "tests/test_post_repository.py::FileSystemPostRepositoryTests::test_existing_slug_values_returns_saved_markdown_stems",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.rss_parser.x__local_name": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_links_from_atom_feed",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_unique_http_urls_from_rss_feed",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning"
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.rss_parser.x__deduplicate_http_urls": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_links_from_atom_feed",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_unique_http_urls_from_rss_feed",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning"
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.rss_parser.x_extract_article_urls": [
             "tests/test_rss_parser.py::RssParserTests::test_raises_error_for_empty_content",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_rss_parser.py::RssParserTests::test_extracts_links_from_atom_feed",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_rss_parser.py::RssParserTests::test_extracts_links_from_atom_feed",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_unique_http_urls_from_rss_feed",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
             "tests/test_rss_parser.py::RssParserTests::test_raises_error_for_invalid_xml",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url"
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.rss_parser.x__extract_atom_entry_links": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_links_from_atom_feed",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_unique_http_urls_from_rss_feed",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning"
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.rss_parser.x__extract_rss_item_links": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_links_from_atom_feed",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_rss_parser.py::RssParserTests::test_extracts_unique_http_urls_from_rss_feed",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning"
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.sync_execution.x_execute_download_candidates": [
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_propagates_unexpected_exceptions",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown"
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_propagates_unexpected_exceptions",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.sync_execution.x__download_candidate": [
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_propagates_unexpected_exceptions",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown"
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_propagates_unexpected_exceptions",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.sync_execution.x__summarize_outcomes": [
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
-            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_persists_successful_markdown"
+            "tests/test_sync_execution.py::SyncExecutionTests::test_execute_download_candidates_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.sync_planning.x_resolve_slug": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_counts_all_existing_urls",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
-            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_splits_new_existing_and_invalid_urls",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_continues_after_rejected_url"
+            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_continues_after_rejected_url",
+            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_splits_new_existing_and_invalid_urls",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.sync_planning.x_build_sync_plan": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
             "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_counts_all_existing_urls",
-            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_continues_after_rejected_url",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
-            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_splits_new_existing_and_invalid_urls",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url"
+            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_continues_after_rejected_url",
+            "tests/test_sync_planning.py::SyncPlanningTests::test_build_sync_plan_splits_new_existing_and_invalid_urls",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.use_case.x\u01c1SyncSubstackPostsUseCase\u01c1__init__": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url"
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ],
         "substack_sync.use_case.x\u01c1SyncSubstackPostsUseCase\u01c1sync": [
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_uses_existing_slug_snapshot_during_planning",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_persists_successful_url_even_with_failures",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_marks_failure_when_endpoint_returns_empty_markdown",
             "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_persists_markdown_file",
-            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_sync_fetches_feed_using_received_feed_url"
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_downloads_only_new_posts_returns_expected_summary",
+            "tests/test_use_case.py::SyncSubstackPostsUseCaseTests::test_continues_processing_remaining_urls_after_failure"
         ]
     },
     "duration_by_test": {
@@ -299,7 +299,9 @@
         "tests/test_resilience.py::ResilienceTests::test_null_circuit_breaker_executes_operation": 0.0006900599983055145,
         "tests/test_resilience.py::ResilienceTests::test_circuit_breaker_opens_after_failure_threshold": 0.0008248859958257526,
         "tests/test_resilience.py::ResilienceTests::test_build_retry_policy_retries_transient_server_errors": 0.0008996100077638403,
-        "tests/test_project_tooling.py::ProjectToolingTests::test_sync_workflow_installs_runtime_dependencies_with_uv": 0.015110225998796523
+        "tests/test_project_tooling.py::ProjectToolingTests::test_sync_workflow_installs_runtime_dependencies_with_uv": 0.015110225998796523,
+        "tests/test_project_tooling.py::ProjectToolingTests::test_agents_requires_pull_before_start_and_rebase_before_push": 0.008869027995388024,
+        "tests/test_project_tooling.py::ProjectToolingTests::test_readme_displays_sync_and_quality_badges": 0.0054050490143708885
     },
     "stats_time": 0.6819227700000001
 }
