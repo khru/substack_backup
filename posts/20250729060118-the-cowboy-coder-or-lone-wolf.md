@@ -3,7 +3,7 @@ title: "The Cowboy Coder or Lone Wolf"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-cowboy-coder-or-lone-wolf"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-cowboy-coder-or-lone-wolf"
 substack_post_id: 168234553
-retrieved_at: "2026-03-04T11:48:44.931Z"
+retrieved_at: "2026-03-05T08:35:48.874Z"
 ---
 # The Cowboy Coder or Lone Wolf
 

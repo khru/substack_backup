@@ -3,7 +3,7 @@ title: "🫂 Collaborative work over just working together"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/collaborative-work-over-just-working"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/collaborative-work-over-just-working"
 substack_post_id: 159546599
-retrieved_at: "2026-03-04T11:48:57.595Z"
+retrieved_at: "2026-03-05T08:36:02.387Z"
 ---
 # 🫂 Collaborative work over just working together
 

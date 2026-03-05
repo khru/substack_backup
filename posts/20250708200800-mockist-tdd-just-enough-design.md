@@ -3,7 +3,7 @@ title: "Mockist TDD: Just enough design"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/mockist-tdd-just-enough-design"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/mockist-tdd-just-enough-design"
 substack_post_id: 164630204
-retrieved_at: "2026-03-04T11:48:46.522Z"
+retrieved_at: "2026-03-05T08:35:50.723Z"
 ---
 # Mockist TDD: Just enough design
 
