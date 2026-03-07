@@ -4,7 +4,7 @@ subtitle: "Basic introduction to unit test"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/unit-testing-basics"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/unit-testing-basics"
 substack_post_id: 153249906
-retrieved_at: "2026-03-06T08:33:13.651Z"
+retrieved_at: "2026-03-07T08:25:59.015Z"
 ---
 # Unit Testing: Basics
 

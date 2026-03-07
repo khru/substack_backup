@@ -4,7 +4,7 @@ subtitle: "Pragmatism is implicit in Extreme Programming, although it is not exp
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-missing-value-in-xp-pragmatism"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-missing-value-in-xp-pragmatism"
 substack_post_id: 153202244
-retrieved_at: "2026-03-06T08:33:21.076Z"
+retrieved_at: "2026-03-07T08:26:06.148Z"
 ---
 # The missing value in XP: Pragmatism
 
