@@ -3,7 +3,7 @@ title: "The Ivory Tower Architect"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-ivory-tower-architect"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-ivory-tower-architect"
 substack_post_id: 168235318
-retrieved_at: "2026-03-07T08:25:37.779Z"
+retrieved_at: "2026-03-08T08:26:18.818Z"
 ---
 # The Ivory Tower Architect
 
