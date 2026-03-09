@@ -3,7 +3,7 @@ title: "The Toxic Critic or “No-but” Engineer"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-toxic-critic-or-no-but-engineer"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-toxic-critic-or-no-but-engineer"
 substack_post_id: 168235821
-retrieved_at: "2026-03-08T08:26:17.286Z"
+retrieved_at: "2026-03-09T08:39:10.384Z"
 ---
 # The Toxic Critic or “No-but” Engineer
 
