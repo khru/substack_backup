@@ -4,7 +4,7 @@ subtitle: "The basics"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/integration-testing-basics"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/integration-testing-basics"
 substack_post_id: 153259735
-retrieved_at: "2026-03-09T08:39:30.519Z"
+retrieved_at: "2026-03-10T08:36:12.311Z"
 ---
 # Integration Testing: Basics
 

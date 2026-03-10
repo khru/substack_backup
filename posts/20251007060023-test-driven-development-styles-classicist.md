@@ -3,7 +3,7 @@ title: "Test-Driven Development \"styles\" Classicist (Detroit/Chicago) vs Outsi
 requested_url: "https://emmanuelvalverderamos.substack.com/p/test-driven-development-styles-classicist"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/test-driven-development-styles-classicist"
 substack_post_id: 154482411
-retrieved_at: "2026-03-09T08:39:06.774Z"
+retrieved_at: "2026-03-10T08:35:46.921Z"
 ---
 # Test-Driven Development "styles" Classicist (Detroit/Chicago) vs Outside-in (London)
 

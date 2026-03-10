@@ -4,7 +4,7 @@ subtitle: "A recording from Emmanuel Valverde Ramos and Denis Čahuk's live vide
 requested_url: "https://emmanuelvalverderamos.substack.com/p/intersection-of-refactoring-and-design"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/intersection-of-refactoring-and-design"
 substack_post_id: 159344672
-retrieved_at: "2026-03-09T08:39:23.461Z"
+retrieved_at: "2026-03-10T08:36:04.401Z"
 ---
 # Intersection of Refactoring and Design
 
