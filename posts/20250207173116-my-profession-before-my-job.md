@@ -4,7 +4,7 @@ subtitle: "At work, I’m like a plant. I just exist. I only need a little water
 requested_url: "https://emmanuelvalverderamos.substack.com/p/my-profession-before-my-job"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/my-profession-before-my-job"
 substack_post_id: 156681613
-retrieved_at: "2026-03-10T08:36:15.277Z"
+retrieved_at: "2026-03-11T08:35:49.722Z"
 ---
 # 🇬🇧 My Profession before my Job
 
