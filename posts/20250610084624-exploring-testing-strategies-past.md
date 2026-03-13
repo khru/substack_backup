@@ -3,7 +3,7 @@ title: "Exploring Testing Strategies: Past, Present, and Future"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/exploring-testing-strategies-past"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/exploring-testing-strategies-past"
 substack_post_id: 154266094
-retrieved_at: "2026-03-12T08:37:23.448Z"
+retrieved_at: "2026-03-13T08:34:59.394Z"
 ---
 # Exploring Testing Strategies: Past, Present, and Future
 

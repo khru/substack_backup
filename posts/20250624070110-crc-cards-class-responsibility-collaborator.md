@@ -3,7 +3,7 @@ title: "CRC cards: Class, Responsibility, Collaborator cards"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/crc-cards-class-responsibility-collaborator"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/crc-cards-class-responsibility-collaborator"
 substack_post_id: 164630529
-retrieved_at: "2026-03-12T08:37:21.303Z"
+retrieved_at: "2026-03-13T08:34:57.505Z"
 ---
 # CRC cards: Class, Responsibility, Collaborator cards
 

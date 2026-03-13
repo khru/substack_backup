@@ -3,7 +3,7 @@ title: "🚦 When Platform and Security Become Bottlenecks: A Call for Enabling 
 requested_url: "https://emmanuelvalverderamos.substack.com/p/when-platform-and-security-become"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/when-platform-and-security-become"
 substack_post_id: 159934750
-retrieved_at: "2026-03-12T08:37:31.937Z"
+retrieved_at: "2026-03-13T08:35:08.117Z"
 ---
 # 🚦 When Platform and Security Become Bottlenecks: A Call for Enabling Culture
 

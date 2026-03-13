@@ -3,7 +3,7 @@ title: "Introduction to Event Modeling"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/introduction-to-event-modeling"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/introduction-to-event-modeling"
 substack_post_id: 184032606
-retrieved_at: "2026-03-12T08:37:07.646Z"
+retrieved_at: "2026-03-13T08:34:42.750Z"
 ---
 # Introduction to Event Modeling
 
