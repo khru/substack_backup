@@ -3,7 +3,7 @@ title: "Deep dive into the relationship between the verification of a test and t
 requested_url: "https://emmanuelvalverderamos.substack.com/p/deep-dive-into-the-relationship-between"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/deep-dive-into-the-relationship-between"
 substack_post_id: 152957003
-retrieved_at: "2026-03-13T08:35:12.119Z"
+retrieved_at: "2026-03-14T08:30:05.138Z"
 ---
 # Deep dive into the relationship between the verification of a test and the SUT
 

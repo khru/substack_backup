@@ -4,7 +4,7 @@ subtitle: "The real constraints in software development are product decisions, b
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 substack_post_id: 190302623
-retrieved_at: "2026-03-13T08:34:36.847Z"
+retrieved_at: "2026-03-14T08:29:32.113Z"
 ---
 # AI can write code. That was never the bottleneck.
 
@@ -257,8 +257,6 @@ The hard part is containing its consequences.
 
 # AI makes good engineering more important, not less
 
-https://x.com/i/status/2032010249717055660
-
 Generating code has always been the cheapest part of building software.
 
 The expensive parts are understanding systems, making sound design decisions, maintaining clarity, and keeping complexity under control.
@@ -280,6 +278,8 @@ If at school I have to write an essay, Would I ask the IA about what should I wr
 - What I want
 - How I wanted
 - Why I wanted like this.
+
+More examples here: [https://www.linkedin.com/posts/ian-cooper-2b059b_coding-is-dead-long-live-programming-https-share-7438131759264870400-SY2Q](https://www.linkedin.com/posts/ian-cooper-2b059b_coding-is-dead-long-live-programming-https-share-7438131759264870400-SY2Q)
 
 # Engineering is not typing
 

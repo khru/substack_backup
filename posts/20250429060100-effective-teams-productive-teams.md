@@ -3,7 +3,7 @@ title: "Effective Teams ≠ Productive Teams"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/effective-teams-productive-teams"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/effective-teams-productive-teams"
 substack_post_id: 161363149
-retrieved_at: "2026-03-13T08:35:04.888Z"
+retrieved_at: "2026-03-14T08:29:58.355Z"
 ---
 # Effective Teams ≠ Productive Teams
 

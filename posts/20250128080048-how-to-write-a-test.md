@@ -4,7 +4,7 @@ subtitle: "The 4 phases of a test and the 3 steps in a test"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/how-to-write-a-test"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/how-to-write-a-test"
 substack_post_id: 152960047
-retrieved_at: "2026-03-13T08:35:15.052Z"
+retrieved_at: "2026-03-14T08:30:07.797Z"
 ---
 # How to write a test?
 
