@@ -3,7 +3,7 @@ title: "What to test? The Subject Under Test (SUT)"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/what-to-test-the-subject-under-test"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/what-to-test-the-subject-under-test"
 substack_post_id: 152835799
-retrieved_at: "2026-03-14T08:30:08.503Z"
+retrieved_at: "2026-03-15T08:31:47.638Z"
 ---
 # What to test? The Subject Under Test (SUT)
 

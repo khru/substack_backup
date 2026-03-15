@@ -4,7 +4,7 @@ subtitle: "The cultural, economic, and technical cost of selling software illusi
 requested_url: "https://emmanuelvalverderamos.substack.com/p/naas-when-patches-become-a-product"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/naas-when-patches-become-a-product"
 substack_post_id: 162686688
-retrieved_at: "2026-03-14T08:29:53.436Z"
+retrieved_at: "2026-03-15T08:31:32.453Z"
 ---
 # ❌ ÑaaS: when patches become a product
 

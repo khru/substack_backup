@@ -4,7 +4,7 @@ subtitle: "How a useful role became a distorted job title and what’s replacing
 requested_url: "https://emmanuelvalverderamos.substack.com/p/from-ivory-tower-architect-to-staff"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/from-ivory-tower-architect-to-staff"
 substack_post_id: 168232113
-retrieved_at: "2026-03-14T08:29:48.595Z"
+retrieved_at: "2026-03-15T08:31:25.959Z"
 ---
 # From “Ivory Tower Architect” to Staff & Principal Engineer
 

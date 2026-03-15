@@ -3,7 +3,7 @@ title: "The hidden leadership biases that sabotage true team autonomy"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-hidden-leadership-biases-that"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-hidden-leadership-biases-that"
 substack_post_id: 162327079
-retrieved_at: "2026-03-14T08:29:54.640Z"
+retrieved_at: "2026-03-15T08:31:33.114Z"
 ---
 # The hidden leadership biases that sabotage true team autonomy
 

@@ -4,7 +4,7 @@ subtitle: "The real constraints in software development are product decisions, b
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 substack_post_id: 190302623
-retrieved_at: "2026-03-14T08:29:32.113Z"
+retrieved_at: "2026-03-15T08:31:07.082Z"
 ---
 # AI can write code. That was never the bottleneck.
 
@@ -282,6 +282,8 @@ If at school I have to write an essay, Would I ask the IA about what should I wr
 More examples here: [https://www.linkedin.com/posts/ian-cooper-2b059b_coding-is-dead-long-live-programming-https-share-7438131759264870400-SY2Q](https://www.linkedin.com/posts/ian-cooper-2b059b_coding-is-dead-long-live-programming-https-share-7438131759264870400-SY2Q)
 
 # Engineering is not typing
+
+[![](https://substackcdn.com/image/fetch/$s_!LAw2!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4f614ac4-f17a-4cf4-bc01-eedb89699530_96x96.jpeg)](https://javil.substack.com/p/whats-the-important-part-of-being?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web)
 
 The popular narrative around AI often treats programming as if it were mainly typing code. It is not.
 
