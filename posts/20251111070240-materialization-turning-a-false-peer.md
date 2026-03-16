@@ -4,7 +4,7 @@ subtitle: "A refactor to demote a peer"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer"
 substack_post_id: 175454440
-retrieved_at: "2026-03-15T08:31:15.886Z"
+retrieved_at: "2026-03-16T08:05:50.230Z"
 ---
 # Materialization: turning a false peer into an internal
 

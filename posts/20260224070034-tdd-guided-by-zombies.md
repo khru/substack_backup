@@ -4,7 +4,7 @@ subtitle: "How to find where to start"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/tdd-guided-by-zombies"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/tdd-guided-by-zombies"
 substack_post_id: 187498754
-retrieved_at: "2026-03-15T08:31:09.179Z"
+retrieved_at: "2026-03-16T08:05:44.314Z"
 ---
 # TDD Guided by ZOMBIES
 

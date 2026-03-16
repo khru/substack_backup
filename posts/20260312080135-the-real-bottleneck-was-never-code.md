@@ -4,7 +4,7 @@ subtitle: "The real constraints in software development are product decisions, b
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 substack_post_id: 190302623
-retrieved_at: "2026-03-15T08:31:07.082Z"
+retrieved_at: "2026-03-16T08:05:42.519Z"
 ---
 # AI can write code. That was never the bottleneck.
 
@@ -490,6 +490,22 @@ It cannot replace experience.
 - [Don't reciew the AI changes](https://www.linkedin.com/posts/fabian-wesner_are-code-reviews-still-needed-the-idea-share-7437838894013923331-AN1u)
 - [All you need is good tests](https://www.linkedin.com/feed/update/urn:li:activity:7437838897088471040/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287437857452374519808%2Curn%3Ali%3Aactivity%3A7437838897088471040%29)
 
+Last but not least, I think is important that we start thinking about how this will impact our ability to learn what we are doing and do a better work, example of this are reacent studies from companies like anthropic. Where they say this:
+
+> Research shows AI helps people do [parts](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4945566) of their job faster. In an observational [study](https://www.anthropic.com/research/estimating-productivity-gains) of [Claude.ai](http://claude.ai/redirect/website.v1.6c59e1cc-e9fd-42a2-b881-d16825636aed) data, we found AI can speed up some tasks by 80%. But does this increased productivity come with trade-offs? Other research shows that when people use AI assistance, they become [less engaged with their work](https://www.nature.com/articles/s41598-025-98385-2) and [reduce](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf) the effort they put into doing it—in other words, they offload their thinking to AI.
+
+> …
+
+> On average, participants in the AI group finished about two minutes faster, although the difference was not statistically significant. There was, however, a significant difference in test scores: the AI group averaged 50% on the quiz, compared to 67% in the hand-coding group—or the equivalent of nearly two letter grades (Cohen's *d*=0.738, *p*=0.01). The largest gap in scores between the two groups was on debugging questions, suggesting that the ability to understand when code is incorrect and why it fails may be a particular area of concern if AI impedes coding development.
+
+> …
+
+> Our results **suggest that incorporating AI aggressively into the workplace, particularly with respect to software engineering, comes with trade-offs.** The findings highlight that not all AI-reliance is the same: the way we interact with AI while trying to be efficient affects how much we learn. Given time constraints and organizational pressures, junior developers or other professionals may rely on AI to complete tasks as fast as possible at the cost of skill development—and notably the ability to debug issues when something goes wrong.
+
+> Though preliminary, t**hese results suggest important considerations as companies transition to a greater ratio of AI-written to human-written code**. **Productivity benefits may come at the cost of skills necessary to validate AI-written code if junior engineers’ skill development has been stunted by using AI in the first place**. Managers should think intentionally about how to deploy AI tools at scale, and consider systems or intentional design choices that ensure engineers continue to learn as they work—and are thus able to exercise meaningful oversight over the systems they build.
+
+Source: *[How AI assistance impacts the formation of coding skill](https://www.anthropic.com/research/AI-assistance-coding-skills)*
+
 # References
 
 - Conway, M. (1968). *How Do Committees Invent?* [https://www.melconway.com/Home/pdf/committees.pdf](https://www.melconway.com/Home/pdf/committees.pdf)
@@ -500,4 +516,5 @@ It cannot replace experience.
 - Emilio Carrión. *[La IA no va a eliminar al ingeniero de software. Va a eliminar al que solo escribía código.](https://www.linkedin.com/pulse/la-ia-va-eliminar-al-ingeniero-de-software-que-solo-escrib%25C3%25ADa-carri%25C3%25B3n-kcele/)*
 - Forsgren, N., Humble, J., Kim, G. (2018).** ***Accelerate: The Science of Lean Software and DevOps*
 - DeMarco, T., Lister, T. (1999). Peopleware: *Productive Projects and Teams*
-- Chen, J., Xu, X., Wei, H., Chen, C., Zhao, B. (2026) *SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration. https://arxiv.org/abs/2603.03823*
+- Chen, J., Xu, X., Wei, H., Chen, C., Zhao, B. (2026) *SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration. [https://arxiv.org/abs/2603.03823](https://arxiv.org/abs/2603.03823)*
+- Anthropic. *How AI assistance impacts the formation of coding skill* [https://www.anthropic.com/research/AI-assistance-coding-skills](https://www.anthropic.com/research/AI-assistance-coding-skills)
