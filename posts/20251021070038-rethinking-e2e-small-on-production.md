@@ -3,7 +3,7 @@ title: "Rethinking E2E: small, on-production smoke checks for critical flows"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/rethinking-e2e-small-on-production"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/rethinking-e2e-small-on-production"
 substack_post_id: 171904113
-retrieved_at: "2026-03-16T08:05:50.988Z"
+retrieved_at: "2026-03-17T08:45:38.026Z"
 ---
 # Rethinking E2E: small, on-production smoke checks for critical flows
 

@@ -4,7 +4,7 @@ subtitle: "The real constraints in software development are product decisions, b
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 substack_post_id: 190302623
-retrieved_at: "2026-03-16T08:05:42.519Z"
+retrieved_at: "2026-03-17T08:45:32.235Z"
 ---
 # AI can write code. That was never the bottleneck.
 
@@ -137,6 +137,8 @@ The center of gravity moves upward.
 Inside real product organizations, constraints rarely look like “we cannot write code fast enough”.
 
 They usually appear somewhere else.
+
+Tweet by the creator of [OpenCode](https://opencode.ai/)
 
 ### Product decisions
 
@@ -505,6 +507,22 @@ Last but not least, I think is important that we start thinking about how this w
 > Though preliminary, t**hese results suggest important considerations as companies transition to a greater ratio of AI-written to human-written code**. **Productivity benefits may come at the cost of skills necessary to validate AI-written code if junior engineers’ skill development has been stunted by using AI in the first place**. Managers should think intentionally about how to deploy AI tools at scale, and consider systems or intentional design choices that ensure engineers continue to learn as they work—and are thus able to exercise meaningful oversight over the systems they build.
 
 Source: *[How AI assistance impacts the formation of coding skill](https://www.anthropic.com/research/AI-assistance-coding-skills)*
+
+A video de resume this articule and also express in a different way the same that I talk on this article
+
+The question that comes to mind after writing this article, rereading it many times, and updating it (more than six times so far)
+
+**What is the real, root problem that AI is meant to solve? And how is it solving it?**
+
+This reminds me of Facebook. Before Facebook, nobody felt the need to “connect”, we were already connected. A need was simply created that we DIDN’T have to solve a problem we DIDN’T have. My question is: is anyone capable of answering the fundamental questions. **What problem did we have that this technology solves, and how is it doing so?** So far, I only see promises that it will do many things and that it will be something that changes the world. And it is changing it, but not because it’s contributing anything to us, but because we’re using it for things without even considering the consequences.
+
+Let’s take an example that every developer will understand: imagine you’re given a problem to solve, and instead of thinking about the problem and coming up with a solution, you simply take an untested solution and apply it without considering what implications it might have. The next day, it will be like the beginning of this article: In the worst-case scenario and even in the best-case scenario, you’ll realize you’re building something that doesn’t solve the problem or might not solve it.
+
+I often say that the difference between someone with little or no experience and someone with experience is that, before writing code, the latter stops to think about what they’re doing.
+
+By distinguishing between the problem space and the solution space and understanding the trade-offs involved in the decisions we make—sadly, in the case of AI, due to social pressure, the hype generated, and all the smoke and mirrors— I get the feeling that we’re entering a state of urgency and/or fear that’s causing us to make decisions that may not be the best for us, simply because others are making us feel that way. With this article, I’d like to call on everyone to, before rushing headlong into a solution, at least consider what implications using it will have and whether or not it’s even sustainable.
+
+Speaking of sustainability, I’ll give another example that developers will understand: when you’re going to use a library or a framework for a professional application, you don’t just grab the framework that just came out; you check if it solves your problem, if it’s stable, if it has documentation, if it’s been tested, and if other companies are using it—you do much more thorough research. With AI, you’re not even waiting for that—you’re using the beta version, and you and your company are the beta testers. I know it sounds sad, but it’s true.
 
 # References
 
