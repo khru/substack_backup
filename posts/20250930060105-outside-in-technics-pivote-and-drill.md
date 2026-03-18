@@ -3,7 +3,7 @@ title: "Outside-in: techniques Pivote and Drill-down"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/outside-in-technics-pivote-and-drill"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/outside-in-technics-pivote-and-drill"
 substack_post_id: 168238656
-retrieved_at: "2026-03-17T08:45:39.408Z"
+retrieved_at: "2026-03-18T08:42:13.357Z"
 ---
 # Outside-in: techniques Pivote and Drill-down
 

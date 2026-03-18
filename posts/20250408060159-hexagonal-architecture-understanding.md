@@ -3,7 +3,7 @@ title: "🛑 Hexagonal Architecture: Understanding Ports & Adapters"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/hexagonal-architecture-understanding"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/hexagonal-architecture-understanding"
 substack_post_id: 160764100
-retrieved_at: "2026-03-17T08:45:51.448Z"
+retrieved_at: "2026-03-18T08:42:25.278Z"
 ---
 # 🛑 Hexagonal Architecture: Understanding Ports & Adapters
 
