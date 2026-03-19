@@ -3,7 +3,7 @@ title: "Subcutaneous Acceptance Tests: Verifying Behavior Just Below the Surface
 requested_url: "https://emmanuelvalverderamos.substack.com/p/subcutaneous-acceptance-tests-verifying"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/subcutaneous-acceptance-tests-verifying"
 substack_post_id: 161290283
-retrieved_at: "2026-03-18T08:42:24.498Z"
+retrieved_at: "2026-03-19T08:37:46.520Z"
 ---
 # Subcutaneous Acceptance Tests: Verifying Behavior Just Below the Surface
 

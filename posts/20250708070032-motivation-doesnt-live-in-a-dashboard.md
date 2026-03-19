@@ -3,7 +3,7 @@ title: "🧠 Motivation doesn’t live in a dashboard"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/motivation-doesnt-live-in-a-dashboard"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/motivation-doesnt-live-in-a-dashboard"
 substack_post_id: 163701078
-retrieved_at: "2026-03-18T08:42:18.670Z"
+retrieved_at: "2026-03-19T08:37:38.082Z"
 ---
 # 🧠 Motivation doesn’t live in a dashboard
 
