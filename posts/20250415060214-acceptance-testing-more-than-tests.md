@@ -3,7 +3,7 @@ title: "Acceptance Testing: More Than Tests, Executable Specifications"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/acceptance-testing-more-than-tests"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/acceptance-testing-more-than-tests"
 substack_post_id: 160772733
-retrieved_at: "2026-03-20T08:35:49.446Z"
+retrieved_at: "2026-03-21T08:27:46.504Z"
 ---
 # Acceptance Testing: More Than Tests, Executable Specifications
 

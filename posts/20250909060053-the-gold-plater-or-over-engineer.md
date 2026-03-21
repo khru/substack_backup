@@ -3,7 +3,7 @@ title: "The Gold-Plater or Over-Engineer"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-gold-plater-or-over-engineer"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-gold-plater-or-over-engineer"
 substack_post_id: 168236019
-retrieved_at: "2026-03-20T08:35:35.296Z"
+retrieved_at: "2026-03-21T08:27:31.301Z"
 ---
 # The Gold-Plater or Over-Engineer
 

@@ -3,7 +3,7 @@ title: "Trunk-based development is not a Git trick. It is what continuous integr
 requested_url: "https://emmanuelvalverderamos.substack.com/p/trunk-based-development-is-not-a"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/trunk-based-development-is-not-a"
 substack_post_id: 188888120
-retrieved_at: "2026-03-20T08:35:24.762Z"
+retrieved_at: "2026-03-21T08:27:20.382Z"
 ---
 # Trunk-based development is not a Git trick. It is what continuous integration looks like.
 
@@ -258,6 +258,8 @@ A practical policy is to set a review latency target that matches your integrati
 > Martin Fowler.
 
 That line is not an anti-review statement. It is an anti-queue statement. The goal is fast feedback without delaying integration.
+
+Additional information in this post: [https://open.substack.com/pub/a4al6a/p/stop-using-pull-requests](https://open.substack.com/pub/a4al6a/p/stop-using-pull-requests)
 
 ---
 
@@ -753,4 +755,4 @@ If you see these, do not argue about Git. Fix the feedback loop, batch size, and
 - Nicole Forsgren, Jez Humble, Gene Kim. Accelerate: the science of lean software and DevOps. LaunchDarkly. 30 feature flagging best practices mega guide.
 - Kent Beck. “Explore then expand then extract.”
 
-[Software Design: Tidy First?Explore *Then* Expand *Then* ExtractFirst publishing February 2016…Read more3 months ago · 40 likes · 3 comments · Kent Beck](https://tidyfirst.substack.com/p/explore-then-expand-then-extract?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web)
+[Software Design: Tidy First?Explore *Then* Expand *Then* ExtractFirst publishing February 2016…Read more4 months ago · 40 likes · 3 comments · Kent Beck](https://tidyfirst.substack.com/p/explore-then-expand-then-extract?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web)
