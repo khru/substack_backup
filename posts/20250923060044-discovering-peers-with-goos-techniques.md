@@ -4,7 +4,7 @@ subtitle: "Breaking Out, Budding Off, and Bundling Up"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/discovering-peers-with-goos-techniques"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/discovering-peers-with-goos-techniques"
 substack_post_id: 168237147
-retrieved_at: "2026-03-21T08:27:29.939Z"
+retrieved_at: "2026-03-22T08:29:12.871Z"
 ---
 # Discovering Peers with GOOS Techniques
 

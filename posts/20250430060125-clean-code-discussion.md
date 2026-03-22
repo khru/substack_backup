@@ -4,7 +4,7 @@ subtitle: "A recording from Emmanuel Valverde Ramos and Denis Čahuk's live vide
 requested_url: "https://emmanuelvalverderamos.substack.com/p/clean-code-discussion"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/clean-code-discussion"
 substack_post_id: 157898866
-retrieved_at: "2026-03-21T08:27:44.261Z"
+retrieved_at: "2026-03-22T08:29:22.293Z"
 ---
 # Clean Code Discussion
 

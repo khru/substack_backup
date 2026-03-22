@@ -3,7 +3,7 @@ title: "ACID, properly understood: transactions as the engine of correctness"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/acid-properly-understood-transactions"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/acid-properly-understood-transactions"
 substack_post_id: 188432489
-retrieved_at: "2026-03-21T08:27:18.908Z"
+retrieved_at: "2026-03-22T08:29:05.166Z"
 ---
 # ACID, properly understood: transactions as the engine of correctness
 

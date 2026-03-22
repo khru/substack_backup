@@ -4,7 +4,7 @@ subtitle: "Turn domain knowledge into shared understanding, better software deci
 requested_url: "https://emmanuelvalverderamos.substack.com/p/introduction-to-domain-storytelling"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/introduction-to-domain-storytelling"
 substack_post_id: 184103934
-retrieved_at: "2026-03-21T08:27:24.250Z"
+retrieved_at: "2026-03-22T08:29:09.110Z"
 ---
 # Introduction to Domain Storytelling
 
