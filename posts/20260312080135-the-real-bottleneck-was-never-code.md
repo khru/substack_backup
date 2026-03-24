@@ -4,7 +4,7 @@ subtitle: "The real constraints in software development are product decisions, b
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 substack_post_id: 190302623
-retrieved_at: "2026-03-22T08:29:05.656Z"
+retrieved_at: "2026-03-24T08:45:09.311Z"
 ---
 # AI can write code. That was never the bottleneck.
 
@@ -531,6 +531,8 @@ I often say that the difference between someone with little or no experience and
 By distinguishing between the problem space and the solution space and understanding the trade-offs involved in the decisions we make—sadly, in the case of AI, due to social pressure, the hype generated, and all the smoke and mirrors— I get the feeling that we’re entering a state of urgency and/or fear that’s causing us to make decisions that may not be the best for us, simply because others are making us feel that way. With this article, I’d like to call on everyone to, before rushing headlong into a solution, at least consider what implications using it will have and whether or not it’s even sustainable.
 
 Speaking of sustainability, I’ll give another example that developers will understand: when you’re going to use a library or a framework for a professional application, you don’t just grab the framework that just came out; you check if it solves your problem, if it’s stable, if it has documentation, if it’s been tested, and if other companies are using it—you do much more thorough research. With AI, you’re not even waiting for that—you’re using the beta version, and you and your company are the beta testers. I know it sounds sad, but it’s true.
+
+Other interesting points of view for the AI are this:[Marcus on AILLMs + Coding Agents = Security NightmareLast October, I wrote an essay called “When it comes to security, LLMs are like Swiss cheese — and that’s going to cause huge problems” warning that “The more people use LLMs, the more trouble we are going to be in”. Until last week, when I went to Black Hat Las Vegas, I had no earthly idea how serious the problems were. There, I got to know Nathan Hami…Read more7 months ago · 422 likes · 72 comments · Gary Marcus and Nathan Hamiel](https://garymarcus.substack.com/p/llms-coding-agents-security-nightmare?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web)
 
 # References
 
