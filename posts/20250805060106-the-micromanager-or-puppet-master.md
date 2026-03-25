@@ -3,7 +3,7 @@ title: "The Micromanager or Puppet Master"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-micromanager-or-puppet-master"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-micromanager-or-puppet-master"
 substack_post_id: 168234821
-retrieved_at: "2026-03-24T08:45:19.220Z"
+retrieved_at: "2026-03-25T08:43:41.668Z"
 ---
 # The Micromanager or Puppet Master
 

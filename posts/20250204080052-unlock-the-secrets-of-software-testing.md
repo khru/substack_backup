@@ -3,7 +3,7 @@ title: "Unlock the Secrets of Software Testing: State-Based, Output-Based, and C
 requested_url: "https://emmanuelvalverderamos.substack.com/p/unlock-the-secrets-of-software-testing"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/unlock-the-secrets-of-software-testing"
 substack_post_id: 152656084
-retrieved_at: "2026-03-24T08:45:31.826Z"
+retrieved_at: "2026-03-25T08:43:56.364Z"
 ---
 # Unlock the Secrets of Software Testing: State-Based, Output-Based, and Communication-Based verifications
 

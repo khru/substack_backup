@@ -3,7 +3,7 @@ title: "Idempotency in software: Designing systems where you can safely retry"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/idempotency-in-software-designing"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/idempotency-in-software-designing"
 substack_post_id: 188434629
-retrieved_at: "2026-03-24T08:45:08.454Z"
+retrieved_at: "2026-03-25T08:43:30.317Z"
 ---
 # Idempotency in software: Designing systems where you can safely retry
 
