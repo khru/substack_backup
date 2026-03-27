@@ -3,7 +3,7 @@ title: "Introduction to Event Storming"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/introduction-to-event-storming"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/introduction-to-event-storming"
 substack_post_id: 184021815
-retrieved_at: "2026-03-25T08:43:36.098Z"
+retrieved_at: "2026-03-27T08:57:50.929Z"
 ---
 # Introduction to Event Storming
 

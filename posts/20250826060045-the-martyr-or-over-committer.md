@@ -3,7 +3,7 @@ title: "The Martyr or Over-Committer"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-martyr-or-over-committer"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-martyr-or-over-committer"
 substack_post_id: 168235568
-retrieved_at: "2026-03-25T08:43:40.402Z"
+retrieved_at: "2026-03-27T08:57:56.182Z"
 ---
 # The Martyr or Over-Committer
 

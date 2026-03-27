@@ -3,7 +3,7 @@ title: "Separation of concerns, functional thinking, and the discipline of simpl
 requested_url: "https://emmanuelvalverderamos.substack.com/p/separation-of-concerns-functional"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/separation-of-concerns-functional"
 substack_post_id: 185633927
-retrieved_at: "2026-03-25T08:43:33.615Z"
+retrieved_at: "2026-03-27T08:57:48.392Z"
 ---
 # Separation of concerns, functional thinking, and the discipline of simplicity
 
@@ -128,8 +128,7 @@ A tiny example helps.
 
 A “do everything at once” version in JavaScript:
 
-```
-// sum-cli.js
+```javascript
 const numbers = process.argv.slice(2).map(Number);
 const total = numbers.reduce((accumulator, value) =&gt; accumulator + value, 0);
 console.log(total);
@@ -144,8 +143,7 @@ Even here we can spot concerns:
 
 Separating them does not make the program “more enterprise”. It makes the responsibilities legible:
 
-```
-// sum-cli.js
+```javascript
 function readCommandLineArguments(argv) {
   const argumentValues = argv.slice(2);
   return argumentValues;
@@ -405,7 +403,7 @@ This exercise is inspired by the kind of scenario used in Grokking Simplicity (f
 
 Here is the starting point, intentionally messy. This is the sort of code that appears naturally when you are trying to ship.
 
-```
+```javascript
 // shopping-cart.js
 const freeShippingThresholdInDollars = 20;
 const taxRate = 0.1;
@@ -470,7 +468,7 @@ Goals:
 
 I switch to cents to avoid rounding surprises, and I use constants that describe intent.
 
-```
+```javascript
 const centsPerDollar = 100;
 
 const freeShippingThresholdInCents = 20 * centsPerDollar;
@@ -492,7 +490,7 @@ Here is the thinking: before splitting logic, I want to see what the function ne
 
 I introduce a parameter object style configuration and explicit dependencies:
 
-```
+```javascript
 function addToCartAndUpdateEverything({
   productId,
   quantity,
@@ -526,7 +524,7 @@ I want a pure calculation that takes data and returns data.
 
 First, I separate “add line item” from everything else:
 
-```
+```plaintext
 function addLineItem(cartLines, product, quantity) {
   return [
     ...cartLines,
@@ -542,7 +540,7 @@ function addLineItem(cartLines, product, quantity) {
 
 Then I extract calculations for totals:
 
-```
+```javascript
 function calculateSubtotalInCents(cartLines) {
   const startingSubtotalInCents = 0;
   return cartLines.reduce((subtotalInCents, line) =&gt; {
@@ -575,7 +573,7 @@ This aligns with the “separation of state” idea: state updates become calcul
 
 Now our orchestration function can look like:
 
-```
+```javascript
 function addToCartAndUpdateEverything({
   productId,
   quantity,
@@ -609,7 +607,7 @@ Instead of doing actions, the core returns a list of effects to be performed.
 
 #### Functional core
 
-```
+```javascript
 const effectTypeRenderCartTotals = "render_cart_totals";
 const effectTypePersistCart = "persist_cart";
 const effectTypeTrackAnalyticsEvent = "track_analytics_event";
@@ -638,7 +636,7 @@ This is calculation. Even the “effects” are just data structures.
 
 Now we need something that executes those effects. This is where a function like `runEffects` comes from. It does not exist in the original spaghetti code because we only need it after we adopt this architecture.
 
-```
+```plaintext
 function runEffects({ effects, dependencies }) {
   for (const effect of effects) {
     if (effect.type === effectTypeRenderCartTotals) {
@@ -675,7 +673,7 @@ The goal is not to “be object oriented”. The goal is to stop growing a condi
 
 This replaces conditionals with a dictionary of handlers. It is inversion of control because the runner no longer decides behavior. The mapping does.
 
-```
+```javascript
 function createEffectHandlers(dependencies) {
   return {
     [effectTypeRenderCartTotals]: (effect) =&gt; dependencies.renderTotals(effect.totals),
@@ -700,7 +698,7 @@ function runEffects({ effects, effectHandlers }) {
 
 If you want polymorphism, you can represent effects as command objects with an `execute` method. This removes the type check entirely.
 
-```
+```javascript
 function createRenderCartTotalsCommand(totals) {
   return {
     execute: (dependencies) =&gt; dependencies.renderTotals(totals),
@@ -739,7 +737,7 @@ What is missing is a clear place where wiring happens. That wiring is the config
 
 Here is a simple configurator:
 
-```
+```javascript
 function createShoppingCartApplication({ catalog, documentRef, localStorageRef, analyticsRef }) {
   function loadCart() {
     const cartJson = localStorageRef.getItem("cart");

@@ -4,7 +4,7 @@ subtitle: "The real constraints in software development are product decisions, b
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 substack_post_id: 190302623
-retrieved_at: "2026-03-25T08:43:31.318Z"
+retrieved_at: "2026-03-27T08:57:45.620Z"
 ---
 # AI can write code. That was never the bottleneck.
 
@@ -356,6 +356,8 @@ It does not eliminate the need for understanding.
 
 # The review and incident problem
 
+[![](https://substackcdn.com/image/fetch/$s_!iFdL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff039592f-9b00-4793-9956-027eb4cbe01d_1655x900.png)](https://substackcdn.com/image/fetch/$s_!iFdL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff039592f-9b00-4793-9956-027eb4cbe01d_1655x900.png)
+
 AI systems can generate code quickly.
 
 Human review capacity does not scale at the same rate.
@@ -547,3 +549,5 @@ Other interesting points of view for the AI are this:[Marcus on AILLMs + Coding 
 - Chen, J., Xu, X., Wei, H., Chen, C., Zhao, B. (2026) *SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration. [https://arxiv.org/abs/2603.03823](https://arxiv.org/abs/2603.03823)*
 - Anthropic. *How AI assistance impacts the formation of coding skill* [https://www.anthropic.com/research/AI-assistance-coding-skills](https://www.anthropic.com/research/AI-assistance-coding-skills)
 - [Judy Hanwen Shen](https://arxiv.org/search/cs?searchtype=author&amp;query=Shen,+J+H), [Alex Tamkin](https://arxiv.org/search/cs?searchtype=author&amp;query=Tamkin,+A). *How AI Impacts Skill Formation*. [https://arxiv.org/abs/2601.20245](https://arxiv.org/abs/2601.20245)
+- Margaret-Anne Storey. *From Technical Debt to Cognitive and Intent Debt: Rethinking Software Health in the Age of AI*
+	[https://arxiv.org/abs/2603.22106](https://arxiv.org/abs/2603.22106)
