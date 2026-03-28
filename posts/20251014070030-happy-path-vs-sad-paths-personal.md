@@ -3,7 +3,7 @@ title: "Happy Path vs. Sad Paths (Personal opinion)"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/happy-path-vs-sad-paths-personal"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/happy-path-vs-sad-paths-personal"
 substack_post_id: 174813547
-retrieved_at: "2026-03-27T08:57:52.863Z"
+retrieved_at: "2026-03-28T08:33:55.035Z"
 ---
 # Happy Path vs. Sad Paths (Personal opinion)
 

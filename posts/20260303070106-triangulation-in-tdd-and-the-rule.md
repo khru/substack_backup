@@ -3,7 +3,7 @@ title: "Triangulation in TDD and the Rule of Three"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/triangulation-in-tdd-and-the-rule"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/triangulation-in-tdd-and-the-rule"
 substack_post_id: 188245320
-retrieved_at: "2026-03-27T08:57:47.217Z"
+retrieved_at: "2026-03-28T08:33:47.681Z"
 ---
 # Triangulation in TDD and the Rule of Three
 

@@ -4,7 +4,7 @@ subtitle: "If your organisation tracks tokens consumed or AI-generated lines of 
 requested_url: "https://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token"
 substack_post_id: 191673061
-retrieved_at: "2026-03-27T08:57:43.963Z"
+retrieved_at: "2026-03-28T08:33:44.417Z"
 ---
 # Stop measuring AI adoption with token counts
 

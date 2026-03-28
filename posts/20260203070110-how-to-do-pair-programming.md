@@ -3,7 +3,7 @@ title: "A complete guide to Pair Programming"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming"
 substack_post_id: 184547650
-retrieved_at: "2026-03-27T08:57:49.473Z"
+retrieved_at: "2026-03-28T08:33:50.398Z"
 ---
 # A complete guide to Pair Programming
 
