@@ -3,7 +3,7 @@ title: "🧯 Never the expert: breaking knowledge silos and bottlenecks in techn
 requested_url: "https://emmanuelvalverderamos.substack.com/p/never-the-expert-breaking-knowledge"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/never-the-expert-breaking-knowledge"
 substack_post_id: 163533948
-retrieved_at: "2026-03-28T08:34:06.206Z"
+retrieved_at: "2026-03-29T07:50:41.817Z"
 ---
 # 🧯 Never the expert: breaking knowledge silos and bottlenecks in technical teams
 

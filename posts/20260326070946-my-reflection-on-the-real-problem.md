@@ -3,7 +3,7 @@ title: "My reflection on the real problem about AI in the software industry"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/my-reflection-on-the-real-problem"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/my-reflection-on-the-real-problem"
 substack_post_id: 192179254
-retrieved_at: "2026-03-28T08:33:43.862Z"
+retrieved_at: "2026-03-29T07:50:23.706Z"
 ---
 # My reflection on the real problem about AI in the software industry
 
@@ -46,3 +46,7 @@ This is my reflection for the day. I know it doesn’t add much and it isn’t v
 [![Contenido del artículo](https://substackcdn.com/image/fetch/$s_!Pu-B!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e360acd-027c-4fbc-a616-edfae712fdad_575x474.png)](https://substackcdn.com/image/fetch/$s_!Pu-B!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e360acd-027c-4fbc-a616-edfae712fdad_575x474.png)
 
 And remember, AI is not going to solve any of these problems. **Don’t forget that AI has proven to amplify things**, both the good and the bad. So, if this has been my experience, and I’m guessing a lot of people can relate to this, it’s safe to assume that many companies are about to become much more hostile places to work.
+
+This video explain some of my thoughts
+
+[https://youtu.be/bNJad6HE23c?is=w15GxhH2DImX6knu](https://youtu.be/bNJad6HE23c?is=w15GxhH2DImX6knu)

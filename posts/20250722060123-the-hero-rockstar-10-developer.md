@@ -3,7 +3,7 @@ title: "The Hero / Rockstar / “10× Developer”"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-hero-rockstar-10-developer"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-hero-rockstar-10-developer"
 substack_post_id: 168233948
-retrieved_at: "2026-03-28T08:34:01.518Z"
+retrieved_at: "2026-03-29T07:50:38.169Z"
 ---
 # The Hero / Rockstar / “10× Developer”
 

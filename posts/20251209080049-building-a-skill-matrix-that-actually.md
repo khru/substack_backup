@@ -4,7 +4,7 @@ subtitle: "Most teams guess who knows what. This article shows how to use a skil
 requested_url: "https://emmanuelvalverderamos.substack.com/p/building-a-skill-matrix-that-actually"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/building-a-skill-matrix-that-actually"
 substack_post_id: 180870438
-retrieved_at: "2026-03-28T08:33:53.057Z"
+retrieved_at: "2026-03-29T07:50:31.176Z"
 ---
 # Building a skill matrix that actually helps your team
 
