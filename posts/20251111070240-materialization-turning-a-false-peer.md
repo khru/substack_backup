@@ -4,7 +4,7 @@ subtitle: "A refactor to demote a peer"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer"
 substack_post_id: 175454440
-retrieved_at: "2026-03-29T07:50:31.649Z"
+retrieved_at: "2026-04-04T07:46:33.505Z"
 ---
 # Materialization: turning a false peer into an internal
 
@@ -34,7 +34,7 @@ Let’s see an example of this. Let’s say we have a system in this state.
 
 We will focus on how `SimulatedSecurityManager` interacts with `UserDataRequester`, and on its implementation `TextUserDataRequester`,
 
-```
+```csharp
 namespace Security;
 
 public class SimulatedSecurityManager
@@ -90,7 +90,7 @@ public class SimulatedSecurityManager
 
 **The interface:**
 
-```
+```csharp
 namespace Security;
 
 public interface UserDataRequester
@@ -101,7 +101,7 @@ public interface UserDataRequester
 
 **The “peer” implementation:**
 
-```
+```csharp
 namespace Security;
 
 public class TextUserDataRequester : UserDataRequester
@@ -149,7 +149,7 @@ public class TextUserDataRequester : UserDataRequester
 
 For `SimulatedSecurityManager`:
 
-```
+```csharp
 using NSubstitute;
 using NUnit.Framework;
 
@@ -204,7 +204,7 @@ public class SimulatedSecurityManagerTest
 
 **For the “peer” implementation:**
 
-```
+```csharp
 using NSubstitute;
 using NUnit.Framework;
 
@@ -268,7 +268,7 @@ The recipe for this refactor:
 
 After applying the parallel change, we get to the following tests in which we are injecting the implementation of the peer’s interface instead of a test double:
 
-```
+```csharp
 using NSubstitute;
 using NUnit.Framework;
 
@@ -339,7 +339,7 @@ public class SimulatedSecurityManagerTest
 
 ### 1…4 Final version. The peer was demoted to an internal
 
-```
+```csharp
 namespace Security;
 
 public class SimulatedSecurityManager

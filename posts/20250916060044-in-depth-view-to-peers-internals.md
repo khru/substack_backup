@@ -3,7 +3,7 @@ title: "In depth view to Peers, Internals collaborators"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/in-depth-view-to-peers-internals"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/in-depth-view-to-peers-internals"
 substack_post_id: 164573136
-retrieved_at: "2026-03-29T07:50:34.713Z"
+retrieved_at: "2026-04-04T07:46:36.888Z"
 ---
 # In depth view to Peers, Internals collaborators
 

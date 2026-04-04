@@ -1,9 +1,8 @@
 ---
 title: "What makes a great automated test? The test desiderata"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/what-makes-a-great-automated-test"
-canonical_url: "https://emmanuelvalverderamos.substack.com/p/what-makes-a-great-automated-test"
 substack_post_id: 152829672
-retrieved_at: "2026-03-29T07:50:54.682Z"
+retrieved_at: "2026-04-04T07:47:02.440Z"
 ---
 # What makes a great automated test? The test desiderata
 

@@ -3,7 +3,7 @@ title: "Test-Driven Development the basics"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/test-driven-development-the-basics"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/test-driven-development-the-basics"
 substack_post_id: 162677485
-retrieved_at: "2026-03-29T07:50:40.628Z"
+retrieved_at: "2026-04-04T07:46:45.339Z"
 ---
 # Test-Driven Development the basics
 

@@ -3,7 +3,7 @@ title: "🔓 From constraint to confidence: why autonomy in software teams is a 
 requested_url: "https://emmanuelvalverderamos.substack.com/p/from-constraint-to-confidence-why"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/from-constraint-to-confidence-why"
 substack_post_id: 161521200
-retrieved_at: "2026-03-29T07:50:44.190Z"
+retrieved_at: "2026-04-04T07:46:49.892Z"
 ---
 # 🔓 From constraint to confidence: why autonomy in software teams is a strategic imperative
 

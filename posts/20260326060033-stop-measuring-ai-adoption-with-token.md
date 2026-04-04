@@ -2,9 +2,8 @@
 title: "Stop measuring AI adoption with token counts"
 subtitle: "If your organisation tracks tokens consumed or AI-generated lines of code as proof of progress, it is not measuring transformation. It is measuring noise."
 requested_url: "https://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token"
-canonical_url: "https://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token"
 substack_post_id: 191673061
-retrieved_at: "2026-03-29T07:50:24.137Z"
+retrieved_at: "2026-04-04T07:46:14.258Z"
 ---
 # Stop measuring AI adoption with token counts
 
