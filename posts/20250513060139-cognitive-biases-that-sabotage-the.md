@@ -3,7 +3,7 @@ title: "Cognitive biases that sabotage the autonomy of software teams"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/cognitive-biases-that-sabotage-the"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/cognitive-biases-that-sabotage-the"
 substack_post_id: 162323396
-retrieved_at: "2026-04-04T07:46:48.549Z"
+retrieved_at: "2026-04-05T07:53:41.816Z"
 ---
 # Cognitive biases that sabotage the autonomy of software teams
 

@@ -4,7 +4,7 @@ subtitle: "The real constraints in software development are product decisions, b
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-real-bottleneck-was-never-code"
 substack_post_id: 190302623
-retrieved_at: "2026-04-04T07:46:17.718Z"
+retrieved_at: "2026-04-05T07:53:22.381Z"
 ---
 # AI can write code. That was never the bottleneck.
 

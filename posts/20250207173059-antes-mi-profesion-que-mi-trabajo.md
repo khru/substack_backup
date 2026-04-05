@@ -4,7 +4,7 @@ subtitle: "En mi trabajo soy una planta. Me limito a existir. Sólo necesito un 
 requested_url: "https://emmanuelvalverderamos.substack.com/p/antes-mi-profesion-que-mi-trabajo"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/antes-mi-profesion-que-mi-trabajo"
 substack_post_id: 156680448
-retrieved_at: "2026-04-04T07:46:59.723Z"
+retrieved_at: "2026-04-05T07:53:51.203Z"
 ---
 # 🇪🇸 Antes mi profesión que mi trabajo
 

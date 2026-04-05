@@ -2,8 +2,9 @@
 title: "❌ ÑaaS: when patches become a product"
 subtitle: "The cultural, economic, and technical cost of selling software illusions"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/naas-when-patches-become-a-product"
+canonical_url: "https://emmanuelvalverderamos.substack.com/p/naas-when-patches-become-a-product"
 substack_post_id: 162686688
-retrieved_at: "2026-04-04T07:46:47.239Z"
+retrieved_at: "2026-04-05T07:53:40.682Z"
 ---
 # ❌ ÑaaS: when patches become a product
 

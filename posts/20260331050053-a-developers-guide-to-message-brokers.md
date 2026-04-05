@@ -3,7 +3,7 @@ title: "A Developer's Guide to Message Brokers"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/a-developers-guide-to-message-brokers"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/a-developers-guide-to-message-brokers"
 substack_post_id: 188435973
-retrieved_at: "2026-04-04T07:46:13.391Z"
+retrieved_at: "2026-04-05T07:53:19.716Z"
 ---
 # A Developer's Guide to Message Brokers
 

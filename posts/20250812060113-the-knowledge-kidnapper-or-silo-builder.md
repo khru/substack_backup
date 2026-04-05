@@ -3,7 +3,7 @@ title: "The Knowledge Kidnapper or Silo Builder"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-knowledge-kidnapper-or-silo-builder"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-knowledge-kidnapper-or-silo-builder"
 substack_post_id: 168235092
-retrieved_at: "2026-04-04T07:46:39.579Z"
+retrieved_at: "2026-04-05T07:53:34.139Z"
 ---
 # The Knowledge Kidnapper or Silo Builder
 
