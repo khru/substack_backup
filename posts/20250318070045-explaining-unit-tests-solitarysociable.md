@@ -3,7 +3,7 @@ title: "Explaining Unit Tests Solitary/Sociable and Integration Tests Narrow/Bro
 requested_url: "https://emmanuelvalverderamos.substack.com/p/explaining-unit-tests-solitarysociable"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/explaining-unit-tests-solitarysociable"
 substack_post_id: 152612051
-retrieved_at: "2026-04-05T07:53:47.016Z"
+retrieved_at: "2026-04-11T07:47:59.696Z"
 ---
 # Explaining Unit Tests Solitary/Sociable and Integration Tests Narrow/Broad
 

@@ -3,7 +3,7 @@ title: "A complete guide to Pair Programming"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming"
 substack_post_id: 184547650
-retrieved_at: "2026-04-05T07:53:26.140Z"
+retrieved_at: "2026-04-11T07:47:27.462Z"
 ---
 # A complete guide to Pair Programming
 
@@ -281,6 +281,35 @@ As I mentioned at the beginning, when I talked about why *pair programming* is h
 - The dictator: the person who dictates how things must be done and won’t listen to reason.
 - The philosophical pair: the person who starts talking about deep topics and the importance of things that sometimes aren’t even what you’re looking at, and that hurts the pair’s focus.
 - The code war: when two teammates with strong opinions fight over their opinions instead of focusing on what matters. Sometimes it’s two dictators fighting each other.
+
+## Pairing session checklist example
+
+### Preparation
+
+- Goal defined (What are we solving? and what’s the current state)
+- Check agendas/calendars (Align on breaks &amp; availability)
+- Understand the task (Raise hand if unclear)
+- Style selected (Driver-Nav / Ping-Pong / Strong)
+- Roles assigned (Who starts driving?)
+- Audio/Video check passed
+- Timebox &amp; Breaks agreed (e.g. 25/5)
+- Backup channel ready (Teams our work room)
+
+### Execution
+
+- Driver is “thinking aloud”
+- Navigator is taking notes / spotting risks
+- Notifications silenced
+- Roles switched at least once
+- No “Ghost Mode” (both vocal)
+
+### Closing
+
+- Tests green / WIP marked
+- Both understand the problem space and the solution space
+- Next steps clear
+- Mini-Retro: things to improve from the pairing and feedback 1:1
+- Share any key insights with the team
 
 ## Not everything is good
 

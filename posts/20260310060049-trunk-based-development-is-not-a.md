@@ -3,7 +3,7 @@ title: "Trunk-based development is not a Git trick. It is what continuous integr
 requested_url: "https://emmanuelvalverderamos.substack.com/p/trunk-based-development-is-not-a"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/trunk-based-development-is-not-a"
 substack_post_id: 188888120
-retrieved_at: "2026-04-05T07:53:23.054Z"
+retrieved_at: "2026-04-11T07:47:22.191Z"
 ---
 # Trunk-based development is not a Git trick. It is what continuous integration looks like.
 

@@ -3,7 +3,7 @@ title: "My reflection on the real problem about AI in the software industry"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/my-reflection-on-the-real-problem"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/my-reflection-on-the-real-problem"
 substack_post_id: 192179254
-retrieved_at: "2026-04-05T07:53:20.256Z"
+retrieved_at: "2026-04-11T07:47:17.958Z"
 ---
 # My reflection on the real problem about AI in the software industry
 

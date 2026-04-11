@@ -3,7 +3,7 @@ title: "Separation of concerns, functional thinking, and the discipline of simpl
 requested_url: "https://emmanuelvalverderamos.substack.com/p/separation-of-concerns-functional"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/separation-of-concerns-functional"
 substack_post_id: 185633927
-retrieved_at: "2026-04-05T07:53:24.955Z"
+retrieved_at: "2026-04-11T07:47:24.962Z"
 ---
 # Separation of concerns, functional thinking, and the discipline of simplicity
 
