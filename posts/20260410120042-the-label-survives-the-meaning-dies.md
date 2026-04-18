@@ -4,7 +4,7 @@ subtitle: "The software industry keeps turning useful ideas into rituals, and AI
 requested_url: "https://emmanuelvalverderamos.substack.com/p/the-label-survives-the-meaning-dies"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-label-survives-the-meaning-dies"
 substack_post_id: 193546410
-retrieved_at: "2026-04-11T07:47:14.522Z"
+retrieved_at: "2026-04-18T07:57:14.695Z"
 ---
 # The label survives, the meaning dies
 
@@ -479,7 +479,7 @@ And the industry calls that progress.
 
 #### Virtuous cycle
 
-[![](https://substackcdn.com/image/fetch/$s_!9tT1!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae625c6e-35fb-4732-a201-5b6682f69321_1522x1078.gif)](https://substackcdn.com/image/fetch/$s_!9tT1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae625c6e-35fb-4732-a201-5b6682f69321_1522x1078.gif)
+[![](https://substackcdn.com/image/fetch/$s_!WEFA!,w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe1fc0ec-ffa7-4553-ad8f-14cd5ccb622c_1307x1034.gif)](https://substackcdn.com/image/fetch/$s_!WEFA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe1fc0ec-ffa7-4553-ad8f-14cd5ccb622c_1307x1034.gif)
 
 ## References
 

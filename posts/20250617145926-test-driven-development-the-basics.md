@@ -3,7 +3,7 @@ title: "Test-Driven Development the basics"
 requested_url: "https://emmanuelvalverderamos.substack.com/p/test-driven-development-the-basics"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/test-driven-development-the-basics"
 substack_post_id: 162677485
-retrieved_at: "2026-04-11T07:47:47.022Z"
+retrieved_at: "2026-04-18T07:57:33.750Z"
 ---
 # Test-Driven Development the basics
 
@@ -40,7 +40,7 @@ At its essence, TDD is a technique for writing software through short, iterative
 
 > “You are not allowed to write any production code unless it is to make a failing test pass. You are not allowed to write any more of a test than is sufficient to fail, and failing to compile is considered failing. You are not allowed to write any more production code than is sufficient to pass the currently failing test.”
 
-- Kent Beck, *Test-Driven Development: By Example*
+> - Kent Beck, *Test-Driven Development: By Example*
 
 These constraints are not arbitrary. They are boundaries designed to protect us from ourselves, from speculative design, overengineering, and early coupling. By forcing us to move in small, safe, deliberate steps, these laws help us build systems that are better structured, easier to change, and more resilient to uncertainty.
 
@@ -54,7 +54,7 @@ From an economic perspective, **Luis Artola** in *Software Economics* frames sof
 
 > “The true cost in software does not come from the work done, but from the future options it limits.”
 
-- Luis Artola, *Software Economics*
+> - Luis Artola, *Software Economics*
 
 Every small test clarifies intent, reduces ambiguity, and exposes inconsistencies early, when they are still cheap to fix. In economic terms, TDD helps us preserve the flexibility to change, which is our most valuable asset in a dynamic market.
 
@@ -66,11 +66,9 @@ Practiced regularly, TDD becomes more than a workflow, it becomes a **habit of t
 
 > “The act of writing a test first makes you think twice about the design. That’s a good thing.”
 
-- Steve Freeman &amp; Nat Pryce, *Growing Object-Oriented Software, Guided by Tests*
+> - Steve Freeman &amp; Nat Pryce, *Growing Object-Oriented Software, Guided by Tests*
 
 In the next section, we will explore the **TDD cycle** in detail: what it looks like in action, why each phase matters, and how it helps us reason about behavior, design, and confidence, one test at a time.
-
----
 
 ## ❌ What TDD is *Not* - unlearning the misconceptions first
 
@@ -79,8 +77,6 @@ Before we go deeper, let’s pause and clear the slate. If we’re going to lear
 Test-Driven Development is not what many people believe it is. And that confusion is costly, in time, quality, and trust.
 
 Here are the most common myths and misconceptions 👇
-
----
 
 ### 🚫 TDD is not “writing tests before code”
 
@@ -98,8 +94,6 @@ The test is a **thought experiment**, not a verification script. You write the t
 
 TDD isn’t test-first. It’s **design-first, with tests as the vehicle**.
 
----
-
 ### 🚫 TDD is not about exhaustive testing
 
 This is another trap. TDD does not aim for 100% coverage, or some abstract measure of testing completeness. It’s not about writing every possible test for every possible path.
@@ -114,9 +108,7 @@ In other words:
 
 > “You don’t write tests to prove you’re right. You write tests to be free to change your mind.”
 
-- *inspired by Kent Beck*
-
----
+*> - inspired by Kent Beck*
 
 ### 🚫 TDD is not about tools or frameworks
 
@@ -138,8 +130,6 @@ Frameworks can help. But they can also get in the way.
 
 The best tool you can bring to TDD is your **attention**.
 
----
-
 ### 🚫 TDD is not QA
 
 This one is critical.
@@ -151,8 +141,6 @@ It does not replace exploratory testing, boundary testing, stress testing, or us
 You use TDD to **design with confidence**. You use QA to **validate what you missed**.
 
 They complement each other. One does not replace the other.
-
----
 
 ### 🚫 TDD is not “just for backend code”
 
@@ -172,9 +160,7 @@ The key is designing **for testability**, not just to test, but to **decouple yo
 
 > “If it’s hard to test, that’s a signal, not a blocker.”
 
-- *Inspired by The Programmer’s Brain* &amp; *Growing OO Software*
-
----
+*> - Inspired by The Programmer’s Brain* &amp; *Growing OO Software*
 
 ### 🚫 TDD is not for “perfect” developers
 
@@ -183,8 +169,6 @@ TDD is not a purity contest. It’s not about never breaking the rules or always
 It’s about building software through a process of **safe, structured trial and error**.
 
 You don’t need to be perfect. You just need to be **deliberate**.
-
----
 
 ## ✅ So… What *is* TDD then?
 
@@ -333,7 +317,7 @@ Often, the answer is not the “final” solution.
 
 Instead, we **fake it**.
 
-```
+```kotlin
 fun fizzBuzz(n: Int): String {
     return "1"
 }
@@ -375,7 +359,7 @@ Let’s illustrate this in the context of the *FizzBuzz* kata.
 
 We start by writing a test for input 1:
 
-```
+```kotlin
 @Test fun `returns 1 for input 1`() {
     assertEquals("1", fizzBuzz(1))
 }
@@ -383,7 +367,7 @@ We start by writing a test for input 1:
 
 We fake it:
 
-```
+```kotlin
 fun fizzBuzz(n: Int): String {
     return "1"
 }
@@ -391,7 +375,7 @@ fun fizzBuzz(n: Int): String {
 
 Next test, for input 2:
 
-```
+```kotlin
 @Test fun `returns 2 for input 2`() {
     assertEquals("2", fizzBuzz(2))
 }
@@ -399,7 +383,7 @@ Next test, for input 2:
 
 We fake it again:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number == 2) {
         return "2"
@@ -411,7 +395,7 @@ fun fizzBuzz(number: Int): String {
 
 Now the third case: 4
 
-```
+```kotlin
 @Test fun `returns 4 for input 4`() {
     assertEquals("4", fizzBuzz(4))
 }
@@ -419,7 +403,7 @@ Now the third case: 4
 
 We fake it once more:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number == 2) {
         return "2"
@@ -439,7 +423,7 @@ Each test expects the number to be returned as a string, unless the number is a 
 
 We’ve seen the same behavior **three times**. Now, and **only now**, we can consider **refactoring**:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return number.toString()
 }
@@ -481,7 +465,7 @@ In TDD, after writing a failing test and watching it fail for the right reason, 
 
 Kent Beck uses this approach in *Test-Driven Development by Example*, particularly in the chapter where he’s working through the multiplication logic for a Dollar class. For instance, when testing Dollar(5) * 2 == Dollar(10), he might write a hardcoded return initially, but then once he sees that multiplication logic will repeat with other values like 3 or 4, he jumps to the real formula:
 
-```
+```kotlin
 fun times(multiplier: Int): Dollar {
     return Dollar(amount * multiplier)
 }
@@ -634,7 +618,7 @@ Following the **Fake it until you make it** philosophy, we want to start **as si
 
 Let’s pick:
 
-```
+```kotlin
 @Test
 fun `should return 1 when given 1`() {
     assertEquals("1", fizzBuzz(1))
@@ -647,7 +631,7 @@ At this point, we don’t even have a function named fizzBuzz. So this is a good
 
 ✅ Fix compilation only:
 
-```
+```kotlin
 fun fizzBuzz(n: Int): String {
     TODO("Not yet implemented")
 }
@@ -663,7 +647,7 @@ That’s still not the right failure.
 
 We want to fail **on the assertion**, not on the structure.
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return ""
 }
@@ -690,7 +674,7 @@ We now know the test is **asserting behavior**, not structure or noise.
 
 In the **first red** phase, we wrote:
 
-```
+```kotlin
 @Test
 fun `should return "1" when given 1`() {
     assertEquals("1", fizzBuzz(1))
@@ -699,7 +683,7 @@ fun `should return "1" when given 1`() {
 
 We made it pass with the simplest possible code:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return "1"
 }
@@ -709,7 +693,7 @@ fun fizzBuzz(number: Int): String {
 
 ### 🔴 Red: Given a 2 should return 2
 
-```
+```kotlin
 @Test
 fun `should return "2" when given 2`() {
     assertEquals("2", fizzBuzz(2))
@@ -731,7 +715,7 @@ This is a **failure for the correct reason**: our current implementation always 
 
 We extend our when block to fake "2" as well:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return when (number) {
         1 -&gt; "1"
@@ -746,7 +730,7 @@ Both tests pass ✅. But we’re still **hardcoding** values - intentionally del
 
 ### 🔴 Red: Given 4 should return 4
 
-```
+```kotlin
 @Test
 fun `should return "4" when given 4`() {
     assertEquals("4", fizzBuzz(4))
@@ -766,7 +750,7 @@ Actual   :2
 
 Still faking our way through one case at a time. We update the function:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return when (number) {
         1 -&gt; "1"
@@ -790,7 +774,7 @@ Now that we’ve seen the same behavior repeat three times, returning the input 
 
 We refactor the function to:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return number.toString()
 }
@@ -810,7 +794,7 @@ This isn’t just about reducing lines of code, it's about **clarity** and **int
 
 Here’s the refactored version using JUnit 5’s `@ParameterizedTest` with `@ValueSource`:
 
-```
+```kotlin
 @ParameterizedTest(name = "should return \"{0}\" when number is not divisible by 3 or 5")
 @ValueSource(ints = [1, 2, 4])
 fun `should return number as string when not divisible by 3 or 5`(number: Int) {
@@ -835,7 +819,7 @@ fun `should return number as string when not divisible by 3 or 5`(number: Int) {
 
 We introduce a new test:
 
-```
+```kotlin
 @Test
 fun `should return Fizz when number is divisible by 3`() {
     assertEquals("Fizz", fizzBuzz(3))
@@ -857,7 +841,7 @@ but was: "3"
 
 To pass the test **safely**, we add a specific case for the number 3 - faking the implementation:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return when (number) {
         3 -&gt; "Fizz"
@@ -901,7 +885,7 @@ Let’s update our test list and prep for the next step.
 
 We want to begin triangulating. That means we now add a second example that should also result in "Fizz", to build evidence of a pattern.
 
-```
+```kotlin
 @Test
 fun `should return Fizz when number is divisible by 3 - example 6`() {
     assertEquals("Fizz", fizzBuzz(6))
@@ -923,7 +907,7 @@ but was: "6"
 
 Let’s not generalize yet. Instead, we continue **faking** it safely by adding the special case for 6.
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return when (number) {
         3 -&gt; "Fizz"
@@ -967,7 +951,7 @@ Perfect 👣 Let’s move into the third "Fizz" case (9), where we’ll complete
 
 This is the **final step in our triangulation**. After this, we should be able to extract the pattern that defines "Fizz".
 
-```
+```kotlin
 @Test
 fun `should return Fizz when number is divisible by 3 - example 9`() {
     assertEquals("Fizz", fizzBuzz(9))
@@ -995,7 +979,7 @@ We now have:
 
 ⚠️ If we were to add a third fake for 9, our code would look like this:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     return when (number) {
         3 -&gt; "Fizz"
@@ -1018,7 +1002,7 @@ They are all **divisible by 3**.
 
 Let’s implement that abstraction:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number % 3 == 0) {
         return "Fizz"
@@ -1039,7 +1023,7 @@ Let’s double check:
 
 Lets parametrize the test
 
-```
+```kotlin
 @ParameterizedTest()
 @ValueSource(ints = [3, 6, 9])
 fun `should return Fizz as string when not divisible by 3`(number: Int) {
@@ -1086,7 +1070,7 @@ Our hypothesis: if a number is divisible by 5, it should return "Buzz".
 
 Let’s encode this as a test:
 
-```
+```kotlin
 @Test
 fun `should return Buzz when number is divisible by 5 - example 5`() {
     assertEquals("Buzz", fizzBuzz(5))
@@ -1108,7 +1092,7 @@ but was: "5"
 
 Just like with Fizz, we **don’t generalize yet**. We fake it with a hardcoded check:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number % 3 == 0) {
         return "Fizz"
@@ -1155,7 +1139,7 @@ We’ve only seen "Buzz" once. Let’s follow our rule of thumb: **don’t gener
 
 We're now encoding a second example of "Buzz" behavior:
 
-```
+```kotlin
 @Test
 fun `should return Buzz when number is divisible by 5 - example 10`() {
     val result = fizzBuzz(10)
@@ -1178,7 +1162,7 @@ but was: "10"
 
 No generalization yet. We’re still in **Fake it until you make it** mode, so we treat this as a special case:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number % 3 == 0) {
         return "Fizz"
@@ -1229,7 +1213,7 @@ Perfect 💡 Let’s close the loop on the "Buzz" behavior with our third exampl
 
 ### 🔴 Red: Given a 20 should return 20
 
-```
+```kotlin
 @Test
 fun `should return Buzz when number is divisible by 5 - example 20`() {
     assertEquals("Buzz", fizzBuzz(20))
@@ -1251,7 +1235,7 @@ but was: "20"
 
 We **could**:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number % 3 == 0) {
         return "Fizz"
@@ -1285,7 +1269,7 @@ We’ve seen "Buzz" returned for 5, 10, and 20. What do they have in common?
 
 We can safely extract the business rule now:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number % 3 == 0) {
         return "Fizz"
@@ -1299,7 +1283,9 @@ fun fizzBuzz(number: Int): String {
 }
 ```
 
+```plaintext
 🧪 All previous tests still pass ✅
+```
 
 - Fizz for 3, 6, 9 → ✅
 - Buzz for 5, 10, 20 → ✅
@@ -1309,7 +1295,7 @@ Beautiful. This is **disciplined design** in motion: we abstracted only after ev
 
 Lets parametrize the test
 
-```
+```kotlin
 @ParameterizedTest()
 @ValueSource(ints = [5, 10, 20])
 fun `should return Buzz as string when not divisible by 5`(number: Int) {
@@ -1338,7 +1324,7 @@ fun `should return Buzz as string when not divisible by 5`(number: Int) {
 
 ### 🔴 Red: Given a 15 should return FizzBuzz
 
-```
+```kotlin
 @Test
 fun `should return FizzBuzz when number is divisible by 3 and 5`() {
     assertEquals("FizzBuzz", fizzBuzz(15))
@@ -1362,7 +1348,7 @@ This test clearly identifies **a missing behavior**, giving us the green light t
 
 Let’s begin conservatively and fake this case:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     if (number == 15) return "FizzBuzz"
 
@@ -1403,7 +1389,7 @@ We need **more examples** to justify a proper rule. So let’s triangulate.
 
 ### 🔴 Red: Given a 30 should return FizzBuzz
 
-```
+```kotlin
 @Test
 fun `should return FizzBuzz when number is divisible by 3 and 5 - example 30`() {
     assertEquals("FizzBuzz", fizzBuzz(30))
@@ -1421,7 +1407,7 @@ but was: "Fizz"
 
 Our current implementation:
 
-```
+```kotlin
 if (number == 15) return "FizzBuzz"
 if (number % 3 == 0) return "Fizz"
 if (number % 5 == 0) return "Buzz"
@@ -1435,7 +1421,7 @@ if (number % 5 == 0) return "Buzz"
 
 We’re still in fake-it territory, not enough evidence yet to extract a general rule. So we explicitly add the case for 30:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
 	if (number == 15) {
 		 return "FizzBuzz"
@@ -1475,7 +1461,7 @@ We’re repeating ourselves intentionally, **waiting until we see three cases** 
 
 ### 🔴 Red: Given a 45 should return FizzBuzz
 
-```
+```kotlin
 @Test
 fun `should return FizzBuzz when number is divisible by 3 and 5 - example 45`() {
     assertEquals("FizzBuzz", fizzBuzz(45))
@@ -1507,7 +1493,7 @@ We’ve seen the same behavior enough times to **generalize**.
 
 And in fact, in our previous step, we already did 💡 The current implementation is:
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
 	if (number == 15) {
 		 return "FizzBuzz"
@@ -1532,7 +1518,7 @@ fun fizzBuzz(number: Int): String {
 
 First small refactor
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     var result = ""
 
@@ -1545,7 +1531,7 @@ fun fizzBuzz(number: Int): String {
 
 Improve the function
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     val result = buildString {
         if (number % 3 == 0) append("Fizz")
@@ -1557,7 +1543,7 @@ fun fizzBuzz(number: Int): String {
 
 Extract modules to more expressive functions
 
-```
+```kotlin
 fun fizzBuzz(number: Int): String {
     val result = buildString {
         if (isMultipleOfThree(number)) append("Fizz")

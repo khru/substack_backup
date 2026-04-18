@@ -3,7 +3,7 @@ title: "Streaming vs Pub Sub and the Architectural Impact on Event Driven System
 requested_url: "https://emmanuelvalverderamos.substack.com/p/streaming-vs-pub-sub-and-the-architectural"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/streaming-vs-pub-sub-and-the-architectural"
 substack_post_id: 188436598
-retrieved_at: "2026-04-11T07:47:16.589Z"
+retrieved_at: "2026-04-18T07:57:15.588Z"
 ---
 # Streaming vs Pub Sub and the Architectural Impact on Event Driven Systems
 

@@ -4,7 +4,7 @@ subtitle: "Why I left “pair programming with AI” out of an article about pai
 requested_url: "https://emmanuelvalverderamos.substack.com/p/ai-assistance-is-not-pair-programming"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/ai-assistance-is-not-pair-programming"
 substack_post_id: 193659723
-retrieved_at: "2026-04-11T07:47:15.856Z"
+retrieved_at: "2026-04-18T07:57:15.227Z"
 ---
 # AI assistance is not pair programming
 

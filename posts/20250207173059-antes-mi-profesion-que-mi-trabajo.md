@@ -4,7 +4,7 @@ subtitle: "En mi trabajo soy una planta. Me limito a existir. Sólo necesito un 
 requested_url: "https://emmanuelvalverderamos.substack.com/p/antes-mi-profesion-que-mi-trabajo"
 canonical_url: "https://emmanuelvalverderamos.substack.com/p/antes-mi-profesion-que-mi-trabajo"
 substack_post_id: 156680448
-retrieved_at: "2026-04-11T07:48:06.075Z"
+retrieved_at: "2026-04-18T07:57:45.206Z"
 ---
 # 🇪🇸 Antes mi profesión que mi trabajo
 
@@ -44,7 +44,7 @@ No fue bueno, pero fue lo mejor. Mi proceso de duelo tocó fondo y una cita de R
 
 *Quiero dejar de hablar de las cosas malas y empezar a hablar de las buenas porque reconcentrar la mala hostia sólo me hace daño a mí y no lo sufre quien me la genera.*
 
-Mano de santo, hoyga. Como en una secuencia del tercer acto de una película mala, desperté en mi propio cuerpo pero todo era diferente: trabajo remoto, bien remunerado, horario flexible, mínima expectativa, máximo confort. Jackpot!
+Mano de santo, oiga. Como en una secuencia del tercer acto de una película mala, desperté en mi propio cuerpo pero todo era diferente: trabajo remoto, bien remunerado, horario flexible, mínima expectativa, máximo confort. Jackpot!
 
 El fondo de mi pozo era, en realidad, un agujero de gusano a otro universo donde mi trabajo y mi profesión eran cosas distintas, ¿Quién lo hubiera dicho?
 
