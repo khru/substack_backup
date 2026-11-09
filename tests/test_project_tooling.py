@@ -137,6 +137,17 @@ class ProjectToolingTests(unittest.TestCase):
             workflow_content,
         )
 
+    def test_sync_workflow_uses_cursor_pagination_without_a_time_window_guard(self) -> None:
+        workflow_content = _SYNC_WORKFLOW_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("SUBSTACK_ARCHIVE_PAGINATION: cursor", workflow_content)
+        self.assertIn(
+            "SUBSTACK_MARKDOWN_FALLBACK_ENDPOINT: https://r.jina.ai/http://",
+            workflow_content,
+        )
+        self.assertNotIn("Check 09:00 Europe/Madrid window", workflow_content)
+        self.assertNotIn("steps.madrid_guard.outputs.skip", workflow_content)
+
     def test_sync_workflow_installs_runtime_dependencies_with_uv(self) -> None:
         workflow_content = _SYNC_WORKFLOW_PATH.read_text(encoding="utf-8")
 

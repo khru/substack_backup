@@ -98,6 +98,9 @@ This file is the execution source of truth for TDD order.
 | DOC-IMG-002 | high | done | S | on-point | README explicitly states backup runs without rewriting markdown links | - |
 | GOV-IMG-001 | high | done | S | on-point | AGENTS documents image backup invariants including required failure on download errors | - |
 | ADR-005 | high | done | I | on-point | ADR records independent image backup workflow and `img/<markdown_stem>/` layout decision | - |
+| PAG-005 | high | done | B | boundary | Archive reader follows `nextCursor` pages until the complete archive is consumed | pending-cycle |
+| MD-001 | high | done | E | boundary | Markdown synchronization falls back when the primary converter is unavailable | pending-cycle |
+| WF-004 | high | done | B | boundary | Scheduled sync executes despite GitHub schedule delay and uses cursor pagination | pending-cycle |
 
 ## Mutation survivors log
 

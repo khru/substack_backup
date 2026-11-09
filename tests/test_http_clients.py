@@ -9,6 +9,50 @@ from substack_sync.http_clients import HttpArchiveReader
 
 
 class HttpArchiveReaderTests(unittest.TestCase):
+    def test_fetch_reads_cursor_pages_from_archive_proxy(self) -> None:
+        archive_url = "https://example.workers.dev/archive"
+        requested_urls: list[str] = []
+        cursor = "next-page"
+
+        response_by_url = {
+            f"{archive_url}?sort=new&search=&limit=20": (
+                '{"posts": [{"canonical_url": "https://example.substack.com/p/first", '
+                '"post_date": "2026-03-03T07:01:06.960Z"}], '
+                '"nextCursor": "next-page"}'
+            ),
+            f"{archive_url}?sort=new&search=&limit=20&cursor={cursor}": (
+                '{"posts": [{"canonical_url": "https://example.substack.com/p/second", '
+                '"post_date": "2026-03-03T06:00:00.000Z"}], "nextCursor": null}'
+            ),
+        }
+
+        def fetch_text(request_url: str) -> str:
+            requested_urls.append(request_url)
+            return response_by_url[request_url]
+
+        reader = HttpArchiveReader(
+            timeout_seconds=30,
+            fetch_text=fetch_text,
+            pagination_mode="cursor",
+        )
+
+        posts = reader.fetch(archive_url)
+
+        self.assertEqual(
+            posts,
+            (
+                ArchivePost(
+                    article_url="https://example.substack.com/p/first",
+                    published_timestamp="20260303070106",
+                ),
+                ArchivePost(
+                    article_url="https://example.substack.com/p/second",
+                    published_timestamp="20260303060000",
+                ),
+            ),
+        )
+        self.assertEqual(requested_urls, list(response_by_url.keys()))
+
     def test_fetch_reads_archive_pages_using_limit_twenty(self) -> None:
         archive_url = "https://example.workers.dev/archive"
         requested_urls: list[str] = []

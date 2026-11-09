@@ -8,6 +8,7 @@ from substack_sync.constants import (
     DEFAULT_ARCHIVE_API_URL,
     DEFAULT_FEED_URL,
     DEFAULT_MARKDOWN_ENDPOINT,
+    DEFAULT_MARKDOWN_FALLBACK_ENDPOINT,
     DEFAULT_OUTPUT_DIRECTORY,
     DEFAULT_REQUEST_TIMEOUT_SECONDS,
 )
@@ -28,10 +29,14 @@ def main(argv: list[str] | None = None) -> int:
 
 def _build_use_case(arguments: argparse.Namespace) -> SyncSubstackArchivePostsUseCase:
     return SyncSubstackArchivePostsUseCase(
-        archive_reader=HttpArchiveReader(timeout_seconds=arguments.timeout_seconds),
+        archive_reader=HttpArchiveReader(
+            timeout_seconds=arguments.timeout_seconds,
+            pagination_mode=arguments.archive_pagination,
+        ),
         markdown_fetcher=HttpMarkdownFetcher(
             endpoint_url=arguments.markdown_endpoint,
             timeout_seconds=arguments.timeout_seconds,
+            fallback_endpoint_url=arguments.markdown_fallback_endpoint,
         ),
         post_repository=FileSystemPostRepository(output_directory=Path(arguments.output_directory)),
     )
@@ -77,6 +82,11 @@ def _parse_arguments(argv: list[str] | None) -> argparse.Namespace:
         help="Endpoint prefix used to transform URLs into markdown.",
     )
     parser.add_argument(
+        "--markdown-fallback-endpoint",
+        default=DEFAULT_MARKDOWN_FALLBACK_ENDPOINT,
+        help="Fallback endpoint used when the primary markdown converter fails.",
+    )
+    parser.add_argument(
         "--output-directory",
         default=DEFAULT_OUTPUT_DIRECTORY,
         help="Directory where markdown files are stored.",
@@ -86,6 +96,12 @@ def _parse_arguments(argv: list[str] | None) -> argparse.Namespace:
         default=DEFAULT_REQUEST_TIMEOUT_SECONDS,
         type=int,
         help="HTTP timeout in seconds for feed and markdown requests.",
+    )
+    parser.add_argument(
+        "--archive-pagination",
+        choices=("offset", "cursor"),
+        default="offset",
+        help="Pagination protocol used by the archive API.",
     )
     return parser.parse_args(argv)
 

@@ -1,16 +1,13 @@
----
-title: "AI assistance is not pair programming"
-subtitle: "Why I left “pair programming with AI” out of an article about pair programming, and why the distinction matters more than it seems"
-requested_url: "https://emmanuelvalverderamos.substack.com/p/ai-assistance-is-not-pair-programming"
-canonical_url: "https://emmanuelvalverderamos.substack.com/p/ai-assistance-is-not-pair-programming"
-substack_post_id: 193659723
-retrieved_at: "2026-04-18T07:57:15.227Z"
----
-# AI assistance is not pair programming
+Title: AI assistance is not pair programming
 
-### Why I left “pair programming with AI” out of an article about pair programming, and why the distinction matters more than it seems
+URL Source: http://emmanuelvalverderamos.substack.com/p/ai-assistance-is-not-pair-programming
 
-[![](https://substackcdn.com/image/fetch/$s_!7RGr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32c092b5-e17e-4850-915e-716c764a193a_1024x558.png)](https://substackcdn.com/image/fetch/$s_!7RGr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32c092b5-e17e-4850-915e-716c764a193a_1024x558.png)
+Final URL: https://emmanuelvalverderamos.substack.com/p/ai-assistance-is-not-pair-programming
+
+Published Time: 2026-04-09T11:03:13+00:00
+
+Markdown Content:
+[![Image 1](https://substackcdn.com/image/fetch/$s_!7RGr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32c092b5-e17e-4850-915e-716c764a193a_1024x558.png)](https://substackcdn.com/image/fetch/$s_!7RGr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32c092b5-e17e-4850-915e-716c764a193a_1024x558.png)
 
 When I published my article about pair programming, a friend asked me a reasonable question.
 
@@ -30,17 +27,9 @@ But useful is not the same thing as pair programming.
 
 That distinction is the whole point.
 
-## TL;DR
+[![Image 2: X avatar for @evrtrabajo](https://substackcdn.com/image/fetch/$s_!gApN!,w_40,h_40,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fprofile_images%2F1758644850596200448%2Fgz1BKnaC.jpg) Emmanuel Valverde | 👨‍💻 @ 🏡@evrtrabajo 🧵1/17 Wait, I don’t think I understand this right: “pair programming with AI”. So when I use the keyboard, am I pairing with the keyboard? Useful tool? Yes. A pair? No. 1:47 PM · Apr 8, 2026 · 85 Views 1 Reply · 2 Likes](https://x.com/evrtrabajo/status/2041875593440973225?s=20)
 
----
-
-Crafting software is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
-
----
-
-## The problem is not the tool
-
-[![](https://substackcdn.com/image/fetch/$s_!T6at!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F38653823-cab6-481f-bca6-89d6502661d3_1024x559.png)](https://substackcdn.com/image/fetch/$s_!T6at!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F38653823-cab6-481f-bca6-89d6502661d3_1024x559.png)
+[![Image 3](https://substackcdn.com/image/fetch/$s_!T6at!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F38653823-cab6-481f-bca6-89d6502661d3_1024x559.png)](https://substackcdn.com/image/fetch/$s_!T6at!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F38653823-cab6-481f-bca6-89d6502661d3_1024x559.png)
 
 My issue is not that AI helps people write software.
 
@@ -54,17 +43,15 @@ Because if we stretch the term too far, we do not merely modernise it. We dilute
 
 And once that happens, we start confusing very different things.
 
-We confuse assistance with collaboration.
-We confuse speed with shared understanding.
-We confuse interaction with reciprocity.
-We confuse output with learning.
+We confuse assistance with collaboration.  
+We confuse speed with shared understanding.  
+We confuse interaction with reciprocity.  
+We confuse output with learning.  
 We confuse a tool with a team practice.
 
 That is where the trouble starts.
 
-## What pair programming actually is
-
-[![](https://substackcdn.com/image/fetch/$s_!d43K!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10c53451-3ba3-4253-b0fb-d29fdb4fcc03_1024x559.png)](https://substackcdn.com/image/fetch/$s_!d43K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10c53451-3ba3-4253-b0fb-d29fdb4fcc03_1024x559.png)
+[![Image 4](https://substackcdn.com/image/fetch/$s_!d43K!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10c53451-3ba3-4253-b0fb-d29fdb4fcc03_1024x559.png)](https://substackcdn.com/image/fetch/$s_!d43K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10c53451-3ba3-4253-b0fb-d29fdb4fcc03_1024x559.png)
 
 Pair programming is not just “getting help while coding.”
 
@@ -74,11 +61,11 @@ Two people work on the same problem together, in real time, with shared attentio
 
 They pair.
 
-That means dialogue.
-It means challenge.
-It means clarification.
-It means role switching.
-It means catching tactical mistakes and strategic mistakes.
+That means dialogue.  
+It means challenge.  
+It means clarification.  
+It means role switching.  
+It means catching tactical mistakes and strategic mistakes.  
 It means talking through uncertainty while the work is happening, not after it.
 
 Good pair programming is social, cognitive, and deeply human.
@@ -95,9 +82,7 @@ That is the practice.
 
 Not typing with something helpful open on the side.
 
-## The keyboard test
-
-[![](https://substackcdn.com/image/fetch/$s_!hMkj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F748742c3-e6b4-429a-addb-db2f7079703e_1024x558.png)](https://substackcdn.com/image/fetch/$s_!hMkj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F748742c3-e6b4-429a-addb-db2f7079703e_1024x558.png)
+[![Image 5](https://substackcdn.com/image/fetch/$s_!hMkj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F748742c3-e6b4-429a-addb-db2f7079703e_1024x558.png)](https://substackcdn.com/image/fetch/$s_!hMkj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F748742c3-e6b4-429a-addb-db2f7079703e_1024x558.png)
 
 This is the simplest way I know to make the distinction visible.
 
@@ -109,7 +94,7 @@ The keyboard is useful. It is essential, even. But it is not my pair. It does no
 
 It is a tool.
 
-A very useful tool.
+A very useful tool.  
 Still a tool.
 
 For me, many claims about “pair programming with AI” fail that same basic test.
@@ -117,8 +102,6 @@ For me, many claims about “pair programming with AI” fail that same basic te
 The tool may be powerful. It may be interactive. It may even feel conversational. Some tools stay beside you while you work. Others can read a codebase, edit files, run commands, and take on more autonomous tasks. None of that, by itself, makes the tool a pair in the sense that pair programming was meant to describe.
 
 And once the category is wrong, the reasoning built on top of it starts to wobble.
-
-## Why the name matters
 
 Some people will hear this and think it sounds pedantic.
 
@@ -138,13 +121,13 @@ But the moment we reuse the label, we also smuggle in expectations that may no l
 
 If I spend an afternoon working alone with an LLM, my team has not automatically paired.
 
-[![](https://substackcdn.com/image/fetch/$s_!mVN_!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5052c526-6b0b-47f3-9745-5aac47cf06e5_1024x558.png)](https://substackcdn.com/image/fetch/$s_!mVN_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5052c526-6b0b-47f3-9745-5aac47cf06e5_1024x558.png)
+[![Image 6](https://substackcdn.com/image/fetch/$s_!mVN_!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5052c526-6b0b-47f3-9745-5aac47cf06e5_1024x558.png)](https://substackcdn.com/image/fetch/$s_!mVN_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5052c526-6b0b-47f3-9745-5aac47cf06e5_1024x558.png)
 
-Knowledge did not spread just because I had assistance.
-Shared ownership did not appear just because suggestions were made.
-Trust did not grow just because the interaction was productive.
-A junior did not learn from a senior.
-A senior did not sharpen their thinking through dialogue with another human.
+Knowledge did not spread just because I had assistance.  
+Shared ownership did not appear just because suggestions were made.  
+Trust did not grow just because the interaction was productive.  
+A junior did not learn from a senior.  
+A senior did not sharpen their thinking through dialogue with another human.  
 The team did not become less fragile simply because a machine was involved in the workflow.
 
 Those are not small details. Those are some of the main reasons pair programming exists.
@@ -153,9 +136,7 @@ So no, the naming problem is not cosmetic.
 
 It is operational.
 
-## The hidden substitution
-
-[![](https://substackcdn.com/image/fetch/$s_!6AvX!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2331f3ce-e072-4380-8719-3ec2367b32d5_1024x558.png)](https://substackcdn.com/image/fetch/$s_!6AvX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2331f3ce-e072-4380-8719-3ec2367b32d5_1024x558.png)
+[![Image 7](https://substackcdn.com/image/fetch/$s_!6AvX!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2331f3ce-e072-4380-8719-3ec2367b32d5_1024x558.png)](https://substackcdn.com/image/fetch/$s_!6AvX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2331f3ce-e072-4380-8719-3ec2367b32d5_1024x558.png)
 
 This is the part that matters most.
 
@@ -167,25 +148,23 @@ That is the trap.
 
 You can absolutely become a faster solo developer with AI assistance.
 
-You can become more effective at exploring options.
-You can lower the cost of drafting.
-You can reduce the friction of looking things up.
-You can get unstuck faster.
+You can become more effective at exploring options.  
+You can lower the cost of drafting.  
+You can reduce the friction of looking things up.  
+You can get unstuck faster.  
 You can ask for alternative implementations, test ideas, summaries, explanations, and rough first passes.
 
 All of that is real.
 
 But none of it automatically turns a solo workflow into a pairing practice.
 
-A useful assistant is not the same thing as a reciprocal collaborator.
-A stream of suggestions is not the same thing as shared responsibility.
+A useful assistant is not the same thing as a reciprocal collaborator.  
+A stream of suggestions is not the same thing as shared responsibility.  
 A productive session is not the same thing as a human learning loop.
 
 That does not make the tool worse.
 
 It just means we should describe it honestly.
-
-## This is not anti-AI. It is anti-confusion.
 
 I am not arguing that AI has no place in software development.
 
@@ -215,8 +194,6 @@ That is not progress.
 
 That is category confusion with good branding.
 
-## What I would rather say
-
 I think we need better honesty and better vocabulary.
 
 If I am using an LLM to help me think, draft, or review while I code, I am doing AI-assisted programming.
@@ -232,8 +209,6 @@ More importantly, they are useful.
 They help us reason properly about what we are doing. They help us choose the right practice for the right outcome. They help us avoid flattering ourselves with benefits we have not actually created.
 
 And they let AI be what it is without forcing it into a category it does not fit.
-
-## Why I left it out
 
 So when my friend asked me why I did not write about “pair programming with AI” in an article about pair programming, my answer was not that AI is irrelevant.
 
@@ -255,16 +230,14 @@ And if we lose the ability to say that clearly, we do not just lose a definition
 
 We lose part of our ability to think clearly about how software teams actually learn, collaborate, and build shared ownership.
 
-## Conclusion
-
 Words matter because practices matter.
 
 If we keep the term pair programming for the human practice it was meant to describe, we preserve something valuable. We preserve a distinction between assistance and collaboration. Between interaction and reciprocity. Between working faster alone and learning together as a team.
 
 That distinction is worth defending.
 
-Not because AI is weak.
-Not because the future must look like the past.
+Not because AI is weak.  
+Not because the future must look like the past.  
 Not because language should never evolve.
 
 But because precision matters when the thing being described has real social and organisational consequences.
@@ -279,19 +252,22 @@ And sometimes that clarity is the difference between understanding a practice an
 
 I see other content creators that talk about this topic and I really wonder, how would the real Human + Human using AI works, I’ve seen post like this from Aleix Morgadas
 
-[![](https://substackcdn.com/image/fetch/$s_!Jclx!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2b983592-e8a9-4295-8dbb-61e4de81a493_1280x1280.png)](https://learnings.aleixmorgadas.dev/p/rethinking-pair-programming-in-the?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web)
-
 And I see some interesting and cool ideas that I think are worth trying out, although I can’t quite picture what these sessions are actually like. I mean, how does it work? Do I just send a prompt, wait 20 minutes for it to be resolved, and then go do something else? Or do we just chat about how our lives are going during that time?
 
 It seems a bit surreal; it feels like trying to adapt something that wasn’t designed to be used that way. Maybe later someone will explain how they do this, but for now, my perspective is that they’re totally different things. I’m not saying they can’t work well together, just that I still don’t have a clear picture of what that would look like, and I think it might be worth exploring this point.
 
-## References
+*   Emmanuel Valverde Ramos, _How to do Pair Programming_[https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming](https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming)
 
-- Emmanuel Valverde Ramos, *How to do Pair Programming* [https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming](https://emmanuelvalverderamos.substack.com/p/how-to-do-pair-programming)
-- Martin Fowler, *On Pair Programming* [https://martinfowler.com/articles/on-pair-programming.html](https://martinfowler.com/articles/on-pair-programming.html)
-- Martin Fowler, *Pair Programming* [https://martinfowler.com/bliki/PairProgramming.html](https://martinfowler.com/bliki/PairProgramming.html)
-- Martin Fowler, *Coding assistants do not replace pair programming* [https://martinfowler.com/articles/exploring-gen-ai/05-not-your-pair-programmer.html](https://martinfowler.com/articles/exploring-gen-ai/05-not-your-pair-programmer.html)
-- GitHub, *What is GitHub Copilot?* [https://docs.github.com/en/copilot/get-started/what-is-github-copilot](https://docs.github.com/en/copilot/get-started/what-is-github-copilot)
-- GitHub, *Using GitHub Copilot in GitHub Codespaces* [https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces)
-- GitHub, *Integrate AI agents* [https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents](https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
-- Laurie Williams and Robert Kessler, *Pair Programming Illuminated*
+*   Martin Fowler, _On Pair Programming_[https://martinfowler.com/articles/on-pair-programming.html](https://martinfowler.com/articles/on-pair-programming.html)
+
+*   Martin Fowler, _Pair Programming_[https://martinfowler.com/bliki/PairProgramming.html](https://martinfowler.com/bliki/PairProgramming.html)
+
+*   Martin Fowler, _Coding assistants do not replace pair programming_[https://martinfowler.com/articles/exploring-gen-ai/05-not-your-pair-programmer.html](https://martinfowler.com/articles/exploring-gen-ai/05-not-your-pair-programmer.html)
+
+*   GitHub, _What is GitHub Copilot?_[https://docs.github.com/en/copilot/get-started/what-is-github-copilot](https://docs.github.com/en/copilot/get-started/what-is-github-copilot)
+
+*   GitHub, _Using GitHub Copilot in GitHub Codespaces_[https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces)
+
+*   GitHub, _Integrate AI agents_[https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents](https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
+
+*   Laurie Williams and Robert Kessler, _Pair Programming Illuminated_

@@ -1,16 +1,15 @@
----
-title: "Stop measuring AI adoption with token counts"
-subtitle: "If your organisation tracks tokens consumed or AI-generated lines of code as proof of progress, it is not measuring transformation. It is measuring noise."
-requested_url: "https://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token"
-canonical_url: "https://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token"
-substack_post_id: 191673061
-retrieved_at: "2026-04-18T07:57:17.026Z"
----
-# Stop measuring AI adoption with token counts
+Title: Stop measuring AI adoption with token counts
 
-### If your organisation tracks tokens consumed or AI-generated lines of code as proof of progress, it is not measuring transformation. It is measuring noise.
+URL Source: http://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token
 
-[![](https://substackcdn.com/image/fetch/$s_!q5fL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28084894-cada-481b-809a-cc3515f9bc34_1024x559.png)](https://substackcdn.com/image/fetch/$s_!q5fL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28084894-cada-481b-809a-cc3515f9bc34_1024x559.png)
+Final URL: https://emmanuelvalverderamos.substack.com/p/stop-measuring-ai-adoption-with-token
+
+Published Time: 2026-03-26T06:00:33+00:00
+
+Markdown Content:
+**Every time I say AI on this article I’m talking about LLM and agents, and also MCP, because all of this elements ARE NOT AI. But everybody call this AI**
+
+[![Image 1](https://substackcdn.com/image/fetch/$s_!q5fL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28084894-cada-481b-809a-cc3515f9bc34_1024x559.png)](https://substackcdn.com/image/fetch/$s_!q5fL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28084894-cada-481b-809a-cc3515f9bc34_1024x559.png)
 
 There is something deeply unserious about the way many organisations are trying to measure AI adoption.
 
@@ -28,14 +27,6 @@ It is not just incomplete.
 
 It is absurd.
 
----
-
-Crafting software is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
-
----
-
-## A token has no business meaning
-
 This should not be controversial, and yet here we are.
 
 A token does not tell you whether a customer problem was solved. It does not tell you whether a team delivered something users actually wanted. It does not tell you whether quality improved. It does not tell you whether cycle time fell. It does not tell you whether rework dropped. It does not tell you whether the organisation learned anything. It does not tell you whether the business is better off.
@@ -48,9 +39,7 @@ That is exhaust.
 
 And the fact that something is easy to count does not magically make it strategically meaningful. A dashboard full of clean graphs can still be a dashboard full of nonsense.
 
-## In many cases, more tokens mean more waste
-
-[![](https://substackcdn.com/image/fetch/$s_!r5XD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f90a0cf-1efa-4ec5-a6f3-32a2fb499e0c_1024x559.png)](https://substackcdn.com/image/fetch/$s_!r5XD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f90a0cf-1efa-4ec5-a6f3-32a2fb499e0c_1024x559.png)
+[![Image 2](https://substackcdn.com/image/fetch/$s_!r5XD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f90a0cf-1efa-4ec5-a6f3-32a2fb499e0c_1024x559.png)](https://substackcdn.com/image/fetch/$s_!r5XD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f90a0cf-1efa-4ec5-a6f3-32a2fb499e0c_1024x559.png)
 
 This is the part that people conveniently ignore.
 
@@ -58,14 +47,21 @@ A high token count may not mean your teams are getting more value from AI. It ma
 
 It may mean:
 
-- bloated prompts
-- poor problem framing
-- repeated retries
-- low-quality outputs
-- excessive back-and-forth
-- generated code that gets thrown away
-- workflows padded out to “show adoption”
-- teams spending more energy managing the tool than solving the problem
+*   bloated prompts
+
+*   poor problem framing
+
+*   repeated retries
+
+*   low-quality outputs
+
+*   excessive back-and-forth
+
+*   generated code that gets thrown away
+
+*   workflows padded out to “show adoption”
+
+*   teams spending more energy managing the tool than solving the problem
 
 So the same metric that some executive wants to present as proof of progress may actually be evidence of friction, confusion, and inefficiency.
 
@@ -75,11 +71,9 @@ And once a metric like that becomes a target, the organisation starts gaming it.
 
 More theatre.
 
-**> If your metric rewards more text, more prompts, or more machine output, do not be surprised when people optimise for performance art instead of results.**
+> **If your metric rewards more text, more prompts, or more machine output, do not be surprised when people optimise for performance art instead of results.**
 
-## It can also become a metric that rewards higher spend
-
-[![](https://substackcdn.com/image/fetch/$s_!dek-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc60ed007-97eb-4709-87df-8665b3b6e645_1024x559.png)](https://substackcdn.com/image/fetch/$s_!dek-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc60ed007-97eb-4709-87df-8665b3b6e645_1024x559.png)
+[![Image 3](https://substackcdn.com/image/fetch/$s_!dek-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc60ed007-97eb-4709-87df-8665b3b6e645_1024x559.png)](https://substackcdn.com/image/fetch/$s_!dek-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc60ed007-97eb-4709-87df-8665b3b6e645_1024x559.png)
 
 There is another reason token consumption is a dangerous metric: it can push organisations towards spending more while telling themselves they are succeeding.
 
@@ -91,11 +85,9 @@ Instead of asking whether teams are delivering more value, reducing toil, improv
 
 In that scenario, token consumption stops being a harmless vanity metric. It becomes a mechanism that can legitimise waste.
 
-**> A metric is especially dangerous when it not only fails to measure value, but also rewards spending more money to simulate progress.**
+> **A metric is especially dangerous when it not only fails to measure value, but also rewards spending more money to simulate progress.**
 
-## Counting AI-generated lines of code is the same stupidity with different branding
-
-[![](https://substackcdn.com/image/fetch/$s_!Mvox!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99dd18e4-5acc-4ae9-950d-c96c01b7c261_1024x558.png)](https://substackcdn.com/image/fetch/$s_!Mvox!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99dd18e4-5acc-4ae9-950d-c96c01b7c261_1024x558.png)
+[![Image 4](https://substackcdn.com/image/fetch/$s_!Mvox!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99dd18e4-5acc-4ae9-950d-c96c01b7c261_1024x558.png)](https://substackcdn.com/image/fetch/$s_!Mvox!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99dd18e4-5acc-4ae9-950d-c96c01b7c261_1024x558.png)
 
 Then there is the other favourite: AI-generated lines of code.
 
@@ -111,20 +103,23 @@ Quite often it is worse.
 
 More code can mean:
 
-- more maintenance burden
-- more bugs
-- more accidental complexity
-- more review cost
-- more regression risk
-- more future friction
+*   more maintenance burden
+
+*   more bugs
+
+*   more accidental complexity
+
+*   more review cost
+
+*   more regression risk
+
+*   more future friction
 
 So when an organisation celebrates AI-generated code volume, what it is often celebrating is surface area. Not value. Not elegance. Not maintainability. Just more stuff.
 
 And “more stuff” has never been a serious north star.
 
-## This is what happens when organisations confuse outputs with outcomes
-
-[![](https://substackcdn.com/image/fetch/$s_!nkc2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f888aa5-1af3-4b63-b18a-d45b76aee9ea_1024x559.png)](https://substackcdn.com/image/fetch/$s_!nkc2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f888aa5-1af3-4b63-b18a-d45b76aee9ea_1024x559.png)
+[![Image 5](https://substackcdn.com/image/fetch/$s_!nkc2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f888aa5-1af3-4b63-b18a-d45b76aee9ea_1024x559.png)](https://substackcdn.com/image/fetch/$s_!nkc2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f888aa5-1af3-4b63-b18a-d45b76aee9ea_1024x559.png)
 
 The real issue is not AI.
 
@@ -142,23 +137,29 @@ They ask how many tokens were used.
 
 That is the managerial equivalent of looking at a car’s fuel consumption and claiming you now understand whether the journey was worth taking.
 
-## What they should be measuring is not mysterious
-
 This is not hard conceptually.
 
 It is only hard politically, because the meaningful metrics are less flattering and require more honesty.
 
 If AI is genuinely helping, you should see signs such as:
 
-- capabilities delivered that users actually wanted
-- shorter time from idea to real use
-- less repetitive manual work
-- more time spent on higher-value work
-- fewer defects
-- less rework
-- better user satisfaction
-- stronger adoption in production
-- measurable improvement in business goals
+*   capabilities delivered that users actually wanted
+
+*   shorter time from idea to real use
+
+*   less repetitive manual work
+
+*   more time spent on higher-value work
+
+*   fewer defects
+
+*   less rework
+
+*   better user satisfaction
+
+*   stronger adoption in production
+
+*   measurable improvement in business goals
 
 Those are imperfect too, but at least they are pointed in the right direction.
 
@@ -167,8 +168,6 @@ They ask whether anything got better.
 Token counts do not. AI-generated lines do not. Prompt counts do not. AI-generated commit counts do not.
 
 Those are usage traces. Useful for operational visibility, maybe. Useful for cost control, maybe. Useful for claiming business value, no.
-
-## Tokens belong in finance and operations, not in your success story
 
 There is one place where tokens do matter: cost and usage management.
 
@@ -182,9 +181,7 @@ That is the sleight of hand happening in too many organisations right now. A met
 
 It does not deserve the promotion.
 
-## The deeper problem is what these metrics reveal about leadership
-
-[![](https://substackcdn.com/image/fetch/$s_!GYFA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5176a80c-3a5e-4f68-b346-9fc6dd2e0f95_1024x559.png)](https://substackcdn.com/image/fetch/$s_!GYFA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5176a80c-3a5e-4f68-b346-9fc6dd2e0f95_1024x559.png)
+[![Image 6](https://substackcdn.com/image/fetch/$s_!GYFA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5176a80c-3a5e-4f68-b346-9fc6dd2e0f95_1024x559.png)](https://substackcdn.com/image/fetch/$s_!GYFA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5176a80c-3a5e-4f68-b346-9fc6dd2e0f95_1024x559.png)
 
 Bad metrics are never just bad metrics. They reveal what leadership actually values.
 
@@ -192,10 +189,13 @@ When leaders obsess over token usage, they are telling the organisation somethin
 
 They are saying:
 
-- visible activity matters more than validated impact
-- tool usage matters more than delivered outcomes
-- volume matters more than judgement
-- dashboards matter more than users
+*   visible activity matters more than validated impact
+
+*   tool usage matters more than delivered outcomes
+
+*   volume matters more than judgement
+
+*   dashboards matter more than users
 
 That is why these metrics are not harmless. They train behaviour. Teams learn what counts by what gets measured. If the signal of success is “use the AI a lot,” then teams will use the AI a lot. If the signal is “generate more code,” then more code will appear.
 
@@ -203,11 +203,9 @@ Whether any of that makes the product better is another question entirely.
 
 And in weak organisations, that second question never gets asked.
 
-**> When an organisation measures AI by token consumption, it is often revealing that it cares more about the appearance of progress than the substance of it.**
+> **When an organisation measures AI by token consumption, it is often revealing that it cares more about the appearance of progress than the substance of it.**
 
 That is uncomfortable, but it is true often enough to be worth saying plainly.
-
-## AI does not create value by existing
 
 This is the part that should be obvious and somehow is not.
 
@@ -218,8 +216,6 @@ It is valuable when it helps people achieve something that matters.
 That may mean faster delivery. That may mean better decisions. That may mean less toil. That may mean improved quality. That may mean giving skilled people more room for the work that actually requires skill.
 
 But if none of that is happening, then the token count is just an expensive comfort blanket.
-
-## The question leadership should ask
 
 Not:
 
@@ -235,8 +231,6 @@ That is the whole conversation.
 
 Everything else is instrumentation, procurement, or vanity.
 
-## Final point
-
 If your organisation measures AI adoption by token consumption, it is not really measuring adoption.
 
 It is measuring throughput from a tool and pretending that throughput is transformation.
@@ -251,6 +245,6 @@ The business does not need metrics of noise.
 
 It needs metrics of value.
 
-**> The question is not how much AI you consumed. The question is what you achieved because of it.**
+> **The question is not how much AI you consumed. The question is what you achieved because of it.**
 
 If you want, I can give you the exact same piece with a stronger Substack title and subtitle pack.

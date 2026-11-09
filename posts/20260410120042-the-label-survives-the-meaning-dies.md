@@ -1,14 +1,13 @@
----
-title: "The label survives, the meaning dies"
-subtitle: "The software industry keeps turning useful ideas into rituals, and AI is the latest case, not the first"
-requested_url: "https://emmanuelvalverderamos.substack.com/p/the-label-survives-the-meaning-dies"
-canonical_url: "https://emmanuelvalverderamos.substack.com/p/the-label-survives-the-meaning-dies"
-substack_post_id: 193546410
-retrieved_at: "2026-04-18T07:57:14.695Z"
----
-# The label survives, the meaning dies
+Title: The label survives, the meaning dies
 
-### The software industry keeps turning useful ideas into rituals, and AI is the latest case, not the first
+URL Source: http://emmanuelvalverderamos.substack.com/p/the-label-survives-the-meaning-dies
+
+Final URL: https://emmanuelvalverderamos.substack.com/p/the-label-survives-the-meaning-dies
+
+Published Time: 2026-04-10T12:00:42+00:00
+
+Markdown Content:
+**Every time I say AI on this article I’m talking about LLM and agents, and also MCP, because all of this elements ARE NOT AI. But everybody call this AI**
 
 You can almost predict the meeting before it starts.
 
@@ -28,15 +27,7 @@ Not AI in isolation. Not one more complaint about hype. The deeper problem is th
 
 And once you see that, a lot of old arguments stop looking separate. Agile. DevOps. Pull requests. Refactoring. Technical debt. Blockchain. NFTs. AI. Agents. AGI. Different labels. Same disease.
 
----
-
-Crafting software is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
-
----
-
-## First the meaning goes soft
-
-[![](https://substackcdn.com/image/fetch/$s_!fn6c!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1817986-7ff2-4b7c-8526-0da9c509a82b_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!fn6c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1817986-7ff2-4b7c-8526-0da9c509a82b_2816x1536.png)
+[![Image 1](https://substackcdn.com/image/fetch/$s_!fn6c!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1817986-7ff2-4b7c-8526-0da9c509a82b_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!fn6c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1817986-7ff2-4b7c-8526-0da9c509a82b_2816x1536.png)
 
 In software, language is not decoration. Language is operational.
 
@@ -52,18 +43,19 @@ That is why this keeps happening. Not by accident. Because the industry keeps re
 
 And once a word has been flattened enough, a second problem appears. It becomes socially risky to challenge it. Not because the argument against the challenge is strong, but because the word now carries identity, status, and belonging. People do not just defend the idea. They defend the self-image attached to the label. That is how entire organisations end up speaking a language they no longer understand while still feeling sophisticated for using it.
 
-## Agile was not Scrum
-
-[![](https://substackcdn.com/image/fetch/$s_!q-Hp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07bc30fa-0f8e-4040-900e-c014d8be0dfc_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!q-Hp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07bc30fa-0f8e-4040-900e-c014d8be0dfc_2816x1536.png)
+[![Image 2](https://substackcdn.com/image/fetch/$s_!q-Hp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07bc30fa-0f8e-4040-900e-c014d8be0dfc_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!q-Hp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07bc30fa-0f8e-4040-900e-c014d8be0dfc_2816x1536.png)
 
 Agile is one of the clearest examples because the original meaning is not difficult to recover.
 
 The Agile Manifesto did not introduce a ceremony pack. It introduced a value system:
 
-- Individuals and interactions over processes and tools
-- Working software over comprehensive documentation
-- Customer collaboration over contract negotiation
-- Responding to change over following a plan
+*   Individuals and interactions over processes and tools
+
+*   Working software over comprehensive documentation
+
+*   Customer collaboration over contract negotiation
+
+*   Responding to change over following a plan
 
 And it did not stop there. Agile also came with principles, and one of the strangest things about the last two decades is how many people talk about agile while barely knowing them. Yet a lot of the real substance is there, not in the slogan, but in the principles.
 
@@ -75,9 +67,7 @@ Scrum, by contrast, is a framework. That does not make Scrum bad. It can be usef
 
 That is why so much “agile” work in large organisations has felt dead for years. Not because the original critique was wrong, but because the industry found a way to preserve the word while escaping the cost of actually living by it. The label survived. The meaning narrowed. The ritual expanded. Then people blamed agile for the behaviour of the hollow shell left behind.
 
-## DevOps was not a role
-
-[![](https://substackcdn.com/image/fetch/$s_!oEZg!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f5e77e0-9b50-4184-b52d-f769310c48ae_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!oEZg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f5e77e0-9b50-4184-b52d-f769310c48ae_2816x1536.png)
+[![Image 3](https://substackcdn.com/image/fetch/$s_!oEZg!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f5e77e0-9b50-4184-b52d-f769310c48ae_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!oEZg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f5e77e0-9b50-4184-b52d-f769310c48ae_2816x1536.png)
 
 DevOps suffered a similar fate.
 
@@ -87,9 +77,7 @@ But once the market got involved, the move became familiar. Take a collaborative
 
 This is one of the software industry’s favourite tricks. When an idea threatens to redistribute responsibility, it often gets neutralised by assigning it to a specialist. The organisation gets to keep the label. It does not have to keep the change. Again, the label survives. The meaning dies.
 
-## Pull requests became a moral performance
-
-[![](https://substackcdn.com/image/fetch/$s_!GWIh!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e77c1d9-714e-434a-b1da-e7629fa42934_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!GWIh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e77c1d9-714e-434a-b1da-e7629fa42934_2816x1536.png)
+[![Image 4](https://substackcdn.com/image/fetch/$s_!GWIh!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e77c1d9-714e-434a-b1da-e7629fa42934_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!GWIh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e77c1d9-714e-434a-b1da-e7629fa42934_2816x1536.png)
 
 Pull requests are another perfect example because the original context is so easy to recover.
 
@@ -99,17 +87,11 @@ What is much less obvious is why that exact mechanism became the default moral g
 
 And yet that is what happened. A context-specific mechanism became a universal ritual. Then the ritual acquired moral prestige. Then people started speaking as if code review and blocking pull requests were naturally the same thing.
 
-[![](https://substackcdn.com/image/fetch/$s_!7QAB!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8eba1c8-4dfc-4210-ac95-613def440ed9_144x144.png)](https://bryanfinster.substack.com/p/ai-broke-your-code-review-heres-how?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web)
-
 Research from Microsoft is useful here because it cuts through a lot of folklore. Bacchelli and Bird found that expectations around modern code review often diverged from outcomes, and that review brought benefits like knowledge transfer, team awareness, maintainability improvements, and alternative solutions, not just defect detection. That does not mean review is worthless. It means one operating form for review got mistaken for the goal itself.
 
 And once that happens, criticism gets distorted. Question the queue and people hear “you are against quality.” Question the delay and people hear “you are against collaboration.” No. The point is simpler than that. The goal is shared understanding, maintainability, risk reduction, and flow. A blocking asynchronous queue is one way to pursue that goal. It is not the goal. But once semantic diffusion has done its work, that distinction becomes strangely hard for the industry to hold in its head.
 
-[![](https://substackcdn.com/image/fetch/$s_!JZMQ!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F55b6085b-e5fb-4331-9ec4-f59cc43a2546_144x144.png)](https://a4al6a.substack.com/p/stop-using-pull-requests?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web)
-
-## Blockchain and NFTs were not universal answers
-
-[![](https://substackcdn.com/image/fetch/$s_!qTrq!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6d2ce52-97d8-4880-993c-f366e4489425_1024x558.png)](https://substackcdn.com/image/fetch/$s_!qTrq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6d2ce52-97d8-4880-993c-f366e4489425_1024x558.png)
+[![Image 5](https://substackcdn.com/image/fetch/$s_!qTrq!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6d2ce52-97d8-4880-993c-f366e4489425_1024x558.png)](https://substackcdn.com/image/fetch/$s_!qTrq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6d2ce52-97d8-4880-993c-f366e4489425_1024x558.png)
 
 Blockchain and NFTs compressed the same pattern into a shorter, louder cycle.
 
@@ -119,13 +101,11 @@ That is the rhythm. First the grand claim. Then the strategy decks. Then the sym
 
 Even sober post-hype discussion about NFTs ended up focused on much narrower use cases than the sweeping rhetoric that surrounded the boom years. That alone tells a story. The mythology arrived first. The discipline arrived later. Again, the useful thing is not always zero. That is not the point. The point is that the language arrives inflated. And once it arrives inflated, it stops helping people think. It starts helping them posture.
 
-## Even refactoring got flattened
-
 It would be comforting if this only happened to managerial buzzwords.
 
 It does not.
 
-[![](https://substackcdn.com/image/fetch/$s_!bXCj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fe83bf1-45a5-41fa-90af-8ac767ef8da9_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!bXCj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fe83bf1-45a5-41fa-90af-8ac767ef8da9_2816x1536.png)
+[![Image 6](https://substackcdn.com/image/fetch/$s_!bXCj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fe83bf1-45a5-41fa-90af-8ac767ef8da9_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!bXCj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fe83bf1-45a5-41fa-90af-8ac767ef8da9_2816x1536.png)
 
 It also happens to terms that were precise from the beginning.
 
@@ -185,9 +165,7 @@ In this new era of AI, sadly, many people think that code doesn’t matter, but 
 
 It matters not only because when you have an incident, it won’t be an agent that comes to fix it, but a human, and that human has to understand not only what the code does but also why it was written. I wish this were the only reason, but it’s also necessary for things like token consumption, to provide a context that’s easier to understand. Let’s not forget that the agents underneath still rely on LLM models.
 
-## Technical debt may be the clearest example of all
-
-[![](https://substackcdn.com/image/fetch/$s_!RIXo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe220d679-560e-4451-bfa0-f4fcadeecbee_1024x558.png)](https://substackcdn.com/image/fetch/$s_!RIXo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe220d679-560e-4451-bfa0-f4fcadeecbee_1024x558.png)
+[![Image 7](https://substackcdn.com/image/fetch/$s_!RIXo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe220d679-560e-4451-bfa0-f4fcadeecbee_1024x558.png)](https://substackcdn.com/image/fetch/$s_!RIXo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe220d679-560e-4451-bfa0-f4fcadeecbee_1024x558.png)
 
 Technical debt is one of the strongest examples of semantic diffusion in software because it shows how a useful metaphor can turn into a laundering mechanism.
 
@@ -195,11 +173,15 @@ At its best, technical debt is a disciplined metaphor. Fowler defines it as a me
 
 That is useful because it moves the discussion away from taste and toward economics:
 
-- Future cost
-- Friction
-- Loss of options
-- Loss of liquidity
-- Loss of ease in change
+*   Future cost
+
+*   Friction
+
+*   Loss of options
+
+*   Loss of liquidity
+
+*   Loss of ease in change
 
 That was the point.
 
@@ -207,17 +189,13 @@ But the industry could not resist stretching the term until it became a catch-al
 
 At that point the metaphor stops clarifying and starts laundering. Not every mess deserves the dignity of being called debt. Some things are trade-offs. Some are accidental complexity. Some are entropy. Some are simple neglect. Some are just poor work with respectable language draped over it. Used properly, technical debt lets people talk about timing, prudence, recklessness, and future cost of change. Used lazily, it turns every unpleasant engineering reality into a respectable-sounding blur. Again, the useful idea was specific. The industry made it vague.
 
-## AI is the latest chapter, not the whole book
-
 Now we get to AI.
 
 AI matters here not because it is the first thing the software industry has misunderstood, but because it is the latest thing to pass through the same machine. And this case is even more revealing because the incentives are bigger. The money is bigger. The prestige is bigger. The language is more anthropomorphic. The metrics are easier to fake. The theatre is easier to scale. Semantic diffusion was already a serious industry habit. AI made it faster, louder, and more expensive.
 
-Before talking about copilots, coding agents, and AGI, it is worth recovering what the term *artificial intelligence* actually meant. The field did not begin in the 2020s. Dartmouth’s historical account treats the 1956 summer research project as the birth of AI as a field, and John McCarthy defined AI as the science and engineering of making intelligent machines. The original ambition was much broader than today’s mainstream commercial discourse usually implies.
+Before talking about copilots, coding agents, and AGI, it is worth recovering what the term _artificial intelligence_ actually meant. The field did not begin in the 2020s. Dartmouth’s historical account treats the 1956 summer research project as the birth of AI as a field, and John McCarthy defined AI as the science and engineering of making intelligent machines. The original ambition was much broader than today’s mainstream commercial discourse usually implies.
 
 That history matters because it blocks two lazy stories at once. The first is that AI is a brand new idea that arrived from nowhere the moment chat interfaces became popular. It is not. The second is that because the field is old, nothing important is happening now. That is also false. Something important is happening now. But the current commercial wave is still narrower than the historical ambition carried by the term AI. If people do not recover that distinction, the rest of the discussion becomes fog.
-
-## What we mostly call AI now
 
 What the market currently calls AI is, in practice, heavily dominated by large language models and the systems built around them.
 
@@ -229,11 +207,9 @@ That matters because the word AI imports a much older and much broader ambition 
 
 When one fashionable family of systems temporarily colonises an older, broader term, semantic diffusion accelerates. That is why so much AI discourse feels simultaneously confident and blurry. The claims are large. The categories are weak. The distinctions are soft. And the softness keeps getting rewarded.
 
-## Agents are the new mystique layer
+[![Image 8](https://substackcdn.com/image/fetch/$s_!rV3s!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78c1de2c-a15f-47c4-b78e-42afcb6d3a8a_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!rV3s!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78c1de2c-a15f-47c4-b78e-42afcb6d3a8a_2816x1536.png)
 
-[![](https://substackcdn.com/image/fetch/$s_!rV3s!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78c1de2c-a15f-47c4-b78e-42afcb6d3a8a_2816x1536.png)](https://substackcdn.com/image/fetch/$s_!rV3s!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78c1de2c-a15f-47c4-b78e-42afcb6d3a8a_2816x1536.png)
-
-Few words are inflating faster than *agent*.
+Few words are inflating faster than _agent_.
 
 Used carefully, the term can be useful. It can describe systems that do more than generate one-shot outputs, systems that keep state, use tools, sequence actions, coordinate steps, and recover from failure.
 
@@ -243,11 +219,9 @@ A great deal of what is being sold as an agent today is better understood as a m
 
 Once the label becomes mystical, the discussion becomes less precise and more marketable. That is the trade. The industry gets a more exciting noun. In exchange it gets weaker thinking.
 
-## AGI is even worse
+[![Image 9](https://substackcdn.com/image/fetch/$s_!CKoU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad583ebe-ea8b-4da7-a19d-c72671746ea0_1024x558.png)](https://substackcdn.com/image/fetch/$s_!CKoU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad583ebe-ea8b-4da7-a19d-c72671746ea0_1024x558.png)
 
-[![](https://substackcdn.com/image/fetch/$s_!CKoU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad583ebe-ea8b-4da7-a19d-c72671746ea0_1024x558.png)](https://substackcdn.com/image/fetch/$s_!CKoU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad583ebe-ea8b-4da7-a19d-c72671746ea0_1024x558.png)
-
-If *agent* is inflated, *AGI* is worse.
+If _agent_ is inflated, _AGI_ is worse.
 
 Recent work trying to operationalise AGI says this quite openly: the concept matters, but it is also controversial, difficult to define cleanly, and still requires explicit treatment of performance, generality, and autonomy. The entire point of the “Levels of AGI” framework is to create a common language because the category is not already clean, settled, or universally operationalised.
 
@@ -263,19 +237,25 @@ That is theatre wearing technical language.
 
 Even saddly is when CEO tell you we already have it
 
-## This is why the current discourse feels unserious
+[Video 3](https://www.youtube.com/watch?v=awE5DV-M48o)
 
 Once you put all of this together, a lot of present-day AI talk starts to look less like serious reasoning and more like the latest round of the late night show.
 
 The sequence is familiar:
 
-- Take a broad term with a long history
-- Compress it into the currently fashionable commercial form
-- Speak as if that form exhausts the broader category
-- Add anthropomorphic and prestige-heavy language
-- Measure shallow proxies that are easy to count and easy to sell
-- Confuse activity with understanding
-- Mistake local acceleration for systemic transformation
+*   Take a broad term with a long history
+
+*   Compress it into the currently fashionable commercial form
+
+*   Speak as if that form exhausts the broader category
+
+*   Add anthropomorphic and prestige-heavy language
+
+*   Measure shallow proxies that are easy to count and easy to sell
+
+*   Confuse activity with understanding
+
+*   Mistake local acceleration for systemic transformation
 
 None of that means the tools are worthless.
 
@@ -286,8 +266,6 @@ And once meaning gets loose, measurement gets lazy.
 If a company does not know whether its bottleneck is code production, review latency, environment instability, architectural friction, unclear product decisions, slow feedback, or organisational dependency, then “AI adoption” can quickly become one more theatre metric. Usage goes up. Output goes up. Demo density goes up. Excitement goes up. That proves almost nothing.
 
 Faster code generation only transforms a delivery system if code generation was meaningfully the constraint. Otherwise all that happened was the acceleration of a local activity wrapped in grand language. That is not transformation. It is a category mistake.
-
-## The real accusation
 
 The real accusation here is not that the software industry experiments with new tools.
 
@@ -303,21 +281,25 @@ The real product many organisations buy is not the capability.
 
 It is the comfort of saying the word.
 
-## What serious teams should do instead
-
 The answer is not cynicism.
 
 **The answer is discipline**.
 
 Serious teams should protect the meaning of their words before they scale those words across the organisation. At minimum, they should ask:
 
-- What exact problem is being solved?
-- What exact capability is real?
-- Which assumptions must hold for that capability to matter?
-- What bottleneck is actually being relieved?
-- What new risks are being introduced?
-- What evidence would show the tool genuinely helped?
-- What evidence would show the organisation is fooling itself?
+*   What exact problem is being solved?
+
+*   What exact capability is real?
+
+*   Which assumptions must hold for that capability to matter?
+
+*   What bottleneck is actually being relieved?
+
+*   What new risks are being introduced?
+
+*   What evidence would show the tool genuinely helped?
+
+*   What evidence would show the organisation is fooling itself?
 
 They should treat refactoring as part of normal software development, not as a guilt category. They should treat technical debt as an economic metaphor, not as a euphemism for anything unpleasant. They should stop confusing frameworks with values, roles with collaboration, mechanisms with goals, and labels with understanding.
 
@@ -328,8 +310,6 @@ The opposite of hype is not scepticism for its own sake.
 It is semantic discipline.
 
 It is preserving enough clarity in words that they still help people think.
-
-## Conclusions
 
 The software industry does not only suffer from hype.
 
@@ -361,11 +341,15 @@ And it may be the saddest one.
 
 All the things mentioned in this article came to stay:
 
-- Agile stayed
-- DevOps stayed
-- Pull requests stayed
-- Technical debt stayed
-- And AI, in one form or another, will stay too
+*   Agile stayed
+
+*   DevOps stayed
+
+*   Pull requests stayed
+
+*   Technical debt stayed
+
+*   And AI, in one form or another, will stay too
 
 But in this industry, when an idea comes to stay, what often stays is not the original insight. What stays is the flattened version. The marketable version. The ritualised version. The part that was easiest to sell, easiest to scale, easiest to copy, and easiest to perform without understanding. That is what makes this so depressing.
 
@@ -405,7 +389,7 @@ Then call the result progress.
 
 And part of the reason this keeps happening is not especially mysterious.
 
-[![](https://substackcdn.com/image/fetch/$s_!2eas!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3558011a-b9cd-4574-a194-d67614629c45_675x499.png)](https://substackcdn.com/image/fetch/$s_!2eas!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3558011a-b9cd-4574-a194-d67614629c45_675x499.png)
+[![Image 10](https://substackcdn.com/image/fetch/$s_!2eas!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3558011a-b9cd-4574-a194-d67614629c45_675x499.png)](https://substackcdn.com/image/fetch/$s_!2eas!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3558011a-b9cd-4574-a194-d67614629c45_675x499.png)
 
 Understanding is not evenly distributed in any field. If you want a simple mental model, think of it as a gauss curve. A relatively small number of people understand an idea deeply. A much larger number understand it partially, superficially, or through repetition. When I talk about these categories in the gauss curve, I’m not trying to pinpoint anyone. The person who became an expert wasn’t born that way, they went through the earlier stages. The difference is that they didn’t just scratch the surface; they made the effort to understand more deeply.
 
@@ -435,7 +419,7 @@ That would already be irritating on its own.
 
 What makes it worse is how familiar it is.
 
-[![](https://substackcdn.com/image/fetch/$s_!83sN!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e731a30-bec9-43e3-9e4d-378597c55acd_1024x559.png)](https://substackcdn.com/image/fetch/$s_!83sN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e731a30-bec9-43e3-9e4d-378597c55acd_1024x559.png)
+[![Image 11](https://substackcdn.com/image/fetch/$s_!83sN!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e731a30-bec9-43e3-9e4d-378597c55acd_1024x559.png)](https://substackcdn.com/image/fetch/$s_!83sN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e731a30-bec9-43e3-9e4d-378597c55acd_1024x559.png)
 
 These are often the same professional environments, and often the same kinds of people, that spent years turning software into a checklist, confusing Java with JavaScript, asking candidates about “agile” without understanding either its values or its principles, and repeating words like architecture, scalability, technical debt, DevOps, refactoring, or software desing as if saying the term were the same thing as understanding the idea. They did not use those terms to understand the work. They used them to filter people, manage impressions, or sound competent without doing the work of comprehension. The people who helped flatten the meaning of yesterday’s terms are now trying to lecture everyone else about today’s ones.
 
@@ -455,7 +439,7 @@ Because one of the most damaging things in this industry is not only bad strateg
 
 It is shallow language, delivered with confidence, by people who mistake checklists for understanding, repetition for knowledge, and the ability to say a term for the ability to think with it.
 
-[![](https://substackcdn.com/image/fetch/$s_!I2t_!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F42083454-299c-4f69-8550-9ee6ec2cf120_1024x559.png)](https://substackcdn.com/image/fetch/$s_!I2t_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F42083454-299c-4f69-8550-9ee6ec2cf120_1024x559.png)
+[![Image 12](https://substackcdn.com/image/fetch/$s_!I2t_!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F42083454-299c-4f69-8550-9ee6ec2cf120_1024x559.png)](https://substackcdn.com/image/fetch/$s_!I2t_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F42083454-299c-4f69-8550-9ee6ec2cf120_1024x559.png)
 
 If software wants to be taken seriously as a profession, it has to become far less tolerant of this pattern. It has to protect its terms, recover context, and stop letting markets flatten every useful idea into a portable ritual.
 
@@ -471,29 +455,34 @@ The ritual survives.
 
 And the industry calls that progress.
 
-### To simplify things, let’s take a look at how this system works.
+[![Image 13](https://substackcdn.com/image/fetch/$s_!CD_f!,w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c05e5b1-c9ce-4ca8-974a-2b5fb1c7f44c_1170x1102.gif)](https://substackcdn.com/image/fetch/$s_!CD_f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c05e5b1-c9ce-4ca8-974a-2b5fb1c7f44c_1170x1102.gif)
 
-#### Vicious cycle
+![Image 14](https://substackcdn.com/image/fetch/$s_!WEFA!,w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe1fc0ec-ffa7-4553-ad8f-14cd5ccb622c_1307x1034.gif)
 
-[![](https://substackcdn.com/image/fetch/$s_!CD_f!,w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c05e5b1-c9ce-4ca8-974a-2b5fb1c7f44c_1170x1102.gif)](https://substackcdn.com/image/fetch/$s_!CD_f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c05e5b1-c9ce-4ca8-974a-2b5fb1c7f44c_1170x1102.gif)
+*   Martin Fowler, “Semantic Diffusion.” ([martinfowler.com](https://martinfowler.com/bliki/SemanticDiffusion.html))
 
-#### Virtuous cycle
+*   Martin Fowler, “The State of Agile Software in 2018.” ([martinfowler.com](https://martinfowler.com/articles/agile-aus-2018.html))
 
-[![](https://substackcdn.com/image/fetch/$s_!WEFA!,w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe1fc0ec-ffa7-4553-ad8f-14cd5ccb622c_1307x1034.gif)](https://substackcdn.com/image/fetch/$s_!WEFA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe1fc0ec-ffa7-4553-ad8f-14cd5ccb622c_1307x1034.gif)
+*   Manifesto for Agile Software Development. ([Manifiesto Ágil](https://agilemanifesto.org/))
 
-## References
+*   Principles behind the Agile Manifesto. ([Manifiesto Ágil](https://agilemanifesto.org/principles.html))
 
-- Martin Fowler, “Semantic Diffusion.” ([martinfowler.com](https://martinfowler.com/bliki/SemanticDiffusion.html))
-- Martin Fowler, “The State of Agile Software in 2018.” ([martinfowler.com](https://martinfowler.com/articles/agile-aus-2018.html))
-- Manifesto for Agile Software Development. ([Manifiesto Ágil](https://agilemanifesto.org/))
-- Principles behind the Agile Manifesto. ([Manifiesto Ágil](https://agilemanifesto.org/principles.html))
-- DevOpsDays 2009 Belgium and Patrick Debois background. ([devopsdays.org](https://devopsdays.org/blog/2009/11/11/devopsdays-2009-belgium-a-great-success/))
-- Git documentation, `git-request-pull`. ([Git](https://git-scm.com/docs/git-request-pull))
-- Alberto Bacchelli and Christian Bird, “Expectations, Outcomes, and Challenges of Modern Code Review.” ([Git](https://git-scm.com/docs/git-request-pull))
-- Dartmouth, “Artificial Intelligence Coined at Dartmouth.” ([www-formal.stanford.edu](https://www-formal.stanford.edu/jmc/whatisai.pdf))
-- John McCarthy, “What Is Artificial Intelligence?” ([www-formal.stanford.edu](https://www-formal.stanford.edu/jmc/whatisai.pdf))
-- “Levels of AGI for Operationalizing Progress on the Path to AGI.” ([www-formal.stanford.edu](https://www-formal.stanford.edu/jmc/whatisai.pdf))
-- Martin Fowler, “Technical Debt.” ([martinfowler.com](https://martinfowler.com/bliki/SemanticDiffusion.html))
-- Martin Fowler, “Technical Debt Quadrant.” ([martinfowler.com](https://martinfowler.com/bliki/SemanticDiffusion.html))
-- Martin Fowler, *Refactoring: Improving the Design of Existing Code*, second edition.
-- Everett M. Rogers, *Diffusion of Innovations*. [https://teddykw2.files.wordpress.com/2012/07/everett-m-rogers-diffusion-of-innovations.pdf](https://teddykw2.files.wordpress.com/2012/07/everett-m-rogers-diffusion-of-innovations.pdf)
+*   DevOpsDays 2009 Belgium and Patrick Debois background. ([devopsdays.org](https://devopsdays.org/blog/2009/11/11/devopsdays-2009-belgium-a-great-success/))
+
+*   Git documentation, `git-request-pull`. ([Git](https://git-scm.com/docs/git-request-pull))
+
+*   Alberto Bacchelli and Christian Bird, “Expectations, Outcomes, and Challenges of Modern Code Review.” ([Git](https://git-scm.com/docs/git-request-pull))
+
+*   Dartmouth, “Artificial Intelligence Coined at Dartmouth.” ([www-formal.stanford.edu](https://www-formal.stanford.edu/jmc/whatisai.pdf))
+
+*   John McCarthy, “What Is Artificial Intelligence?” ([www-formal.stanford.edu](https://www-formal.stanford.edu/jmc/whatisai.pdf))
+
+*   “Levels of AGI for Operationalizing Progress on the Path to AGI.” ([www-formal.stanford.edu](https://www-formal.stanford.edu/jmc/whatisai.pdf))
+
+*   Martin Fowler, “Technical Debt.” ([martinfowler.com](https://martinfowler.com/bliki/SemanticDiffusion.html))
+
+*   Martin Fowler, “Technical Debt Quadrant.” ([martinfowler.com](https://martinfowler.com/bliki/SemanticDiffusion.html))
+
+*   Martin Fowler, _Refactoring: Improving the Design of Existing Code_, second edition.
+
+*   Everett M. Rogers, _Diffusion of Innovations_. [https://teddykw2.files.wordpress.com/2012/07/everett-m-rogers-diffusion-of-innovations.pdf](https://teddykw2.files.wordpress.com/2012/07/everett-m-rogers-diffusion-of-innovations.pdf)

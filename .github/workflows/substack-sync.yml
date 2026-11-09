@@ -22,77 +22,56 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SUBSTACK_ARCHIVE_API_URL: https://emmanuelvalverderamos-substack-api.evalverde.workers.dev/
+      SUBSTACK_ARCHIVE_PAGINATION: cursor
       SUBSTACK_MARKDOWN_ENDPOINT: https://substack-to-markdown.evalverde.workers.dev/?url=
+      SUBSTACK_MARKDOWN_FALLBACK_ENDPOINT: https://r.jina.ai/http://
       SUBSTACK_OUTPUT_DIR: posts
       SUBSTACK_TIMEOUT_SECONDS: "30"
+      EVENT_NAME: ${{ github.event_name }}
+      DISPATCH_SKIP_REPO_STEPS: ${{ github.event.inputs.skip_repo_steps || '' }}
 
     steps:
-      - name: Check 09:00 Europe/Madrid window for scheduled runs
-        id: madrid_guard
-        if: github.event_name == 'schedule'
-        run: |
-          current_hour="$(TZ=Europe/Madrid date +%H)"
-          if [ "${current_hour}" != "09" ]; then
-            echo "skip=true" >> "${GITHUB_OUTPUT}"
-            echo "Scheduled run skipped. Europe/Madrid hour: ${current_hour}."
-          else
-            echo "skip=false" >> "${GITHUB_OUTPUT}"
-            echo "Scheduled run allowed. Europe/Madrid hour: ${current_hour}."
-          fi
-
       - name: Checkout repository
-        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
 
       - name: Setup Python
-        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.12"
 
       - name: Install uv
-        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
         run: python -m pip install uv
 
       - name: Install project runtime dependencies
-        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
         run: uv sync --no-install-project
 
       - name: Run Substack synchronization
-        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
         run: uv run python scripts/sync_substack.py
 
       - name: Resolve repository steps mode
         id: repo_mode
-        if: github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true'
         run: |
           resolved_skip="${SKIP_REPO_STEPS:-false}"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.skip_repo_steps }}" ]; then
-            resolved_skip="${{ github.event.inputs.skip_repo_steps }}"
+          if [ "${EVENT_NAME}" = "workflow_dispatch" ] && [ -n "${DISPATCH_SKIP_REPO_STEPS}" ]; then
+            resolved_skip="${DISPATCH_SKIP_REPO_STEPS}"
           fi
           echo "skip_repo_steps=${resolved_skip}" >> "${GITHUB_OUTPUT}"
           echo "Resolved skip_repo_steps=${resolved_skip}"
 
       - name: Skip repository steps
-        if: >-
-          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
-          && steps.repo_mode.outputs.skip_repo_steps == 'true'
+        if: steps.repo_mode.outputs.skip_repo_steps == 'true'
         run: echo "Repository steps disabled by skip_repo_steps flag."
 
       - name: Configure git author
-        if: >-
-          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
-          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Stage generated markdown files
-        if: >-
-          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
-          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
         run: |
           if [ -d "${SUBSTACK_OUTPUT_DIR}" ]; then
             git add "${SUBSTACK_OUTPUT_DIR}"
@@ -101,9 +80,7 @@ jobs:
           fi
 
       - name: Validate staged markdown files are non-empty
-        if: >-
-          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
-          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
         run: |
           staged_files="$(git diff --cached --name-only --diff-filter=AM -- 'posts/*.md')"
           if [ -z "${staged_files}" ]; then
@@ -125,9 +102,7 @@ jobs:
           EOF
 
       - name: Commit and push new posts
-        if: >-
-          (github.event_name != 'schedule' || steps.madrid_guard.outputs.skip != 'true')
-          && steps.repo_mode.outputs.skip_repo_steps != 'true'
+        if: steps.repo_mode.outputs.skip_repo_steps != 'true'
         run: |
           if git diff --cached --quiet; then
             echo "No new posts to commit."

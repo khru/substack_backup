@@ -16,22 +16,40 @@ class HttpMarkdownFetcher:
         user_agent: str = DEFAULT_HTTP_USER_AGENT,
         max_retries: int = DEFAULT_HTTP_MAX_RETRIES,
         circuit_breaker: CircuitBreakerPort | None = None,
+        fallback_endpoint_url: str | None = None,
     ) -> None:
         self._endpoint_url = endpoint_url
         self._timeout_seconds = timeout_seconds
         self._user_agent = user_agent
         self._max_retries = max_retries
         self._circuit_breaker = resolve_circuit_breaker(circuit_breaker)
+        self._fallback_circuit_breaker = resolve_circuit_breaker(None)
+        self._fallback_endpoint_url = fallback_endpoint_url
 
     def fetch(self, article_url: str) -> str:
         encoded_article_url = quote(article_url, safe="")
         request_url = f"{self._endpoint_url}{encoded_article_url}"
-        return fetch_text_response(
-            target_url=request_url,
-            timeout_seconds=self._timeout_seconds,
-            user_agent=self._user_agent,
-            error_type=MarkdownDownloadError,
-            operation_label="markdown",
-            max_retries=self._max_retries,
-            circuit_breaker=self._circuit_breaker,
-        )
+        try:
+            return fetch_text_response(
+                target_url=request_url,
+                timeout_seconds=self._timeout_seconds,
+                user_agent=self._user_agent,
+                error_type=MarkdownDownloadError,
+                operation_label="markdown",
+                max_retries=self._max_retries,
+                circuit_breaker=self._circuit_breaker,
+            )
+        except MarkdownDownloadError:
+            if self._fallback_endpoint_url is None:
+                raise
+
+            fallback_url = self._fallback_endpoint_url + article_url.removeprefix("https://")
+            return fetch_text_response(
+                target_url=fallback_url,
+                timeout_seconds=self._timeout_seconds,
+                user_agent=self._user_agent,
+                error_type=MarkdownDownloadError,
+                operation_label="markdown fallback",
+                max_retries=0,
+                circuit_breaker=self._fallback_circuit_breaker,
+            )

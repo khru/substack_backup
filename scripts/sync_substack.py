@@ -20,8 +20,10 @@ def _build_arguments_from_environment() -> list[str]:
         "SUBSTACK_ARCHIVE_API_URL": "--archive-url",
         "SUBSTACK_FEED_URL": "--feed-url",
         "SUBSTACK_MARKDOWN_ENDPOINT": "--markdown-endpoint",
+        "SUBSTACK_MARKDOWN_FALLBACK_ENDPOINT": "--markdown-fallback-endpoint",
         "SUBSTACK_OUTPUT_DIR": "--output-directory",
         "SUBSTACK_TIMEOUT_SECONDS": "--timeout-seconds",
+        "SUBSTACK_ARCHIVE_PAGINATION": "--archive-pagination",
     }
 
     command_arguments: list[str] = []

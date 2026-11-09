@@ -34,4 +34,4 @@ python_version = "3.11"
 strict = true
 warn_unused_configs = true
 mypy_path = "src"
-files = ["src", "scripts/sync_substack.py", "tests"]
+files = ["src", "scripts", "tests"]

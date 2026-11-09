@@ -186,10 +186,11 @@ Run commands in this exact order:
 - Local workflow runs should use `skip_repo_steps=true` or `SKIP_REPO_STEPS=true` when commit/push is not needed.
 
 ## Sync pipeline invariants
-- Execute at 09:00 Europe/Madrid (cron in UTC + guard).
+- Run twice daily from the UTC schedule; each run executes even when GitHub delays the scheduled start.
 - Primary source is archive API via worker proxy with pagination.
-- Default archive page size is `limit=20` and pagination must advance with observed page size.
-- Keep markdown endpoint: `https://substack-to-markdown.evalverde.workers.dev/?url=<encoded-url>`.
+- Archive pagination uses `nextCursor` with `limit=20`.
+- Keep primary markdown endpoint: `https://substack-to-markdown.evalverde.workers.dev/?url=<encoded-url>`.
+- Use the configured markdown fallback endpoint when the primary converter is unavailable.
 - Output path format is `posts/<timestamp>-<slug>.md`.
 - Timestamp format is UTC `YYYYMMDDHHMMSS`.
 - Compare content hashes (MD5) to decide update versus unchanged.

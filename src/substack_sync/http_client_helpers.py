@@ -50,15 +50,26 @@ def fetch_text_response(
     return body
 
 
-def build_archive_request_url(archive_url: str, offset: int, limit: int) -> str:
-    query = urlencode(
-        {
-            "sort": DEFAULT_ARCHIVE_SORT,
-            "search": DEFAULT_ARCHIVE_SEARCH,
-            "offset": offset,
-            "limit": limit,
-        }
-    )
+def build_archive_request_url(
+    archive_url: str,
+    offset: int,
+    limit: int,
+    cursor: str | None = None,
+    cursor_pagination: bool = False,
+) -> str:
+    query_parameters: dict[str, str | int] = {
+        "sort": DEFAULT_ARCHIVE_SORT,
+        "search": DEFAULT_ARCHIVE_SEARCH,
+    }
+    if cursor_pagination:
+        query_parameters["limit"] = limit
+        if cursor is not None:
+            query_parameters["cursor"] = cursor
+    else:
+        query_parameters["offset"] = offset
+        query_parameters["limit"] = limit
+
+    query = urlencode(query_parameters)
     separator = "&" if "?" in archive_url else "?"
     return f"{archive_url}{separator}{query}"
 

@@ -16,13 +16,14 @@ GitHub-hosted runners can be blocked when calling Substack endpoints directly. T
 - persist updates with deterministic filenames,
 - and keep a reliable local quality process with mutation testing.
 
-The repository solves this by using a Cloudflare Worker archive proxy, MD5 content comparison, and timestamped filenames.
+The repository solves this by using a Cloudflare Worker archive proxy, cursor pagination, MD5 content comparison, and timestamped filenames.
 
 ## What the sync does
 
-- Reads article metadata from archive API proxy pages (`limit=20`, offset pagination).
+- Reads article metadata from archive API proxy pages (`limit=20`, cursor pagination).
 - Calls the markdown endpoint:
   - `https://substack-to-markdown.evalverde.workers.dev/?url=<URL_ENCODED>`
+- Falls back to `https://r.jina.ai/http://<ARTICLE_URL>` if the primary converter is unavailable.
 - Stores files in `posts/` as:
   - `posts/<YYYYMMDDHHMMSS>-<slug>.md`
 - Compares markdown MD5 hashes to decide unchanged vs update.
@@ -97,6 +98,8 @@ Optional environment variables:
 - `SUBSTACK_ARCHIVE_API_URL`
 - `SUBSTACK_FEED_URL` (legacy alias)
 - `SUBSTACK_MARKDOWN_ENDPOINT`
+- `SUBSTACK_MARKDOWN_FALLBACK_ENDPOINT`
+- `SUBSTACK_ARCHIVE_PAGINATION`
 - `SUBSTACK_OUTPUT_DIR`
 - `SUBSTACK_TIMEOUT_SECONDS`
 
