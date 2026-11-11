@@ -9,7 +9,7 @@ from substack_sync.http_clients import HttpArchiveReader
 
 
 class HttpArchiveReaderTests(unittest.TestCase):
-    def test_fetch_reads_cursor_pages_from_archive_proxy(self) -> None:
+    def test_fetch_reads_cursor_pages_from_archive_api(self) -> None:
         archive_url = "https://example.workers.dev/archive"
         requested_urls: list[str] = []
         cursor = "next-page"

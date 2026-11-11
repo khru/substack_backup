@@ -122,14 +122,12 @@ class ProjectToolingTests(unittest.TestCase):
         self.assertIn("permissions:", workflow_content)
         self.assertIn("contents: write", workflow_content)
 
-    def test_sync_workflow_uses_cloudflare_archive_proxy_url(self) -> None:
+    def test_sync_workflow_uses_substack_archive_api_url(self) -> None:
         workflow_content = _SYNC_WORKFLOW_PATH.read_text(encoding="utf-8")
-        expected_archive_proxy_url = (
-            "https://emmanuelvalverderamos-substack-api.evalverde.workers.dev/"
-        )
+        expected_archive_api_url = "https://emmanuelvalverderamos.substack.com/api/v1/posts"
 
         self.assertIn(
-            f"SUBSTACK_ARCHIVE_API_URL: {expected_archive_proxy_url}",
+            f"SUBSTACK_ARCHIVE_API_URL: {expected_archive_api_url}",
             workflow_content,
         )
         self.assertNotIn(

@@ -187,7 +187,7 @@ Run commands in this exact order:
 
 ## Sync pipeline invariants
 - Run twice daily from the UTC schedule; each run executes even when GitHub delays the scheduled start.
-- Primary source is archive API via worker proxy with pagination.
+- Primary source is Substack's archive API with cursor pagination.
 - Archive pagination uses `nextCursor` with `limit=20`.
 - Keep primary markdown endpoint: `https://substack-to-markdown.evalverde.workers.dev/?url=<encoded-url>`.
 - Use the configured markdown fallback endpoint when the primary converter is unavailable.

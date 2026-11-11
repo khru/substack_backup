@@ -16,7 +16,7 @@ GitHub-hosted runners can be blocked when calling Substack endpoints directly. T
 - persist updates with deterministic filenames,
 - and keep a reliable local quality process with mutation testing.
 
-The repository solves this by using a Cloudflare Worker archive proxy, cursor pagination, MD5 content comparison, and timestamped filenames.
+The repository solves this by using Substack's archive API, cursor pagination, MD5 content comparison, and timestamped filenames.
 
 ## What the sync does
 

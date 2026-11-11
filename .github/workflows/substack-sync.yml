@@ -21,7 +21,7 @@ jobs:
   sync-substack:
     runs-on: ubuntu-latest
     env:
-      SUBSTACK_ARCHIVE_API_URL: https://emmanuelvalverderamos-substack-api.evalverde.workers.dev/
+      SUBSTACK_ARCHIVE_API_URL: https://emmanuelvalverderamos.substack.com/api/v1/posts
       SUBSTACK_ARCHIVE_PAGINATION: cursor
       SUBSTACK_MARKDOWN_ENDPOINT: https://substack-to-markdown.evalverde.workers.dev/?url=
       SUBSTACK_MARKDOWN_FALLBACK_ENDPOINT: https://r.jina.ai/http://
